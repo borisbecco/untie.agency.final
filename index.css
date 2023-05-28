@@ -904,6 +904,13 @@ nav:hover {
 .letter-button.active {
   text-decoration: underline;
 }
+
+.all-button {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .talents-search {
   display: flex;
   justify-content: center;

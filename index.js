@@ -530,8 +530,15 @@ $(document).ready(function () {
     card.find(".button1, .button2").removeClass("active");
     $(this).addClass("active");
   });
-});
 
+  // Agregar el código para restablecer la búsqueda al hacer clic en el botón "ALL"
+  $("#all-button").click(function () {
+    $(".card").show(); // Mostrar todas las tarjetas
+
+    // Remover la clase .active de todos los botones en las tarjetas
+    $(".card .button1, .card .button2").removeClass("active");
+  });
+});
 //overlay-menu
 
 // Obtener el overlay y el cuerpo de la página
