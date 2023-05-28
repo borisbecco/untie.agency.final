@@ -628,6 +628,11 @@ nav:hover {
     height: 18px;
     width: 100%;
   }
+
+  .textbar-text {
+    font-size: 8px;
+    margin-top: 0.4px;
+  }
 }
 
 @media screen and (min-width: 577px) and (max-width: 991px) {
@@ -635,6 +640,11 @@ nav:hover {
     top: 0px;
     height: 18px;
     width: 100%;
+  }
+
+  .textbar-text {
+    font-size: 8.5px;
+    margin-top: 0.4px;
   }
 }
 
@@ -774,6 +784,7 @@ nav:hover {
     width: auto;
     background-color: #a42f33;
     position: relative;
+    overflow: hidden;
   }
 
   .carousel-container {
@@ -811,10 +822,6 @@ nav:hover {
     justify-content: center;
     align-items: center;
   }
-
-  .space-section {
-    display: none;
-  }
 }
 
 @media screen and (min-width: 577px) and (max-width: 991px) {
@@ -823,6 +830,7 @@ nav:hover {
     width: auto;
     background-color: #a42f33;
     position: relative;
+    overflow: hidden;
   }
 
   .carousel-container {
@@ -862,7 +870,7 @@ nav:hover {
   }
 
   .space-section {
-    display: none;
+    height: 20vh;
   }
 }
 
@@ -902,11 +910,6 @@ nav:hover {
   align-items: center;
 }
 
-.talents-search input[type="text"] {
-  width: 300px; /* Ajusta el ancho del campo de entrada según tus necesidades */
-  font-size: 18px; /* Ajusta el tamaño de la fuente según tus preferencias */
-  padding: 10px; /* Ajusta el espaciado interno según tus preferencias */
-}
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 600px;
@@ -990,10 +993,11 @@ nav:hover {
   padding: 5px;
   display: none;
   color: rgb(11, 11, 11);
-  text-align: justify;
+  text-align: initial;
   z-index: 1;
   transition: opacity 0.3s;
   word-spacing: normal; /* Ajusta el espacio entre las palabras */
+  white-space: initial;
 }
 
 .card img {
@@ -1035,7 +1039,7 @@ nav:hover {
   .card {
     max-width: 100%;
     height: 100px;
-    background-color: #0f0f0f;
+    /* background-color: #0f0f0f; */
     top: 0;
     left: 0;
     margin: 0;
@@ -1046,20 +1050,17 @@ nav:hover {
 
   .card img {
     display: none;
-    height: 500px;
+    height: 516px;
     z-index: 4;
     position: absolute;
-    top: 100px;
+    top: 5px;
     left: 0;
     width: 100%;
     z-index: 6;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    object-fit: cover;
   }
 
   .card h3 {
-    background-color: #e8e8e8;
     width: 100%;
     height: 100px;
     z-index: 1;
@@ -1068,31 +1069,30 @@ nav:hover {
   .card p {
     display: none;
     position: absolute;
-    top: 100px;
+    top: 5px;
     bottom: 0;
     left: 0;
-    padding: 10px;
+    padding: 5px;
     max-width: 100%;
     height: 500px;
     z-index: 7;
-    background-color: #9f9e9e;
-    text-align: left;
-    font-size: 22px;
-    margin-bottom: 110px;
+    text-align: initial;
+    font-size: 16px;
+    margin-bottom: 50px;
   }
 
   .card button {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     position: absolute;
-    bottom: 10px;
+    bottom: 420px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 5;
-    background-color: #292929;
-    height: 15px;
-    width: 15px;
+    background-color: #1d1d1b;
+    height: 12px;
+    width: 12px;
     border-radius: 50%;
   }
   .button2 {
@@ -1103,7 +1103,13 @@ nav:hover {
     display: none;
   }
   .talent {
-    display: none;
+    font-size: 80px
+  }
+
+  .letter-button {
+    font-size: 16px;
+    text-align: center;
+
   }
 }
 
@@ -1111,6 +1117,15 @@ nav:hover {
   .column {
     width: 32.33%;
     display: inline-block;
+  }
+
+  .talent {
+    font-size: 120px;
+  }
+
+  .letter-button {
+    font-size: 20px;
+
   }
 }
 
@@ -2023,13 +2038,13 @@ nav:hover {
       transform: translate3d(0, 0, 0);
     }
     to {
-      transform: translate3d(40%, 0, 0);
+      transform: translate3d(30%, 0, 0);
     }
   }
 
   @keyframes slideReverse {
     from {
-      transform: translate3d(40%, 0, 0);
+      transform: translate3d(30%, 0, 0);
     }
     to {
       transform: translate3d(0, 0, 0);
@@ -2119,13 +2134,13 @@ nav:hover {
       transform: translate3d(0, 0, 0);
     }
     to {
-      transform: translate3d(199%, 0, 0);
+      transform: translate3d(60%, 0, 0);
     }
   }
 
   @keyframes slideReverse {
     from {
-      transform: translate3d(199%, 0, 0);
+      transform: translate3d(60%, 0, 0);
     }
     to {
       transform: translate3d(0, 0, 0);
@@ -2213,7 +2228,7 @@ footer {
 }
 
 .footer-text-bar {
-  animation: scroll-left-footer 5s linear infinite;
+  animation: scroll-left-footer 20s linear infinite;
   white-space: nowrap;
 }
 
