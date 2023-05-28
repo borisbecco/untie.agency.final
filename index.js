@@ -1,18 +1,4 @@
 $(document).ready(function () {
-  // Elimina la línea que oculta el contenido principal de la página
-  // $("body").hide();
-
-  // Elimina la línea que muestra la página gradualmente con una animación
-  // $("body").fadeIn(50, function () {
-
-  // Elimina las animaciones de fadeIn para los elementos que se muestran gradualmente
-  // $(".navbar").show();
-  // $(".textbar").show();
-  // $(".main-tittle").show();
-  // $(".carousel-container-image-slide").show();
-
-  // });
-
   // Captura el clic en los enlaces del menú
   $(".nav-menu-b a, .nav-menu-a a").click(function (e) {
     e.preventDefault(); // Evita que se realice la acción predeterminada del enlace
@@ -471,33 +457,6 @@ changeCarouselContainerBackground();
 
 //talents
 
-// function getRandomColor() {
-//   const colors = [
-//     "deeppink",
-//     "mediumvioletred",
-//     "plum",
-//     "lightgrey",
-//     "magenta",
-//     "pink",
-//     "wheat",
-//     "lightblue",
-//     "thistle",
-//   ];
-//   return colors[Math.floor(Math.random() * colors.length)];
-// }
-
-// const mobileScreen = window.matchMedia("(max-width: 576px)");
-// const h3 = document.querySelectorAll("h3");
-// function applyBackgroundColor() {
-//   if (mobileScreen.matches) {
-//     h3.forEach((h3) => {
-//       h3.style.backgroundColor = getRandomColor();
-//     });
-//   }
-// }
-
-// applyBackgroundColor();
-
 function toggleCard() {
   var cards = document.querySelectorAll(".card");
 
@@ -717,11 +676,3 @@ function scrollUp() {
     behavior: "smooth",
   });
 }
-
-// paralax
-
-var image = document.getElementsByClassName("thumbnail");
-new simpleParallax(image, {
-  transition: "cubic-bezier(0,0,0,1)",
-});
-console.log("SimpleParallax library loaded successfully");
