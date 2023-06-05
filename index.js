@@ -315,8 +315,14 @@ hoverTextList.forEach((hoverText) => {
     hoverText.setAttribute("data-rearranged", "true");
     hoverText.textContent = reverseText(originalText);
     setTimeout(() => {
-      hoverText.removeAttribute("data-rearranged");
-      hoverText.textContent = originalText;
+      hoverText.textContent = shuffleText(reverseText(originalText));
+      setTimeout(() => {
+        hoverText.textContent = reverseText(originalText);
+        setTimeout(() => {
+          hoverText.removeAttribute("data-rearranged");
+          hoverText.textContent = originalText;
+        }, 120);
+      }, 120);
     }, 120);
   });
 });
@@ -324,6 +330,11 @@ hoverTextList.forEach((hoverText) => {
 function reverseText(text) {
   const reversedText = text.split("").reverse().join("");
   return reversedText;
+}
+
+function shuffleText(text) {
+  const shuffledText = text.split("").sort(() => Math.random() - 0.5).join("");
+  return shuffledText;
 }
 
 // carousel
