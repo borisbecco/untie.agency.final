@@ -205,8 +205,8 @@ document.addEventListener("mousemove", function (event) {
   var overlay = document.getElementById("overlay");
   if (overlay.style.display === "block") {
     // Reducir el tamaño del cursor cuando el overlay está abierto
-    customMouse.style.width = "15px";
-    customMouse.style.height = "15px";
+    customMouse.style.width = "10px";
+    customMouse.style.height = "10px";
   } else {
     // Restablecer el tamaño del cursor cuando el overlay está cerrado
     customMouse.style.width = "20px";
@@ -270,10 +270,10 @@ document.addEventListener("mouseover", function (event) {
     var overlay = document.getElementById("overlay");
     if (overlay.style.display === "block") {
       // Cambiar la escala del cursor cuando el overlay está abierto
-      customMouse.style.transform = "scale(2.5)";
+      customMouse.style.transform = "scale(3.0)";
     } else {
       // Restablecer la escala del cursor cuando el overlay está cerrado
-      customMouse.style.transform = "scale(1.5)";
+      customMouse.style.transform = "scale(2.0)";
     }
   }
 });
@@ -285,6 +285,46 @@ document.addEventListener("mouseout", function (event) {
     customMouse.style.transform = ""; // devuelve el tamaño del cursor personalizado a su valor original
   }
 });
+
+//nav bar scroll
+
+window.addEventListener("scroll", function () {
+  var navbar = document.getElementById("nav");
+  var overlay = document.getElementById("overlay");
+  var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+
+  if (
+    scrolled > 0 &&
+    overlay.style.display !== "block" &&
+    !overlay.classList.contains("active")
+  ) {
+    navbar.classList.add("scroll");
+  } else {
+    navbar.classList.remove("scroll");
+  }
+});
+
+// nav menu hover effect
+
+const hoverTextList = document.querySelectorAll(".hover-effect");
+
+hoverTextList.forEach((hoverText) => {
+  const originalText = hoverText.textContent;
+
+  hoverText.addEventListener("mouseenter", () => {
+    hoverText.setAttribute("data-rearranged", "true");
+    hoverText.textContent = reverseText(originalText);
+    setTimeout(() => {
+      hoverText.removeAttribute("data-rearranged");
+      hoverText.textContent = originalText;
+    }, 120);
+  });
+});
+
+function reverseText(text) {
+  const reversedText = text.split("").reverse().join("");
+  return reversedText;
+}
 
 // carousel
 
@@ -347,6 +387,9 @@ toggleButton.addEventListener("click", function () {
   languageButtons.forEach((button) =>
     button.classList.toggle("language-button-color-change")
   );
+  if (overlay.style.display === "block") {
+    navBar.classList.remove("scroll");
+  }
 
   // logo animation
 
@@ -457,88 +500,34 @@ changeCarouselContainerBackground();
 
 //talents
 
-function toggleCard() {
-  var cards = document.querySelectorAll(".card");
-
-  cards.forEach(function (card) {
-    var button1 = card.querySelector(".button1");
-    var button2 = card.querySelector(".button2");
-    var img = card.querySelector("img");
-    var p = card.querySelector("p");
-
-    button1.addEventListener("click", function () {
-      img.style.display = "block";
-      p.style.display = "none";
-      button2.classList.add("active");
-      button1.classList.remove("active");
-    });
-
-    button2.addEventListener("click", function () {
-      p.style.display = "block";
-      img.style.display = "none";
-
-      button1.classList.add("active");
-      button2.classList.remove("active");
-    });
-  });
-}
-
-$(document).ready(function () {
-  $(".card").click(function () {
-    var card = $(this);
-    var img = card.find("img");
-    var p = card.find("p");
-
-    img.show();
-    p.hide();
-
-    card.toggleClass("expanded");
-
-    // Obtener el botón activo
-    var activeButton = card.find(".active");
-
-    // Remover la clase .active de todos los botones en la tarjeta
-    card.find(".button1, .button2").removeClass("active");
-
-    // Agregar la clase .active al botón correspondiente
-    if (img.is(":visible")) {
-      activeButton = card.find(".button1");
-    } else {
-      activeButton = card.find(".button2");
-    }
-    activeButton.addClass("active");
-  });
-
-  $(".button1").click(function (event) {
+$(document).ready(function() {
+  $(".button1").click(function(event) {
     event.stopPropagation();
     var card = $(this).closest(".card");
     card.find("img").show();
     card.find("p").hide();
-
-    // Remover la clase .active de todos los botones en la tarjeta
     card.find(".button1, .button2").removeClass("active");
     $(this).addClass("active");
   });
 
-  $(".button2").click(function (event) {
+  $(".button2").click(function(event) {
     event.stopPropagation();
     var card = $(this).closest(".card");
     card.find("p").show();
     card.find("img").hide();
-
-    // Remover la clase .active de todos los botones en la tarjeta
     card.find(".button1, .button2").removeClass("active");
     $(this).addClass("active");
   });
 
-  // Agregar el código para restablecer la búsqueda al hacer clic en el botón "ALL"
-  $("#all-button").click(function () {
-    $(".card").show(); // Mostrar todas las tarjetas
-
-    // Remover la clase .active de todos los botones en las tarjetas
-    $(".card .button1, .card .button2").removeClass("active");
+  // Mostrar la foto asociada al botón 1 y ocultar el texto asociado al botón 2 por defecto
+  $(".button1").each(function() {
+    var card = $(this).closest(".card");
+    card.find("img").show();
+    card.find("p").hide();
+    card.find(".button1").addClass("active");
   });
 });
+
 //overlay-menu
 
 // Obtener el overlay y el cuerpo de la página
@@ -593,38 +582,38 @@ document.getElementById("toggleButton").addEventListener("click", function () {
 // talent
 
 // Obtén una referencia a todos los botones de letras
-const letterButtons = document.getElementsByClassName("letter-button");
-let activeButton = null;
+// const letterButtons = document.getElementsByClassName("letter-button");
+// let activeButton = null;
 
-for (let i = 0; i < letterButtons.length; i++) {
-  const button = letterButtons[i];
-  const letter = button.textContent.trim().toUpperCase();
-  button.addEventListener("click", function () {
-    // Quita el subrayado del botón activo previo, si existe
-    if (activeButton) {
-      activeButton.classList.remove("active");
-    }
+// for (let i = 0; i < letterButtons.length; i++) {
+//   const button = letterButtons[i];
+//   const letter = button.textContent.trim().toUpperCase();
+//   button.addEventListener("click", function () {
+//     // Quita el subrayado del botón activo previo, si existe
+//     if (activeButton) {
+//       activeButton.classList.remove("active");
+//     }
 
-    // Aplica el subrayado al botón seleccionado
-    button.classList.add("active");
-    activeButton = button;
+//     // Aplica el subrayado al botón seleccionado
+//     button.classList.add("active");
+//     activeButton = button;
 
-    filterCardsByLetter(letter);
-  });
-}
+//     filterCardsByLetter(letter);
+//   });
+// }
 
-function filterCardsByLetter(letter) {
-  const cards = document.getElementsByClassName("card");
-  for (let i = 0; i < cards.length; i++) {
-    const card = cards[i];
-    const cardLetter = card.getAttribute("data-letter");
-    if (cardLetter === letter || letter === "") {
-      card.style.display = "block"; // Muestra la tarjeta
-    } else {
-      card.style.display = "none"; // Oculta la tarjeta
-    }
-  }
-}
+// function filterCardsByLetter(letter) {
+//   const cards = document.getElementsByClassName("card");
+//   for (let i = 0; i < cards.length; i++) {
+//     const card = cards[i];
+//     const cardLetter = card.getAttribute("data-letter");
+//     if (cardLetter === letter || letter === "") {
+//       card.style.display = "block"; // Muestra la tarjeta
+//     } else {
+//       card.style.display = "none"; // Oculta la tarjeta
+//     }
+//   }
+// }
 
 // team
 

@@ -160,6 +160,12 @@ nav {
   height: 60px;
 }
 
+#nav.scroll {
+  background-color: #f9f7ef;
+  opacity: 0.9;
+  transition: 0.5s ease;
+}
+
 @media screen and (max-width: 576px) {
   nav {
     height: 44px;
@@ -463,44 +469,15 @@ nav:hover {
   text-align: center;
 }
 
+.hover-effect:hover {
+  text-decoration: underline;
+}
+
 .nav-menu-a {
   font-size: 18px;
   letter-spacing: -0.4px;
   margin-top: -12px;
   opacity: 1;
-  animation: fade-in-now 1s forwards;
-}
-
-.nav-menu-a:nth-child(1) {
-  animation-delay: 0.1s;
-}
-
-.nav-menu-a:nth-child(2) {
-  animation-delay: 0.15s;
-}
-
-.nav-menu-a:nth-child(3) {
-  animation-delay: 0.2s;
-}
-.nav-menu-a:nth-child(4) {
-  animation-delay: 0.25s;
-}
-.nav-menu-a:nth-child(5) {
-  animation-delay: 0.3s;
-}
-.nav-menu-a:nth-child(6) {
-  animation-delay: 0.35s;
-}
-
-@keyframes fade-in-now {
-  from {
-    opacity: 0;
-    transform: translateY(-50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 .nav-menu ul li a:hover {
@@ -509,31 +486,6 @@ nav:hover {
 
 #what-we-do {
   padding-bottom: 6px;
-}
-
-#submenu {
-  display: none;
-  opacity: 0;
-}
-
-#what-we-do:hover #submenu {
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
-  margin-bottom: -25px;
-  opacity: 1;
-  animation: reveal-submenu 0.1s ease-in;
-}
-
-@keyframes reveal-submenu {
-  0% {
-    opacity: 0;
-    height: 0;
-  }
-  100% {
-    opacity: 1;
-    height: -15px;
-  }
 }
 
 @media screen and (max-width: 576px) {
@@ -559,7 +511,7 @@ nav:hover {
     display: flex;
     opacity: 1;
     flex-direction: column;
-    margin-top: 40px; 
+    margin-top: 40px;
   }
 
   #what-we-do:hover #submenu {
@@ -878,6 +830,7 @@ nav:hover {
 
 .talent-section {
   background-color: #f9f7ef;
+  overflow: hidden;
 }
 .talent {
   font-size: 150px;
@@ -920,98 +873,71 @@ nav:hover {
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 600px;
-  height: 100px;
+  height: 517px;
   margin: auto;
   text-align: center;
   font-family: "Plaak-Bold";
   background-color: #f9f7ef;
   overflow: hidden;
-  transition: height 0.3s;
-  position: relative; /* Added to make the card expand downwards */
+  position: relative;
 }
-.card.expanded .button1,
-.card.expanded .button2 {
-  display: block;
-  z-index: 999 !important;
-}
+
 .card button {
   display: flex;
   justify-content: center;
-  margin-top: 60px;
+  align-items: center;
   position: absolute;
-
-  left: 80%;
+  top: 40px;
+  left: 50%;
   transform: translateX(-50%);
-  z-index: 5;
-  background-color: #050505;
+  z-index: 1;
+  background-color: #f9f7ef;
+  color: white;
   height: 18px;
   width: 18px;
   border-radius: 50%;
-  transform: scale(1); /* Tamaño original del botón cuando está activo */
 }
 
 .card button.active {
   height: 15px;
   width: 15px;
-  transform: scale(
-    0.8
-  ); /* Tamaño más pequeño del botón cuando no está activo */
-}
-.button2 {
-  margin-left: 20px;
-}
-
-.card {
-  position: relative;
-  cursor: none; /* Added cursor style for clickable effect */
-}
-
-.card.expanded {
-  height: 517px; /* Expanded height */
-}
-
-.card.expanded p {
-  display: block; /* Show the paragraph */
-}
-
-.card.expanded img {
-  display: block; /* Show the image */
+  transform: scale(0.8);
 }
 
 .card h3 {
   position: absolute;
-  top: 0;
+  top: 10px;
   left: 0;
   margin: 0;
   padding: 5px;
-  color: rgb(3, 3, 3);
+  color: white;
   z-index: 1;
   font-size: 30px;
   font-weight: 205;
   text-align: left;
-  transition: margin 0.3s; /* Added for smooth margin transition */
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .card p {
   position: absolute;
-  margin-top: 100px;
+  top: 70px;
+  left: 10px;
+  right: 10px;
   font-size: 16px;
   font-weight: 205;
   padding: 5px;
-  display: none;
-  color: rgb(11, 11, 11);
+  color: white;
   text-align: initial;
   z-index: 1;
-  transition: opacity 0.3s;
-  word-spacing: normal; /* Ajusta el espacio entre las palabras */
+  word-spacing: normal;
   white-space: initial;
 }
 
 .card img {
-  display: none;
-  width: 100%; /* Added to make the image fill the card */
-  height: auto; /* Added to maintain aspect ratio */
-  transition: opacity 0.3s; /* Added for smooth opacity transition */
+  display: block;
+  width: 100%;
+  height: auto;
   margin-top: 100px;
 }
 
@@ -1110,13 +1036,12 @@ nav:hover {
     display: none;
   }
   .talent {
-    font-size: 80px
+    font-size: 80px;
   }
 
   .letter-button {
     font-size: 16px;
     text-align: center;
-
   }
 }
 
@@ -1132,7 +1057,6 @@ nav:hover {
 
   .letter-button {
     font-size: 20px;
-
   }
 }
 
