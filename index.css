@@ -456,6 +456,7 @@ nav:hover {
 }
 
 .nav-menu ul {
+  margin-top: 50px;
   list-style: none;
   padding: 0;
 }
@@ -470,9 +471,9 @@ nav:hover {
   text-align: center;
 }
 
-.hover-effect:hover {
+/* .hover-effect:hover {
   text-decoration: underline;
-}
+} */
 
 .nav-menu-a {
   font-size: 18px;
@@ -876,32 +877,50 @@ nav:hover {
   height: 517px;
   margin: auto;
   text-align: center;
-  font-family: "Plaak-Bold";
+  font-family: "Plaak-Regular";
   background-color: #f9f7ef;
   overflow: hidden;
   position: relative;
 }
 
-.card button {
+.card .button1 {
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 40px;
-  left: 50%;
+  top: 65px;
+  left: 88%;
+ 
   transform: translateX(-50%);
   z-index: 1;
   background-color: #f9f7ef;
   color: white;
-  height: 18px;
-  width: 18px;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+}
+
+.card .button2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 65px;
+  left: 82%;
+  
+  transform: translateX(-50%);
+  z-index: 1;
+  background-color: #f9f7ef;
+  color: white;
+  height: 12px;
+  width: 12px;
   border-radius: 50%;
 }
 
 .card button.active {
-  height: 15px;
-  width: 15px;
-  transform: scale(0.8);
+  height: 18px;
+  width: 18px;
+  
 }
 
 .card h3 {
@@ -921,18 +940,19 @@ nav:hover {
 
 .card p {
   position: absolute;
-  top: 70px;
+  top: 100px;
   left: 10px;
   right: 10px;
   font-size: 16px;
-  font-weight: 205;
+  font-family: "plaak-light";
   padding: 5px;
   color: white;
-  text-align: initial;
+  text-align: left;
   z-index: 1;
-  word-spacing: normal;
-  white-space: initial;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
+
 
 .card img {
   display: block;
