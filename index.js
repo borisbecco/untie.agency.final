@@ -253,7 +253,6 @@ document.addEventListener("mousedown", function () {
   var customMouse = document.getElementById("custom-mouse");
   customMouse.style.backgroundColor = "white";
 });
-
 document.addEventListener("mouseup", function () {
   var customMouse = document.getElementById("custom-mouse");
   customMouse.style.backgroundColor = "white";
@@ -321,9 +320,9 @@ hoverTextList.forEach((hoverText) => {
         setTimeout(() => {
           hoverText.removeAttribute("data-rearranged");
           hoverText.textContent = originalText;
-        }, 120);
-      }, 120);
-    }, 120);
+        }, 80);
+      }, 80);
+    }, 80);
   });
 });
 
@@ -333,7 +332,10 @@ function reverseText(text) {
 }
 
 function shuffleText(text) {
-  const shuffledText = text.split("").sort(() => Math.random() - 0.5).join("");
+  const shuffledText = text
+    .split("")
+    .sort(() => Math.random() - 0.5)
+    .join("");
   return shuffledText;
 }
 
@@ -341,8 +343,7 @@ function shuffleText(text) {
 
 let slides = document.querySelectorAll(".image-slide");
 let currentSlide = 0;
-let slideInterval = setInterval(nextSlide, 4000);
-let slidesCarousel = document.querySelector(".carousel-container-image-slide");
+let slideInterval;
 
 function nextSlide() {
   slides[currentSlide].style.opacity = 0;
@@ -350,28 +351,49 @@ function nextSlide() {
   slides[currentSlide].style.opacity = 1;
 }
 
-// Función para cambiar la imagen del slide según la posición del cursor
 function changeSlide(event) {
-  // Obtener la posición horizontal del cursor dentro del contenedor
   const containerWidth = slidesCarousel.offsetWidth;
   const cursorX = event.clientX - slidesCarousel.getBoundingClientRect().left;
-
-  // Calcular el índice del slide basado en la posición del cursor
   const totalSlides = slides.length;
   const slideIndex = Math.floor((cursorX / containerWidth) * totalSlides);
 
-  // Cambiar al slide correspondiente
   slides[currentSlide].style.opacity = 0;
   currentSlide = slideIndex % totalSlides;
   slides[currentSlide].style.opacity = 1;
 }
 
-// Agregar evento "mousemove" al contenedor del carousel
+function startSlideInterval(interval) {
+  slideInterval = setInterval(nextSlide, interval);
+}
+
+function stopSlideInterval() {
+  clearInterval(slideInterval);
+}
+
+function handleMediaQuery(mediaQuery) {
+  if (mediaQuery.matches) {
+    // Media query se cumple, ajustar la velocidad del intervalo
+    stopSlideInterval();
+    startSlideInterval(2500); // Cambiar la velocidad a 2 segundos
+  } else {
+    // Media query no se cumple, restaurar la velocidad original del intervalo
+    stopSlideInterval();
+    startSlideInterval(4000); // Restaurar la velocidad original a 4 segundos
+  }
+}
+
+let slidesCarousel = document.querySelector(".carousel-container-image-slide");
+let mediaQuery = window.matchMedia("(max-width: 991px)");
+
+mediaQuery.addListener(handleMediaQuery); // Escuchar cambios en la media query inicialmente
+
 slidesCarousel.addEventListener("mousemove", function (event) {
   changeSlide(event);
-  clearInterval(slideInterval);
-  slideInterval = setInterval(nextSlide, 4000);
+  stopSlideInterval();
+  startSlideInterval(4000); // Restaurar la velocidad original al mover el mouse
 });
+
+handleMediaQuery(mediaQuery); // Verificar la media query inicialmente
 
 //togglebar
 
@@ -511,34 +533,43 @@ changeCarouselContainerBackground();
 
 //talents
 
-$(document).ready(function() {
-  $(".button1").click(function(event) {
+$(document).ready(function () {
+  $(".card").click(function (event) {
     event.stopPropagation();
-    var card = $(this).closest(".card");
-    card.find("img").show();
-    card.find("p").hide();
-    card.find(".button1, .button2").removeClass("active");
-    $(this).addClass("active");
-  });
-
-  $(".button2").click(function(event) {
-    event.stopPropagation();
-    var card = $(this).closest(".card");
-    card.find("p").show();
-    card.find("img").hide();
-    card.find(".button1, .button2").removeClass("active");
-    $(this).addClass("active");
+    var card = $(this);
+    var img = card.find("img");
+    var text = card.find("p");
+    var button1 = card.find(".button1");
+    var button2 = card.find(".button2");
+    
+    if (img.is(":visible")) {
+      // Si la imagen está visible, deslizar hacia arriba y mostrar el texto
+      img.slideUp();
+      text.slideDown();
+      button1.removeClass("active");
+      button2.addClass("active");
+    } else {
+      // Si el texto está visible, deslizar hacia arriba y mostrar la imagen
+      text.slideUp();
+      img.slideDown();
+      button1.addClass("active");
+      button2.removeClass("active");
+    }
   });
 
   // Mostrar la foto asociada al botón 1 y ocultar el texto asociado al botón 2 por defecto
-  $(".button1").each(function() {
-    var card = $(this).closest(".card");
-    card.find("img").show();
-    card.find("p").hide();
-    card.find(".button1").addClass("active");
+  $(".card").each(function () {
+    var card = $(this);
+    var img = card.find("img");
+    var text = card.find("p");
+    var button1 = card.find(".button1");
+    var button2 = card.find(".button2");
+
+    img.show();
+    text.hide();
+    button1.addClass("active");
   });
 });
-
 //overlay-menu
 
 // Obtener el overlay y el cuerpo de la página
