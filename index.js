@@ -541,7 +541,7 @@ $(document).ready(function () {
     var text = card.find("p");
     var button1 = card.find(".button1");
     var button2 = card.find(".button2");
-    
+
     if (img.is(":visible")) {
       // Si la imagen está visible, deslizar hacia arriba y mostrar el texto
       img.slideUp();
@@ -621,42 +621,6 @@ document.getElementById("toggleButton").addEventListener("click", function () {
   toggleOverlay();
 });
 
-// talent
-
-// Obtén una referencia a todos los botones de letras
-// const letterButtons = document.getElementsByClassName("letter-button");
-// let activeButton = null;
-
-// for (let i = 0; i < letterButtons.length; i++) {
-//   const button = letterButtons[i];
-//   const letter = button.textContent.trim().toUpperCase();
-//   button.addEventListener("click", function () {
-//     // Quita el subrayado del botón activo previo, si existe
-//     if (activeButton) {
-//       activeButton.classList.remove("active");
-//     }
-
-//     // Aplica el subrayado al botón seleccionado
-//     button.classList.add("active");
-//     activeButton = button;
-
-//     filterCardsByLetter(letter);
-//   });
-// }
-
-// function filterCardsByLetter(letter) {
-//   const cards = document.getElementsByClassName("card");
-//   for (let i = 0; i < cards.length; i++) {
-//     const card = cards[i];
-//     const cardLetter = card.getAttribute("data-letter");
-//     if (cardLetter === letter || letter === "") {
-//       card.style.display = "block"; // Muestra la tarjeta
-//     } else {
-//       card.style.display = "none"; // Oculta la tarjeta
-//     }
-//   }
-// }
-
 // team
 
 const teamCards = document.querySelectorAll(".team-card");
@@ -670,7 +634,7 @@ teamCards.forEach(function (card) {
 
   let contenidoVisible = false;
 
-  botonMostrar.addEventListener("click", function () {
+  cardHeader.addEventListener("click", function () {
     if (contenidoVisible) {
       contenidoOculto.style.display = "none";
       flecha.classList.remove("rotate");
