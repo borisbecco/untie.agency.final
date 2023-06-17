@@ -224,15 +224,11 @@ nav:hover {
 #logo1 {
   width: 60px;
   height: 50px;
-  /* mix-blend-mode: exclusion; */
-  /* animation: slide1 1s ease-in-out forwards; */
 }
 
 #logo2 {
   width: 71px;
   height: 50px;
-  /* mix-blend-mode: exclusion; */
-  /* animation: slide2 1s ease-in-out forwards; */
 }
 
 @keyframes slide1 {
@@ -269,13 +265,11 @@ nav:hover {
   #logo1 {
     width: 40px;
     height: 30px;
-    /* animation: slide1 1s ease-in-out forwards; */
   }
 
   #logo2 {
     width: 47px;
     height: 30px;
-    /* animation: slide2 1s ease-in-out forwards; */
   }
   .navbar-color-change {
     border-bottom: 1px solid #f9f7ef;
@@ -289,13 +283,11 @@ nav:hover {
   #logo1 {
     width: 52px;
     height: 40px;
-    /* animation: slide1 1s ease-in-out forwards; */
   }
 
   #logo2 {
     width: 60px;
     height: 40px;
-    /* animation: slide2 1s ease-in-out forwards; */
   }
 }
 
@@ -355,10 +347,10 @@ nav:hover {
 }
 
 .newPosition .hamburger-button-triangle {
-  transform: scaleX(1);
+  transform: scaleX(1.01);
 }
 .newPosition .hamburger-button-agency {
-  transform: scaleY(1);
+  transform: scaleY(1.01);
 }
 
 .language-button-container {
@@ -752,7 +744,7 @@ nav:hover {
     mix-blend-mode: exclusion;
     font-weight: 205;
   }
-  
+
   .main-tittle span {
     position: relative;
     font-family: "plaak-light";
@@ -761,7 +753,6 @@ nav:hover {
     mix-blend-mode: exclusion;
     font-weight: 205;
   }
-
 }
 /* space-section */
 
@@ -882,11 +873,11 @@ nav:hover {
   }
 
   .carousel-container .prev {
-    left: -5px;
+    display: none;
   }
 
   .carousel-container .next {
-    right: -5px;
+    display: none;
   }
 
   .carousel-container .prev,
@@ -1096,7 +1087,6 @@ nav:hover {
   margin-top: 30px;
 }
 
-
 @media screen and (max-width: 576px) {
   .card {
     max-width: 100%;
@@ -1204,7 +1194,6 @@ nav:hover {
   }
 }
 
-
 @media screen and (min-width: 992px) and (max-width: 1366px) {
   .letter-button {
     font-size: 20px;
@@ -1221,7 +1210,7 @@ nav:hover {
     height: 450px;
     max-width: 100%;
   }
-  .card-img{
+  .card-img {
     height: 600px;
     width: 100%;
   }
@@ -1240,7 +1229,7 @@ nav:hover {
     font-size: 4.2vh;
   }
 
-  .card-img{
+  .card-img {
     height: 600px;
     width: 100%;
     top: 5px;
@@ -1250,7 +1239,6 @@ nav:hover {
     height: 500px;
   }
 }
-
 
 /* what-we-do */
 
@@ -1874,24 +1862,25 @@ nav:hover {
 /* team-section */
 
 .team-section {
+  padding: 70px;
   height: auto;
   background-color: #f9f7ef;
   overflow: hidden;
 }
 
 .team-tittle {
-  padding: 50px;
-  margin-bottom: 110px;
+  padding: 22px;
+  margin-bottom: 5px;
 }
 
 .team-text {
-  font-size: 150px;
+  font-size: 185px;
   font-weight: 205;
   margin-top: -20px;
   letter-spacing: -6px;
   text-align: center;
   padding: 10px;
-  margin-bottom: 150px;
+  margin-bottom: 50px;
 }
 
 .team-main-text {
@@ -1900,19 +1889,12 @@ nav:hover {
   text-align: justify;
   font-size: 58px;
   font-style: bold;
-  line-height: 1.6;
+  line-height: 1.25;
+  letter-spacing: 0.95px;
 }
 
 .hover-tittle:hover {
-  animation: shake 0.5s ease-in-out;
-}
-
-@keyframes shake {
-  0% { transform: translate(0, 0); }
-  25% { transform: translate(-5px, 0); }
-  50% { transform: translate(5px, 0); }
-  75% { transform: translate(-5px, 0); }
-  100% { transform: translate(0, 0); }
+  background-color: rgb(238, 233, 233);
 }
 
 @media screen and (max-width: 576px) {
@@ -1923,12 +1905,13 @@ nav:hover {
 
   .team-text {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     text-align: center;
     padding: 10px;
     font-weight: bold;
-    font-size: 15px;
-    font-family: "plaak-heavy";
+    letter-spacing: -1.5px;
+    font-size: 80px;
+    font-family: "plaak-light";
   }
 
   .team-main-text {
@@ -1981,16 +1964,16 @@ nav:hover {
 .team-card {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   width: 100%;
-  /* border-bottom: 1px solid black; */
-  border-top: 2px solid black;
+  border-top: 0.7px solid black;
 }
 
 .contenido-oculto {
   display: flex;
-  justify-content: space-evenly;
-  margin-top: 70px;
-  margin-bottom: 70px;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 40px;
 }
 
 .card-header {
@@ -2011,9 +1994,11 @@ nav:hover {
 .card-tittle-size {
   font-size: 60px;
   font-family: "plaak-light";
-  margin-left: 25px;
-  margin-top: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
   font-weight: normal;
+  letter-spacing: ;
 }
 
 .card-tittle-size-lastname {
@@ -2034,13 +2019,13 @@ nav:hover {
     transform: translate3d(0, 0, 0);
   }
   to {
-    transform: translate3d(500px, 0, 0);
+    transform: translate3d(1000px, 0, 0);
   }
 }
 
 @keyframes slideReverse {
   from {
-    transform: translate3d(500px, 0, 0);
+    transform: translate3d(1000px, 0, 0);
   }
   to {
     transform: translate3d(0, 0, 0);
@@ -2048,29 +2033,35 @@ nav:hover {
 }
 
 .team-card-image {
-  height: 560px;
-  width: 560px;
+  height: 588px;
+  width: 600px;
   object-fit: cover;
   padding-bottom: 24px;
+  margin-top: 28px;
+  margin-left: 80px;
+  
 }
 
 .team-card-team {
-  font-weight: bold;
   display: flex;
   justify-content: flex-start;
+  letter-spacing: 0.8px;
+  margin-top: 28px;
+  margin-left: 2.5px;
   text-align: center;
-  padding: 10px;
-  font-size: 15px;
-  font-family: "plaak-heavy";
+  font-size: 17px;
+  font-family: "plaak-bold";
 }
 
 .team-card-text-container {
-  margin-left: 150px;
+  margin-top: 28px;
+  margin-right: 120px;
 }
 
 .team-card-text {
   text-align: justify;
-  font-size: 20px;
+  font-size: 16.8px;
+  line-height: 1.7;
   font-weight: bold;
   letter-spacing: 3px;
 }
