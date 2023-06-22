@@ -116,6 +116,7 @@ body.overlay-open {
   }
   .space-section {
     display: none;
+    background-color: #f9f7ef;
   }
 }
 
@@ -2301,37 +2302,42 @@ nav:hover {
 
 @media screen and (max-width: 576px) {
   .team-tittle {
-    padding: 30px;
-    margin-bottom: 110px;
+    padding: 0px;
+    margin-bottom: 70px;
   }
 
   .team-text {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    letter-spacing: 0.8px;
+    margin-top: 0px;
+    margin-left: 2.5px;
     text-align: center;
-    margin-right: 25px;
-    font-weight: bold;
-    letter-spacing: -1.5px;
-    font-size: 80px;
-    font-family: "plaak-light";
+    font-size: 8px;
+    font-family: "plaak-bold";
+    margin-bottom: -10px;
   }
 
   .team-main-text {
     display: flex;
-    justify-content: center;
-    padding: 20px;
-    text-align: left;
-    font-size: 32px;
-    font-style: bold;
+    justify-content: flex-start;
+    padding: 18px;
+    text-align: start;
     line-height: 1.3;
-    margin-bottom: -100px;
+    letter-spacing: 0.95px;
+    font-size: 22px;
+    font-style: bold;
+    margin-bottom: -90px;
+    text-decoration: underline;
+    text-decoration-color: rgba(0, 106, 255, 0.505);
+    white-space: normal;
   }
 }
 
 @media screen and (min-width: 577px) and (max-width: 991px) {
   .team-tittle {
-   padding: 22px;
-   margin-bottom: 5px;
+    padding: 22px;
+    margin-bottom: 5px;
   }
 
   .team-text {
@@ -2533,6 +2539,7 @@ nav:hover {
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin-bottom: 15px;
     border-top: 0.7px solid black;
   }
 
@@ -2540,9 +2547,9 @@ nav:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    margin-top: 10px;
-    margin-bottom: 50px;
+    /* justify-content: space-between; */
+    margin-top: 30px;
+    margin-bottom: -5px;
     margin-right: 10px;
   }
 
@@ -2552,13 +2559,17 @@ nav:hover {
   }
 
   .card-tittle-size {
-    font-size: 24px;
+    font-size: 18px;
     margin-left: 0px;
-    margin-top: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
   }
 
   .card-tittle-size-lastname {
-    margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    margin-left: 0;
   }
 
   .slide-animation {
@@ -2574,13 +2585,13 @@ nav:hover {
       transform: translate3d(0, 0, 0);
     }
     to {
-      transform: translate3d(10%, 0, 0);
+      transform: translate3d(50%, 0, 0);
     }
   }
 
   @keyframes slideReverse {
     from {
-      transform: translate3d(10%, 0, 0);
+      transform: translate3d(50%, 0, 0);
     }
     to {
       transform: translate3d(0, 0, 0);
@@ -2591,8 +2602,8 @@ nav:hover {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    padding-bottom: 24px;
     margin: auto;
+    padding: 0;
   }
 
   .team-card-team {
@@ -2601,37 +2612,37 @@ nav:hover {
 
   .team-card-text-container {
     display: flex;
-    justify-content: center; /* Center the content horizontally */
-    align-items: center; /* Center the content vertically if needed */
+    justify-content: center; /* Center the content horizontally */ /* Center the content vertically if needed */
+    align-items: center;
     width: 100%;
-    margin-left: 0;
+    margin-left: 115px;
+    margin-bottom: 30px;
   }
 
   .team-card-text {
-    text-align: left;
-    font-size: 16px;
+    font-size: 1vh;
     font-weight: bold;
-    letter-spacing: 2px;
-    white-space: wrap;
-    margin-left: 0px;
-
+    letter-spacing: 1px;
+    white-space: normal;
+    word-break: normal;
     width: 100%;
   }
 
   .team-card-sub-text {
-    font-size: 8px;
-    letter-spacing: 2px;
+    font-size: 1vh;
+    letter-spacing: 1px;
     font-weight: bold;
     font-family: "plaak-light";
     border-radius: 15px;
     text-align: center;
-    margin-bottom: 20px;
     text-decoration: none;
     color: #1d1d1b;
     white-space: nowrap;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    box-sizing: border-box;
+  }
+
+  .hover-tittle:hover {
+    background-color: transparent;
   }
 
   /* arrow */
@@ -2785,10 +2796,12 @@ nav:hover {
 
   .team-card-text {
     font-size: 11px;
+    white-space: nowrap;
   }
 
   .team-card-sub-text {
     font-size: 11px;
+    white-space: nowrap;
   }
 
   @keyframes slideAnimation {
@@ -2827,10 +2840,12 @@ nav:hover {
 
   .team-card-text {
     font-size: 12px;
+    white-space: nowrap;
   }
 
   .team-card-sub-text {
     font-size: 12px;
+    white-space: nowrap;
   }
   @keyframes slideAnimation {
     from {
