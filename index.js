@@ -543,15 +543,15 @@ $(document).ready(function () {
     var button2 = card.find(".button2");
 
     if (img.is(":visible")) {
-      // Si la imagen está visible, deslizar hacia arriba y mostrar el texto
-      img.slideUp();
-      text.slideDown();
+      // Si la imagen está visible, deslizar hacia la derecha y mostrar el texto
+      img.animate({ width: "toggle", marginLeft: "0" }, 100);
+      text.animate({ width: "toggle", marginLeft: "0px" }, 100);
       button1.removeClass("active");
       button2.addClass("active");
     } else {
-      // Si el texto está visible, deslizar hacia arriba y mostrar la imagen
-      text.slideUp();
-      img.slideDown();
+      // Si el texto está visible, deslizar hacia la derecha y mostrar la imagen
+      text.animate({ width: "toggle", marginLeft: "0" }, 100);
+      img.animate({ width: "toggle", marginLeft: "0px" }, 100);
       button1.addClass("active");
       button2.removeClass("active");
     }
@@ -570,6 +570,7 @@ $(document).ready(function () {
     button1.addClass("active");
   });
 });
+
 //overlay-menu
 
 // Obtener el overlay y el cuerpo de la página
