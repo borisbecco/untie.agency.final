@@ -544,14 +544,14 @@ $(document).ready(function () {
 
     if (img.is(":visible")) {
       // Si la imagen está visible, deslizar hacia la derecha y mostrar el texto
-      img.animate({ width: "toggle", marginLeft: "0" }, 100);
-      text.animate({ width: "toggle", marginLeft: "0px" }, 100);
+      img.animate({ width: "toggle", marginLeft: "0" }, 200);
+      text.animate({ width: "toggle", marginLeft: "0px" }, 200);
       button1.removeClass("active");
       button2.addClass("active");
     } else {
       // Si el texto está visible, deslizar hacia la derecha y mostrar la imagen
-      text.animate({ width: "toggle", marginLeft: "0" }, 100);
-      img.animate({ width: "toggle", marginLeft: "0px" }, 100);
+      text.animate({ width: "toggle", marginLeft: "0" }, 200);
+      img.animate({ width: "toggle", marginLeft: "0px" }, 200);
       button1.addClass("active");
       button2.removeClass("active");
     }
