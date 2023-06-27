@@ -115,7 +115,7 @@ body.overlay-open {
     object-fit: cover;
   }
   .space-section {
-    display: none;
+    height: 15vh !important;
     background-color: #f9f7ef;
   }
 }
@@ -991,7 +991,7 @@ nav:hover {
 .card {
   box-shadow: 0 -2px 12px 2px rgba(29, 29, 29, 0.2);
   max-width: auto;
-  height: 560px;
+  height: 556px;
   margin: auto;
   text-align: center;
   font-family: "Plaak-Regular";
@@ -1000,9 +1000,9 @@ nav:hover {
   background-color:#202020 !important;
 }
 
-.card:hover {
+/* .card:hover {
   background-color: rgb(59, 59, 59) !important;
-}
+} */
 
 .card .button1 {
   display: flex;
@@ -1066,11 +1066,10 @@ nav:hover {
   border-top: 0.01px solid darkgrey;
   position: absolute;
   margin-top: 115px;
-  left: 10px;
-  right: 10px;
   font-size: 0.9vw;
   font-family: "plaak-light";
-  padding: 5px;
+  padding-left: 12.2px;
+  padding-top: 7px;
   color: white;
   text-align: left;
   z-index: 1;
@@ -1083,6 +1082,12 @@ nav:hover {
   width: 100%;
   height: auto;
   margin-top: 115px;
+  transition: transform 0.3s ease-in-out;
+  transform-origin: center center;
+}
+
+.card img:hover{
+  transform: scale(1.1) translateY(5%) translateZ(0);
 }
 
 .row::after {
@@ -1541,6 +1546,8 @@ nav:hover {
     margin-left: 0px;
     margin-top: 0px;
     font-size: 6px;
+    display: flex;
+    flex-direction: column;
     width: 30%;
   }
 

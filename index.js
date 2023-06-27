@@ -83,7 +83,7 @@ const secondSectionHeight = secondSection.offsetHeight;
 const carouselContainerHeight = carouselContainer1.offsetHeight;
 
 window.addEventListener("scroll", function () {
-  const scrollPosition = window.pageYOffset + window.innerHeight;
+  const scrollPosition = window.scrollY + window.innerHeight;
 
   // Verificar si la parte inferior del selector es visible en la pantalla
   if (scrollPosition > secondSectionOffsetTop + secondSectionHeight) {
@@ -103,98 +103,138 @@ const container1Parallax = document.querySelector(".container-1-parallax");
 const container1OffsetTop = container1.offsetTop;
 const container1Height = container1.offsetHeight;
 
-window.addEventListener("scroll", function () {
-  // Verificar si la parte inferior del selector es visible en la pantalla
-  if (
-    window.pageYOffset + window.innerHeight >
-    container1OffsetTop + container1Height
-  ) {
-    const speed = container1Parallax.getAttribute("data-speed");
-    const y = ((window.pageYOffset - container1OffsetTop) * speed) / 80;
-    container1Parallax.style.transform = `translate3d(0, ${y}px, 0)`;
+function handleScrollContainer1() {
+  if (window.innerWidth >= 991) {
+    if (
+      window.scrollY + window.innerHeight >
+      container1OffsetTop + container1Height
+    ) {
+      const speed = container1Parallax.getAttribute("data-speed");
+      const y = ((window.scrollY - container1OffsetTop) * speed) / 80;
+      container1Parallax.style.transform = `translate3d(0, ${y}px, 0)`;
+    }
+  } else {
+    container1Parallax.style.transform = "none";
   }
-});
+}
+
+window.addEventListener("scroll", handleScrollContainer1);
+window.addEventListener("resize", handleScrollContainer1);
 
 const container2 = document.querySelector(".container-2");
 const container2Parallax = document.querySelector(".container-2-parallax");
 const container2OffsetTop = container2.offsetTop;
 const container2Height = container2.offsetHeight;
 
-window.addEventListener("scroll", function () {
-  // Verificar si la parte inferior del selector es visible en la pantalla
-  if (
-    window.pageYOffset + window.innerHeight >
-    container2OffsetTop + container2Height
-  ) {
-    const speed = container2Parallax.getAttribute("data-speed");
-    const y = ((window.pageYOffset - container2OffsetTop) * speed) / 80;
-    container2Parallax.style.transform = `translate3d(0, ${y}px, 0)`;
+function handleScrollContainer2() {
+  if (window.innerWidth >= 991) {
+    if (
+      window.scrollY + window.innerHeight >
+      container2OffsetTop + container2Height
+    ) {
+      const speed = container2Parallax.getAttribute("data-speed");
+      const y = ((window.scrollY - container2OffsetTop) * speed) / 80;
+      container2Parallax.style.transform = `translate3d(0, ${y}px, 0)`;
+    }
+  } else {
+    container2Parallax.style.transform = "none";
   }
-});
+}
+
+window.addEventListener("scroll", handleScrollContainer2);
+window.addEventListener("resize", handleScrollContainer2);
 
 const container3 = document.querySelector(".container-3");
 const container3Parallax = document.querySelector(".container-3-parallax");
 const container3OffsetTop = container3.offsetTop;
 const container3Height = container3.offsetHeight;
 
-window.addEventListener("scroll", function () {
-  // Verificar si la parte inferior del selector es visible en la pantalla
-  if (
-    window.pageYOffset + window.innerHeight >
-    container3OffsetTop + container3Height
-  ) {
-    const speed = container3Parallax.getAttribute("data-speed");
-    const y = ((window.pageYOffset - container3OffsetTop) * speed) / 80;
-    container3Parallax.style.transform = `translate3d(0, ${y}px, 0)`;
+function handleScrollContainer3() {
+  if (window.innerWidth >= 991) {
+    if (
+      window.scrollY + window.innerHeight >
+      container3OffsetTop + container3Height
+    ) {
+      const speed = container3Parallax.getAttribute("data-speed");
+      const y = ((window.scrollY - container3OffsetTop) * speed) / 80;
+      container3Parallax.style.transform = `translate3d(0, ${y}px, 0)`;
+    }
+  } else {
+    container3Parallax.style.transform = "none";
   }
-});
+}
+
+window.addEventListener("scroll", handleScrollContainer3);
+window.addEventListener("resize", handleScrollContainer3);
+
 const container4 = document.querySelector(".container-4");
 const container4Parallax = document.querySelector(".container-4-parallax");
 const container4OffsetTop = container4.offsetTop;
 const container4Height = container4.offsetHeight;
-window.addEventListener("scroll", function () {
-  // Verificar si la parte inferior del selector es visible en la pantalla
-  if (
-    window.pageYOffset + window.innerHeight >
-    container4OffsetTop + container4Height
-  ) {
-    const speed = container4Parallax.getAttribute("data-speed");
-    const y = ((window.pageYOffset - container4OffsetTop) * speed) / 80;
-    container4Parallax.style.transform = `translate3d(0, ${y}px, 0)`;
+
+function handleScrollContainer4() {
+  if (window.innerWidth >= 991) {
+    if (
+      window.scrollY + window.innerHeight >
+      container4OffsetTop + container4Height
+    ) {
+      const speed = container4Parallax.getAttribute("data-speed");
+      const y = ((window.scrollY - container4OffsetTop) * speed) / 80;
+      container4Parallax.style.transform = `translate3d(0, ${y}px, 0)`;
+    }
+  } else {
+    container4Parallax.style.transform = "none";
   }
-});
+}
+
+window.addEventListener("scroll", handleScrollContainer4);
+window.addEventListener("resize", handleScrollContainer4);
+
 const container5 = document.querySelector(".container-5");
 const container5Parallax = document.querySelector(".container-5-parallax");
 const container5OffsetTop = container5.offsetTop;
 const container5Height = container5.offsetHeight;
 
-window.addEventListener("scroll", function () {
-  // Verificar si la parte inferior del selector es visible en la pantalla
-  if (
-    window.pageYOffset + window.innerHeight >
-    container5OffsetTop + container5Height
-  ) {
-    const speed = container5Parallax.getAttribute("data-speed");
-    const y = ((window.pageYOffset - container5OffsetTop) * speed) / 80;
-    container5Parallax.style.transform = `translate3d(0, ${y}px, 0)`;
+function handleScrollContainer5() {
+  if (window.innerWidth >= 991) {
+    if (
+      window.scrollY + window.innerHeight >
+      container5OffsetTop + container5Height
+    ) {
+      const speed = container5Parallax.getAttribute("data-speed");
+      const y = ((window.scrollY - container5OffsetTop) * speed) / 80;
+      container5Parallax.style.transform = `translate3d(0, ${y}px, 0)`;
+    }
+  } else {
+    container5Parallax.style.transform = "none";
   }
-});
+}
+
+window.addEventListener("scroll", handleScrollContainer5);
+window.addEventListener("resize", handleScrollContainer5);
+
 const container6 = document.querySelector(".container-6");
 const container6Parallax = document.querySelector(".container-6-parallax");
 const container6OffsetTop = container6.offsetTop;
 const container6Height = container6.offsetHeight;
 
-window.addEventListener("scroll", function () {
-  // Verificar si la parte inferior del selector es visible en la pantalla
-  if (
-    window.pageYOffset + window.innerHeight >
-    container6OffsetTop + container6Height
-  ) {
-    const speed = container6Parallax.getAttribute("data-speed");
-    const y = ((window.pageYOffset - container6OffsetTop) * speed) / 80;
-    container6Parallax.style.transform = `translate3d(0, ${y}px, 0)`;
+function handleScrollContainer6() {
+  if (window.innerWidth >= 991) {
+    if (
+      window.scrollY + window.innerHeight >
+      container6OffsetTop + container6Height
+    ) {
+      const speed = container6Parallax.getAttribute("data-speed");
+      const y = ((window.scrollY - container6OffsetTop) * speed) / 80;
+      container6Parallax.style.transform = `translate3d(0, ${y}px, 0)`;
+    }
+  } else {
+    container6Parallax.style.transform = "none";
   }
-});
+}
+
+window.addEventListener("scroll", handleScrollContainer6);
+window.addEventListener("resize", handleScrollContainer6);
 
 // custom-mouse
 
@@ -532,9 +572,8 @@ updateIndicators();
 changeCarouselContainerBackground();
 
 //talents
-
 $(document).ready(function () {
-  $(".card").click(function (event) {
+  $(".card").on("click touchstart", function (event) {
     event.stopPropagation();
     var card = $(this);
     var img = card.find("img");
@@ -543,21 +582,15 @@ $(document).ready(function () {
     var button2 = card.find(".button2");
 
     if (img.is(":visible")) {
-      // Si la imagen está visible, deslizar hacia la derecha y mostrar el texto
-      img.animate({ left: "-100%" }, 75, function () {
-        img.hide();
-        text.show().css("left", "100%");
-        text.animate({ left: "0" }, 75);
-      });
+      // Si la imagen está visible, mostrar el texto y ocultar la imagen
+      img.hide();
+      text.show();
       button1.removeClass("active");
       button2.addClass("active");
     } else {
-      // Si el texto está visible, deslizar hacia la derecha y mostrar la imagen
-      text.animate({ left: "100%" }, 75, function () {
-        text.hide();
-        img.show().css("left", "-100%");
-        img.animate({ left: "0" }, 75);
-      });
+      // Si el texto está visible, mostrar la imagen y ocultar el texto
+      text.hide();
+      img.show();
       button1.addClass("active");
       button2.removeClass("active");
     }
@@ -571,8 +604,8 @@ $(document).ready(function () {
     var button1 = card.find(".button1");
     var button2 = card.find(".button2");
 
-    img.show().css("left", "0");
-    text.hide().css("left", "100%");
+    img.show();
+    text.hide();
     button1.addClass("active");
   });
 });
