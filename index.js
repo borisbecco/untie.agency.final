@@ -544,19 +544,19 @@ $(document).ready(function () {
 
     if (img.is(":visible")) {
       // Si la imagen está visible, deslizar hacia la derecha y mostrar el texto
-      img.animate({ left: "-100%" }, 50, function () {
+      img.animate({ left: "-100%" }, 75, function () {
         img.hide();
         text.show().css("left", "100%");
-        text.animate({ left: "0" }, 50);
+        text.animate({ left: "0" }, 75);
       });
       button1.removeClass("active");
       button2.addClass("active");
     } else {
       // Si el texto está visible, deslizar hacia la derecha y mostrar la imagen
-      text.animate({ left: "100%" }, 50, function () {
+      text.animate({ left: "100%" }, 75, function () {
         text.hide();
         img.show().css("left", "-100%");
-        img.animate({ left: "0" }, 50);
+        img.animate({ left: "0" }, 75);
       });
       button1.addClass("active");
       button2.removeClass("active");
