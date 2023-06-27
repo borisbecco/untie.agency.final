@@ -1187,6 +1187,11 @@ nav:hover {
   .card:hover {
     background-color:#202020 !important;
   }
+
+  .card img:hover{
+    transform: none;
+  }
+  
 }
 
 @media screen and (min-width: 577px) and (max-width: 991px) {
