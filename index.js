@@ -544,14 +544,20 @@ $(document).ready(function () {
 
     if (img.is(":visible")) {
       // Si la imagen está visible, deslizar hacia la derecha y mostrar el texto
-      img.animate({ width: "toggle", marginLeft: "0" }, 200);
-      text.animate({ width: "toggle", marginLeft: "0px" }, 200);
+      img.animate({ left: "-100%" }, 50, function () {
+        img.hide();
+        text.show().css("left", "100%");
+        text.animate({ left: "0" }, 50);
+      });
       button1.removeClass("active");
       button2.addClass("active");
     } else {
       // Si el texto está visible, deslizar hacia la derecha y mostrar la imagen
-      text.animate({ width: "toggle", marginLeft: "0" }, 200);
-      img.animate({ width: "toggle", marginLeft: "0px" }, 200);
+      text.animate({ left: "100%" }, 50, function () {
+        text.hide();
+        img.show().css("left", "-100%");
+        img.animate({ left: "0" }, 50);
+      });
       button1.addClass("active");
       button2.removeClass("active");
     }
@@ -565,8 +571,8 @@ $(document).ready(function () {
     var button1 = card.find(".button1");
     var button2 = card.find(".button2");
 
-    img.show();
-    text.hide();
+    img.show().css("left", "0");
+    text.hide().css("left", "100%");
     button1.addClass("active");
   });
 });
