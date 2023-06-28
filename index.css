@@ -19,13 +19,13 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  cursor: none; 
 }
 
 body {
   font-family: "plaak-light", sans-serif;
   user-select: none;
   overflow-x: hidden;
-  cursor: none;
 }
 
 body.overlay-open {
@@ -64,8 +64,8 @@ body.overlay-open {
 }
 
 @media only screen and (min-width: 0px) and (max-width: 991px) {
-  body {
-    cursor: auto;
+  * {
+    cursor: auto; 
   }
 }
 
