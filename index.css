@@ -19,13 +19,13 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  cursor: none;
 }
 
 body {
   font-family: "plaak-light", sans-serif;
   user-select: none;
   overflow-x: hidden;
+  cursor: none;
 }
 
 body.overlay-open {
@@ -62,6 +62,13 @@ body.overlay-open {
     display: none;
   }
 }
+
+@media only screen and (min-width: 0px) and (max-width: 991px) {
+  body {
+    cursor: auto;
+  }
+}
+
 
 /* main-section */
 
@@ -981,7 +988,7 @@ nav:hover {
 .talent {
   font-size: 150px;
   font-weight: 205;
-  margin-top: -20px; 
+  margin-top: -20px;
   letter-spacing: -6px;
   text-align: center;
   padding: 10px;
@@ -997,7 +1004,7 @@ nav:hover {
   font-family: "Plaak-Regular";
   overflow: hidden;
   position: relative;
-  background-color:#202020 !important;
+  background-color: #202020 !important;
 }
 
 /* .card:hover {
@@ -1082,14 +1089,13 @@ nav:hover {
   width: 100%;
   height: auto;
   margin-top: 115px;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.5s ease-in-out; /* Ajusta el tiempo de transición según tus preferencias */
   transform-origin: center center;
 }
 
-.card img:hover{
-  transform: scale(1.1) translateY(5%) translateZ(0);
+.card img:hover {
+  transform: scale(1.02) translateY(1%) translateZ(0); /* Ajusta la escala según el nivel de zoom deseado */
 }
-
 .row::after {
   content: "";
   clear: both;
@@ -1172,26 +1178,24 @@ nav:hover {
     background-color: #f9f7ef;
   }
 
-
   .card img {
     height: 516px;
     z-index: 4;
     position: absolute;
     margin-top: 115px;
-    top:2px;
+    top: 2px;
     left: 0;
     width: 100%;
     z-index: 6;
     object-fit: cover;
   }
   .card:hover {
-    background-color:#202020 !important;
+    background-color: #202020 !important;
   }
 
-  .card img:hover{
+  .card img:hover {
     transform: none;
   }
-  
 }
 
 @media screen and (min-width: 577px) and (max-width: 991px) {
@@ -1217,7 +1221,7 @@ nav:hover {
   }
 
   .card:hover {
-    background-color:#202020 !important;
+    background-color: #202020 !important;
   }
 }
 
@@ -2349,7 +2353,6 @@ nav:hover {
 }
 
 @media screen and (max-width: 576px) {
-
   .team-section {
     padding: 15px;
   }
@@ -2369,7 +2372,7 @@ nav:hover {
     margin-bottom: 0px;
   }
 
-  .team-main-text { 
+  .team-main-text {
     display: flex;
     justify-content: flex-start;
     padding: 18px;
