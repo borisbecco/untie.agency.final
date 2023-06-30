@@ -249,8 +249,8 @@ document.addEventListener("mousemove", function (event) {
     customMouse.style.height = "10px";
   } else {
     // Restablecer el tamaño del cursor cuando el overlay está cerrado
-    customMouse.style.width = "20px";
-    customMouse.style.height = "20px";
+    customMouse.style.width = "15px";
+    customMouse.style.height = "15px";
   }
 
   var thirdSection = document.getElementById("third-section");
@@ -274,12 +274,12 @@ document.addEventListener("mousemove", function (event) {
     // Estilos del cursor cuando está dentro de la sección "thirdSection"
     customMouse.style.width = "15px";
     customMouse.style.height = "15px";
-    customMouse.style.backgroundColor = "red";
+    customMouse.style.backgroundColor = "#a42f33";
     customMouse.style.mixBlendMode = "normal";
   } else {
     // Estilos del cursor por defecto cuando está fuera de la sección "thirdSection"
-    customMouse.style.width = "20px";
-    customMouse.style.height = "20px";
+    customMouse.style.width = "15px";
+    customMouse.style.height = "15px";
     customMouse.style.backgroundColor = "";
     customMouse.style.mixBlendMode = "";
   }
@@ -309,10 +309,10 @@ document.addEventListener("mouseover", function (event) {
     var overlay = document.getElementById("overlay");
     if (overlay.style.display === "block") {
       // Cambiar la escala del cursor cuando el overlay está abierto
-      customMouse.style.transform = "scale(3.0)";
+      customMouse.style.transform = "scale(2.0)";
     } else {
       // Restablecer la escala del cursor cuando el overlay está cerrado
-      customMouse.style.transform = "scale(2.0)";
+      customMouse.style.transform = "scale(1.5)";
     }
   }
 });
@@ -758,3 +758,35 @@ function scrollUp() {
     behavior: "smooth",
   });
 }
+
+//cases
+
+
+$(document).ready(function() {
+  // Obtén las referencias de los elementos del carrusel
+  var carouselContainers = $(".cases-carousel-container");
+
+  // Agrega el evento click a las imágenes del carrusel
+  $(".cases-carousel-inner img").click(function() {
+    // Obtiene la imagen actual
+    var currentImage = $(this);
+
+    // Obtiene el carrusel actual
+    var currentCarouselContainer = currentImage.closest(".cases-carousel-container");
+
+    // Obtiene el índice de la imagen actual
+    var currentIndex = currentCarouselContainer.find(".cases-carousel-inner img").index(currentImage);
+
+    // Obtiene el índice de la siguiente imagen
+    var nextIndex = (currentIndex + 1) % currentCarouselContainer.find(".cases-carousel-inner img").length;
+
+    // Cambia la clase "active" del indicador correspondiente
+    currentCarouselContainer.find(".cases-carousel-indicators span").eq(nextIndex).addClass("active").siblings().removeClass("active");
+
+    // Oculta la imagen actual rápidamente
+    currentImage.hide();
+
+    // Muestra la siguiente imagen rápidamente
+    currentCarouselContainer.find(".cases-carousel-inner img").eq(nextIndex).show();
+  });
+});
