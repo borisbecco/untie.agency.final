@@ -611,7 +611,6 @@ $(document).ready(function () {
   });
 });
 
-
 $(document).ready(function () {
   $(".card").on("swipeleft swiperight", function (event) {
     event.stopPropagation();
@@ -761,32 +760,45 @@ function scrollUp() {
 
 //cases
 
-
-$(document).ready(function() {
+$(document).ready(function () {
   // Obtén las referencias de los elementos del carrusel
   var carouselContainers = $(".cases-carousel-container");
 
   // Agrega el evento click a las imágenes del carrusel
-  $(".cases-carousel-inner img").click(function() {
+  $(".cases-carousel-inner img").click(function () {
     // Obtiene la imagen actual
     var currentImage = $(this);
 
     // Obtiene el carrusel actual
-    var currentCarouselContainer = currentImage.closest(".cases-carousel-container");
+    var currentCarouselContainer = currentImage.closest(
+      ".cases-carousel-container"
+    );
 
     // Obtiene el índice de la imagen actual
-    var currentIndex = currentCarouselContainer.find(".cases-carousel-inner img").index(currentImage);
+    var currentIndex = currentCarouselContainer
+      .find(".cases-carousel-inner img")
+      .index(currentImage);
 
     // Obtiene el índice de la siguiente imagen
-    var nextIndex = (currentIndex + 1) % currentCarouselContainer.find(".cases-carousel-inner img").length;
+    var nextIndex =
+      (currentIndex + 1) %
+      currentCarouselContainer.find(".cases-carousel-inner img").length;
 
     // Cambia la clase "active" del indicador correspondiente
-    currentCarouselContainer.find(".cases-carousel-indicators span").eq(nextIndex).addClass("active").siblings().removeClass("active");
+    currentCarouselContainer
+      .find(".cases-carousel-indicators span")
+      .eq(nextIndex)
+      .addClass("active")
+      .siblings()
+      .removeClass("active");
 
     // Oculta la imagen actual rápidamente
     currentImage.hide();
 
     // Muestra la siguiente imagen rápidamente
-    currentCarouselContainer.find(".cases-carousel-inner img").eq(nextIndex).show();
+    currentCarouselContainer
+      .find(".cases-carousel-inner img")
+      .eq(nextIndex)
+      .show();
   });
 });
