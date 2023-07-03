@@ -1241,7 +1241,7 @@ nav:hover {
   }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1550px) {
+@media screen and (min-width: 992px) and (max-width: 1350px) {
   .column {
     width: 20%;
     display: inline-block;
