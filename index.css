@@ -1117,12 +1117,12 @@ nav:hover {
 
 .row {
   text-align: center;
-  margin-top: 1px;
+  margin: auto;
 }
 
 .row > * {
-  display: block;
-  margin: -3px;
+  display: table;
+  margin-left: -5px;
 }
 
 
