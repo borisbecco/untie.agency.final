@@ -1276,6 +1276,71 @@ nav:hover {
   .row {
     text-align: center;
   }
+
+  .talent {
+    font-size: 95px;
+  }
+
+  .card p {
+    font-size: 13px;
+    line-height: 1.4;
+    margin-top: 115px;
+    padding-left: 12.2px;
+    padding-top: 7px;
+  }
+
+  .card img {
+    margin-top: 115px;
+  }
+
+  .card h3 {
+    padding-left: 13px;
+    font-size: 3.5vh;
+    line-height: 1.15;
+  }
+
+  .card .button1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 93px;
+    left: 83%;
+    z-index: 1;
+    background-color: rgb(29, 29, 29);
+    color: white;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    text-decoration: none;
+    border: none;
+  }
+  
+  .card .button2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 93px;
+    left: 90%;
+    z-index: 1;
+    background-color: rgb(29, 29, 29);
+    color: white;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    text-decoration: none;
+    border: none;
+  }
+  
+  .card button.active {
+    height: 6.5px;
+    width: 6.5px;
+    top: 92px;
+    background-color: rgb(29, 29, 29);
+    text-decoration: none;
+    border: none;
+  }
 }
 
 @media screen and (min-width: 1350px) and (max-width: 1601px) {
@@ -1311,13 +1376,13 @@ nav:hover {
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 90px;
-    left: 85%;
+    top: 93px;
+    left: 83%;
     z-index: 1;
     background-color: rgb(29, 29, 29);
     color: white;
-    height: 6px;
-    width: 6px;
+    height: 5px;
+    width: 5px;
     border-radius: 50%;
     text-decoration: none;
     border: none;
@@ -1328,22 +1393,22 @@ nav:hover {
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 90px;
+    top: 93px;
     left: 90%;
     z-index: 1;
     background-color: rgb(29, 29, 29);
     color: white;
-    height: 6px;
-    width: 6px;
+    height: 5px;
+    width: 5px;
     border-radius: 50%;
     text-decoration: none;
     border: none;
   }
   
   .card button.active {
-    height: 8px;
-    width: 8px;
-    top: 90px;
+    height: 6.5px;
+    width: 6.5px;
+    top: 92px;
     background-color: rgb(29, 29, 29);
     text-decoration: none;
     border: none;
