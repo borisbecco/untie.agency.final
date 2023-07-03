@@ -1010,7 +1010,6 @@ nav:hover {
   flex-direction: column; /* Apilamos los elementos verticalmente */
 }
 
-
 .card .button1 {
   display: flex;
   justify-content: center;
@@ -1087,7 +1086,7 @@ nav:hover {
 
 .card img {
   flex: 1;
-  border-top: 0.7px solid black;;
+  border-top: 0.7px solid black;
   display: flex;
   width: 100%;
   height: auto;
@@ -1110,7 +1109,6 @@ nav:hover {
   }
 }
 
-
 .row::after {
   content: "";
   clear: both;
@@ -1130,7 +1128,6 @@ nav:hover {
   display: inline-block;
 }
 @media screen and (max-width: 659px) {
-
   .card {
     max-width: 100%;
     width: 100%;
@@ -1144,7 +1141,6 @@ nav:hover {
     display: flex; /* Utilizamos flexbox para el diseño flexible */
     flex-direction: column; /* Apilamos los elementos verticalmente */
   }
-
 
   .column {
     width: 100%;
@@ -1189,7 +1185,7 @@ nav:hover {
     text-decoration: none;
     border: none;
   }
-  
+
   .card .button2 {
     display: flex;
     justify-content: center;
@@ -1206,7 +1202,7 @@ nav:hover {
     text-decoration: none;
     border: none;
   }
-  
+
   .card button.active {
     height: 6.5px;
     width: 6.5px;
@@ -1217,7 +1213,6 @@ nav:hover {
   }
 
   .row {
-    
     text-align: normal;
   }
 }
@@ -1269,7 +1264,7 @@ nav:hover {
     text-decoration: none;
     border: none;
   }
-  
+
   .card .button2 {
     display: flex;
     justify-content: center;
@@ -1286,7 +1281,7 @@ nav:hover {
     text-decoration: none;
     border: none;
   }
-  
+
   .card button.active {
     height: 6.5px;
     width: 6.5px;
@@ -1296,8 +1291,6 @@ nav:hover {
     border: none;
   }
 }
-
-
 
 @media screen and (min-width: 880px) and (max-width: 991px) {
   .column {
@@ -1343,7 +1336,7 @@ nav:hover {
     text-decoration: none;
     border: none;
   }
-  
+
   .card .button2 {
     display: flex;
     justify-content: center;
@@ -1360,7 +1353,7 @@ nav:hover {
     text-decoration: none;
     border: none;
   }
-  
+
   .card button.active {
     height: 6.5px;
     width: 6.5px;
@@ -1418,7 +1411,7 @@ nav:hover {
     text-decoration: none;
     border: none;
   }
-  
+
   .card .button2 {
     display: flex;
     justify-content: center;
@@ -1435,7 +1428,7 @@ nav:hover {
     text-decoration: none;
     border: none;
   }
-  
+
   .card button.active {
     height: 6.5px;
     width: 6.5px;
@@ -1494,7 +1487,7 @@ nav:hover {
     text-decoration: none;
     border: none;
   }
-  
+
   .card .button2 {
     display: flex;
     justify-content: center;
@@ -1511,7 +1504,7 @@ nav:hover {
     text-decoration: none;
     border: none;
   }
-  
+
   .card button.active {
     height: 6.5px;
     width: 6.5px;
@@ -1566,7 +1559,7 @@ nav:hover {
     text-decoration: none;
     border: none;
   }
-  
+
   .card .button2 {
     display: flex;
     justify-content: center;
@@ -1583,7 +1576,7 @@ nav:hover {
     text-decoration: none;
     border: none;
   }
-  
+
   .card button.active {
     height: 6.5px;
     width: 6.5px;
@@ -3148,7 +3141,7 @@ nav:hover {
     padding: 15px;
     height: auto;
   }
-  
+
   .cases-carousel-containers {
     margin: 0;
     display: flex;
@@ -3164,7 +3157,6 @@ nav:hover {
     margin-right: 60px;
     width: 100%;
     height: 100%;
-    
   }
 
   .cases-carousel-inner img {
@@ -3179,9 +3171,8 @@ nav:hover {
     height: 220px;
     position: relative;
     overflow: hidden;
-   justify-content: center;
+    justify-content: center;
   }
-
 
   .carousel-titles-main-title {
     font-size: 12px;
@@ -3221,7 +3212,7 @@ nav:hover {
     font-size: 48px;
     font-weight: 205;
   }
-  
+
   .cases-sub-tittle {
     display: flex;
     justify-content: center;
@@ -3247,20 +3238,20 @@ nav:hover {
 }
 
 .team-text {
-  font-size: 185px;
-  font-weight: 205;
-  margin-top: -20px;
-  letter-spacing: -6px;
+  display: flex;
+  justify-content: center;
   text-align: center;
   padding: 10px;
-  margin-bottom: -5px;
+  letter-spacing: -6px;
+  font-size: 80px;
+  font-weight: 205;
 }
 
 .team-main-text {
   display: flex;
   justify-content: center;
-  text-align: justify;
-  font-size: 58px;
+  text-align: center;
+  font-size: 24.5px;
   font-style: bold;
   line-height: 1.25;
   letter-spacing: 0.95px;
@@ -3277,6 +3268,7 @@ nav:hover {
   .team-tittle {
     padding: 0px;
     margin-bottom: 70px;
+    font-size: 80px;
   }
 
   .team-text {
@@ -3294,12 +3286,12 @@ nav:hover {
     display: flex;
     justify-content: flex-start;
     padding: 18px;
-    text-align: start;
+    text-align: center;
     line-height: 1.042;
     letter-spacing: 0.95px;
-    font-size: 30px;
+    font-size: 22px;
     font-style: bold;
-    margin-bottom: -80px;
+    margin-bottom: -60px;
   }
 }
 
@@ -3315,15 +3307,15 @@ nav:hover {
     text-align: center;
     padding: 10px;
     letter-spacing: -6px;
-    font-size: 150px;
+    font-size: 80px;
     font-weight: 205;
   }
 
   .team-main-text {
     display: flex;
     justify-content: center;
-    text-align: justify;
-    font-size: 32px;
+    text-align: center;
+    font-size: 24.5px;
     font-style: bold;
     line-height: 1.25;
     letter-spacing: 0.95px;
@@ -3352,8 +3344,8 @@ nav:hover {
 .contenido-oculto {
   display: flex;
   justify-content: space-between;
-  margin-top: 30px;
-  margin-bottom: 40px;
+  margin-top: 15px;
+  margin-bottom: 20px;
 }
 
 .card-header {
@@ -3372,7 +3364,7 @@ nav:hover {
 }
 
 .card-tittle-size {
-  font-size: 60px;
+  font-size: 40px;
   font-family: "plaak-light";
   margin-top: 5px;
   margin-bottom: 5px;
@@ -3398,13 +3390,13 @@ nav:hover {
     transform: translate3d(0, 0, 0);
   }
   to {
-    transform: translate3d(500px, 0, 0);
+    transform: translate3d(270%, 0, 0);
   }
 }
 
 @keyframes slideReverse {
   from {
-    transform: translate3d(500px, 0, 0);
+    transform: translate3d(270%, 0, 0);
   }
   to {
     transform: translate3d(0, 0, 0);
@@ -3412,8 +3404,8 @@ nav:hover {
 }
 
 .team-card-image {
-  height: 588px;
-  width: 600px;
+  height: 470px;
+  width: 480px;
   object-fit: cover;
   padding-bottom: 24px;
   margin-top: 28px;
@@ -3433,7 +3425,7 @@ nav:hover {
 
 .team-card-text-container {
   margin-top: 28px;
-  margin-right: 120px;
+  margin-right: 350px;
 }
 
 .team-card-text {
@@ -3448,7 +3440,7 @@ nav:hover {
   outline: none;
   background-color: transparent;
   text-align: justify;
-  font-size: 20px;
+  font-size: 16.8px;
   letter-spacing: 3px;
   font-weight: bold;
   font-family: "plaak-light";
@@ -3463,15 +3455,15 @@ nav:hover {
 /* arrow */
 
 .arrow1 {
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
   -webkit-transform: rotate(45deg);
   border-left: none;
   border-top: none;
   border-right: 2px #000000 solid;
   border-bottom: 2px #000000 solid;
   margin-right: 30px;
-  margin-top: 35px;
+  margin-top: 15px;
   align-items: center;
 }
 
@@ -3503,7 +3495,7 @@ nav:hover {
   }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 791px) {
   .team-card {
     display: flex;
     flex-direction: column;
@@ -3511,7 +3503,9 @@ nav:hover {
     margin-bottom: 36px;
     border-top: 0.7px solid black;
   }
-
+  .team-cards {
+    margin-top: 0px;
+  }
   .contenido-oculto {
     display: flex;
     flex-direction: column;
@@ -3532,7 +3526,7 @@ nav:hover {
   }
 
   .card-tittle-size {
-    font-size: 30px;
+    font-size: 25px;
     margin-left: 0px;
     margin-top: 15px;
     margin-bottom: 10px;
@@ -3572,11 +3566,12 @@ nav:hover {
   }
 
   .team-card-image {
-    height: 100%;
+    height: 316.8px;
     width: 100%;
     object-fit: cover;
-    margin: auto;
-    padding: 0;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
   }
 
   .team-card-team {
@@ -3588,23 +3583,22 @@ nav:hover {
     justify-content: center; /* Center the content horizontally */ /* Center the content vertically if needed */
     align-items: center;
     width: 100%;
-    margin-left: 115px;
+    margin-right: 0px;
     margin-bottom: 20px;
-    white-space: nowrap;
   }
 
   .team-card-text {
-    font-size: 12px;
+    font-size: 10px;
     font-weight: bold;
     letter-spacing: 0px;
-    white-space: nowrap;
+    white-space: normal;
     text-align: justify;
     width: 100%;
   }
 
   .team-card-sub-text {
     width: 100%;
-    font-size: 10px;
+    font-size: 9px;
     letter-spacing: 1px;
     font-weight: bold;
     font-family: "plaak-light";
@@ -3624,15 +3618,19 @@ nav:hover {
   /* arrow */
 
   .arrow1 {
-    width: 30px;
-    height: 30px;
+    width: 18px;
+    height: 18px;
 
     margin-right: 30px;
-    margin-top: 23px;
+    margin-top: 33px;
   }
 }
 
-@media screen and (min-width: 577px) and (max-width: 991px) {
+@media screen and (min-width: 792px) and (max-width: 909px) {
+  .team-cards {
+    margin-top: 20px;
+  }
+
   .team-card {
     display: flex;
     flex-direction: column;
@@ -3642,22 +3640,24 @@ nav:hover {
 
   .contenido-oculto {
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-content: center;
     margin-top: 15px;
     margin-bottom: 30px;
   }
 
+  .card-tittle-size {
+    font-size: 30px;
+    font-family: "plaak-light";
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-weight: normal;
+  }
+
   .card-title {
     position: absolute;
     padding: 10px;
-  }
-
-  .card-tittle-size {
-    font-size: 32px;
-    margin-left: 25px;
-    margin-top: 10px;
   }
 
   .card-tittle-size-lastname {
@@ -3677,13 +3677,13 @@ nav:hover {
       transform: translate3d(0, 0, 0);
     }
     to {
-      transform: translate3d(1%, 0, 0);
+      transform: translate3d(100%, 0, 0);
     }
   }
 
   @keyframes slideReverse {
     from {
-      transform: translate3d(1%, 0, 0);
+      transform: translate3d(100%, 0, 0);
     }
     to {
       transform: translate3d(0, 0, 0);
@@ -3691,8 +3691,8 @@ nav:hover {
   }
 
   .team-card-image {
-    height: 600px;
-    width: 100%;
+    height: 264px;
+    width: 252px;
     object-fit: cover;
     margin: 0;
   }
@@ -3702,17 +3702,17 @@ nav:hover {
   }
 
   .team-card-text-container {
-    width: 100%;
     justify-content: center;
     text-align: center;
-    margin: 0;
+    margin-right: 20px;
+    margin-top: 0px;
   }
 
   .team-card-text {
     text-align: justify;
-    font-size: 14px;
+    font-size: 9px;
     letter-spacing: 1px;
-    white-space: nowrap;
+    margin-right: 20px;
   }
 
   .team-card-sub-text {
@@ -3729,11 +3729,58 @@ nav:hover {
   }
 
   .arrow1 {
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
 
     margin-right: 30px;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 910px) and (max-width: 991px) {
+  .team-cards {
     margin-top: 20px;
+  }
+
+  .team-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-top: 0.7px solid black;
+  }
+
+  .contenido-oculto {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
+
+  .card-tittle-size {
+    font-size: 30px;
+    font-family: "plaak-light";
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-weight: normal;
+  }
+
+  .card-title {
+    position: absolute;
+    padding: 10px;
+  }
+
+  .card-tittle-size-lastname {
+    margin-left: 16px;
+  }
+
+  .slide-animation {
+    animation: slideAnimation 1s ease-in-out forwards;
+  }
+
+  .slide-reverse {
+    animation: slideReverse 1s ease-in-out forwards;
   }
 
   @keyframes slideAnimation {
@@ -3741,17 +3788,63 @@ nav:hover {
       transform: translate3d(0, 0, 0);
     }
     to {
-      transform: translate3d(35%, 0, 0);
+      transform: translate3d(100%, 0, 0);
     }
   }
 
   @keyframes slideReverse {
     from {
-      transform: translate3d(35%, 0, 0);
+      transform: translate3d(100%, 0, 0);
     }
     to {
       transform: translate3d(0, 0, 0);
     }
+  }
+
+  .team-card-image {
+    height: 264px;
+    width: 252px;
+    object-fit: cover;
+    margin: 0;
+  }
+
+  .team-card-team {
+    display: none;
+  }
+
+  .team-card-text-container {
+    justify-content: center;
+    text-align: center;
+    margin-right: 80px;
+    margin-top: 0px;
+  }
+
+  .team-card-text {
+    text-align: justify;
+    font-size: 11px;
+    letter-spacing: 1px;
+    margin-right: 20px;
+  }
+
+  .team-card-sub-text {
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-family: "plaak-light";
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #1d1d1b;
+  }
+
+  .arrow1 {
+    width: 16px;
+    height: 16px;
+
+    margin-right: 30px;
+    margin-top: 10px;
   }
 }
 
@@ -3785,13 +3878,13 @@ nav:hover {
       transform: translate3d(0, 0, 0);
     }
     to {
-      transform: translate3d(50%, 0, 0);
+      transform: translate3d(100%, 0, 0);
     }
   }
 
   @keyframes slideReverse {
     from {
-      transform: translate3d(50%, 0, 0);
+      transform: translate3d(100%, 0, 0);
     }
     to {
       transform: translate3d(0, 0, 0);
@@ -3801,8 +3894,8 @@ nav:hover {
 
 @media screen and (min-width: 1150px) and (max-width: 1250px) {
   .team-card-image {
-    height: 480px;
-    width: 460px;
+    height: 384px;
+    width: 368px;
     margin-left: 2px;
   }
 
@@ -3828,13 +3921,13 @@ nav:hover {
       transform: translate3d(0, 0, 0);
     }
     to {
-      transform: translate3d(50%, 0, 0);
+      transform: translate3d(150%, 0, 0);
     }
   }
 
   @keyframes slideReverse {
     from {
-      transform: translate3d(50%, 0, 0);
+      transform: translate3d(150%, 0, 0);
     }
     to {
       transform: translate3d(0, 0, 0);
@@ -3844,8 +3937,8 @@ nav:hover {
 
 @media screen and (min-width: 1251px) and (max-width: 1366px) {
   .team-card-image {
-    height: 520px;
-    width: 500px;
+    height: 384px;
+    width: 368px;
     margin-left: 5px;
   }
 
@@ -3876,15 +3969,7 @@ nav:hover {
   }
 
   .team-card-text-container {
-    margin-right: 5px;
-  }
-
-  .team-card-text {
-    font-size: 14px;
-  }
-
-  .team-card-sub-text {
-    font-size: 14px;
+    margin-right: 0;
   }
 }
 
