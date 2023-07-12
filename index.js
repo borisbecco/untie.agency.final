@@ -495,7 +495,7 @@ var images = carousel.getElementsByTagName("img");
 var indicatorsContainer = document.querySelector(".indicators");
 var carouselContainer = document.querySelector(".carousel-container");
 var currentIndex = 0;
-var colors = ["#a42f33", "#262626", "#214733", "#912a5b"];
+var colors = ["#214733", "#262626", "#a42f33", "#912a5b"];
 
 function showImage(index) {
   if (index < 0) {
@@ -573,81 +573,81 @@ changeCarouselContainerBackground();
 
 //talents
 
-$(document).ready(function () {
-  $(".card").on("click", function (event) {
-    event.stopPropagation();
-    var card = $(this);
-    var img = card.find("img");
-    var text = card.find("p");
-    var button1 = card.find(".button1");
-    var button2 = card.find(".button2");
+// $(document).ready(function () {
+//   $(".card").on("click", function (event) {
+//     event.stopPropagation();
+//     var card = $(this);
+//     var img = card.find("img");
+//     var text = card.find("p");
+//     var button1 = card.find(".button1");
+//     var button2 = card.find(".button2");
 
-    if (img.is(":visible")) {
-      // Si la imagen está visible, mostrar el texto y ocultar la imagen
-      img.hide();
-      text.show();
-      button1.removeClass("active");
-      button2.addClass("active");
-    } else {
-      // Si el texto está visible, mostrar la imagen y ocultar el texto
-      text.hide();
-      img.show();
-      button1.addClass("active");
-      button2.removeClass("active");
-    }
-  });
+//     if (img.is(":visible")) {
+//       // Si la imagen está visible, mostrar el texto y ocultar la imagen
+//       img.hide();
+//       text.show();
+//       button1.removeClass("active");
+//       button2.addClass("active");
+//     } else {
+//       // Si el texto está visible, mostrar la imagen y ocultar el texto
+//       text.hide();
+//       img.show();
+//       button1.addClass("active");
+//       button2.removeClass("active");
+//     }
+//   });
 
-  // Mostrar la foto asociada al botón 1 y ocultar el texto asociado al botón 2 por defecto
-  $(".card").each(function () {
-    var card = $(this);
-    var img = card.find("img");
-    var text = card.find("p");
-    var button1 = card.find(".button1");
-    var button2 = card.find(".button2");
+//   // Mostrar la foto asociada al botón 1 y ocultar el texto asociado al botón 2 por defecto
+//   $(".card").each(function () {
+//     var card = $(this);
+//     var img = card.find("img");
+//     var text = card.find("p");
+//     var button1 = card.find(".button1");
+//     var button2 = card.find(".button2");
 
-    img.show();
-    text.hide();
-    button1.addClass("active");
-  });
-});
+//     img.show();
+//     text.hide();
+//     button1.addClass("active");
+//   });
+// });
 
-$(document).ready(function () {
-  $(".card").on("swipeleft swiperight", function (event) {
-    event.stopPropagation();
-    var card = $(this);
-    var img = card.find("img");
-    var text = card.find("p");
-    var button1 = card.find(".button1");
-    var button2 = card.find(".button2");
+// $(document).ready(function () {
+//   $(".card").on("swipeleft swiperight", function (event) {
+//     event.stopPropagation();
+//     var card = $(this);
+//     var img = card.find("img");
+//     var text = card.find("p");
+//     var button1 = card.find(".button1");
+//     var button2 = card.find(".button2");
 
-    if (img.is(":visible")) {
-      // Si la imagen está visible, mostrar el texto y ocultar la imagen
-      img.hide();
-      text.show();
-      button1.removeClass("active");
-      button2.addClass("active");
-    } else {
-      // Si el texto está visible, mostrar la imagen y ocultar el texto
-      text.hide();
-      img.show();
-      button1.addClass("active");
-      button2.removeClass("active");
-    }
-  });
+//     if (img.is(":visible")) {
+//       // Si la imagen está visible, mostrar el texto y ocultar la imagen
+//       img.hide();
+//       text.show();
+//       button1.removeClass("active");
+//       button2.addClass("active");
+//     } else {
+//       // Si el texto está visible, mostrar la imagen y ocultar el texto
+//       text.hide();
+//       img.show();
+//       button1.addClass("active");
+//       button2.removeClass("active");
+//     }
+//   });
 
-  // Mostrar la foto asociada al botón 1 y ocultar el texto asociado al botón 2 por defecto
-  $(".card").each(function () {
-    var card = $(this);
-    var img = card.find("img");
-    var text = card.find("p");
-    var button1 = card.find(".button1");
-    var button2 = card.find(".button2");
+//   // Mostrar la foto asociada al botón 1 y ocultar el texto asociado al botón 2 por defecto
+//   $(".card").each(function () {
+//     var card = $(this);
+//     var img = card.find("img");
+//     var text = card.find("p");
+//     var button1 = card.find(".button1");
+//     var button2 = card.find(".button2");
 
-    img.show();
-    text.hide();
-    button1.addClass("active");
-  });
-});
+//     img.show();
+//     text.hide();
+//     button1.addClass("active");
+//   });
+// });
 
 //overlay-menu
 
