@@ -705,7 +705,7 @@ nav:hover {
     padding: 5px;
     line-height: 1.3;
     color: white;
-    mix-blend-mode: exclusion;
+    /* mix-blend-mode: exclusion; */
   }
 
   .main-tittle h1 {
