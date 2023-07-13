@@ -593,7 +593,7 @@ nav:hover {
     top: 0;
     left: 0;
     width: 100vw;
-    max-height: 100%;
+    max-height: 85%;
     background-color: #1d1d1b;
     font-size: 38px;
     letter-spacing: -2.3px;
@@ -605,6 +605,13 @@ nav:hover {
     flex-direction: column;
     word-spacing: -1px;
   }
+
+  .nav-menu ul {
+    margin-top: 0;
+    list-style: none;
+    padding: 0;
+  }
+  
 }
 
 /* textbar */
@@ -998,7 +1005,7 @@ nav:hover {
   max-width: 100%;
   border: 0.7px solid black;
   width: 100%;
-  height: 55vh;
+  height: 50vh;
   margin: auto;
   text-align: center;
   font-family: "Plaak-Regular";
@@ -1031,7 +1038,7 @@ nav:hover {
   opacity: 0;
   position: absolute;
   margin-top: 80px;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-family: "plaak-regular";
   padding-left: 15px;
   padding-right: 15px;
@@ -1047,8 +1054,8 @@ nav:hover {
 .card span {
   opacity: 0;
   position: absolute;
-  margin-top: 450px;
-  font-size: 0.9rem;
+  margin-top: 340px;
+  font-size: 0.8rem;
   font-family: "plaak-bold";
   padding-left: 15px;
   padding-right: 15px;
@@ -1324,13 +1331,18 @@ nav:hover {
     padding-left: 13px;
     line-height: 1.15;
   }
+
+  .card span {
+    margin-top: 350px;
+    font-size: 0.7rem;
+  }
 }
 
 @media screen and (min-width: 1350px) and (max-width: 1601px) {
   .card {
     /* max-width: 100%; */
     width: 100%;
-    height: 65vh;
+    height: 50vh;
     text-align: center;
     font-family: "Plaak-Regular";
     overflow: hidden;
@@ -1360,7 +1372,7 @@ nav:hover {
   }
 
   .card span {
-    margin-top: 375px;
+    margin-top: 350px;
     font-size: 0.7rem;
   }
 }
@@ -2309,10 +2321,10 @@ nav:hover {
     position: absolute;
   }
   #title1 {
-    font-size: 3.5em;
+    font-size: 2.5em;
     position: absolute;
     padding-top: 5vh;
-    padding-left: 25vw;
+    padding-left: 27vw;
     z-index: 2;
   }
 
@@ -2348,18 +2360,18 @@ nav:hover {
     position: absolute;
     padding-top: 10px;
     padding-left: 5%;
-    font-size: 18px;
+    font-size: 15px;
   }
 
   #wwd {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 700;
     position: absolute;
     padding-left: 5%;
     padding-top: 5%;
   }
   #container-1-t1 {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 700;
     line-height: 1.3;
     margin-left: 5%;
@@ -2367,7 +2379,7 @@ nav:hover {
   }
 
   #container-1-t2 {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 600;
     line-height: 1.3;
     margin-left: 5%;
@@ -2375,7 +2387,7 @@ nav:hover {
   }
 
   #container-1-t3 {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 700;
     line-height: 1.3;
     text-align: right;
@@ -2389,13 +2401,12 @@ nav:hover {
     display: block;
     height: 100vh;
     width: 100vw;
-    /* padding-top: 20px; */
   }
   #title2 {
-    font-size: 3.5em;
+    font-size: 2.5em;
     position: absolute;
     padding-top: 5vh;
-    padding-left: 40vw;
+    padding-left: 39vw;
     z-index: 2;
   }
 
@@ -2409,7 +2420,7 @@ nav:hover {
   }
 
   #container-2-t1 {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 700;
     line-height: 1.3;
     margin-left: 5%;
@@ -2417,7 +2428,7 @@ nav:hover {
   }
 
   #container-2-t2 {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 700;
     line-height: 1.3;
     margin-left: 20%;
@@ -2426,7 +2437,7 @@ nav:hover {
   }
 
   #container-2-t3 {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 700;
     line-height: 1.3;
     margin-left: 5%;
@@ -2442,7 +2453,7 @@ nav:hover {
   }
 
   #title3 {
-    font-size: 3.5em;
+    font-size: 2.5em;
     position: absolute;
     padding-top: 5vh;
     padding-left: 39vw;
@@ -2459,7 +2470,7 @@ nav:hover {
   }
 
   #container-3-t1 {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 700;
     line-height: 1.5;
     margin-left: 7%;
@@ -2468,7 +2479,7 @@ nav:hover {
   }
 
   #container-3-t2 {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 700;
     line-height: 1.5;
     margin-left: 7%;
@@ -2477,7 +2488,7 @@ nav:hover {
   }
 
   #container-3-t3 {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 700;
     line-height: 1.5;
     margin-left: 7%;
@@ -2495,7 +2506,7 @@ nav:hover {
   }
 
   #title4 {
-    font-size: 3.5em;
+    font-size: 2.5em;
     position: absolute;
     padding-top: 5vh;
     padding-left: 42vw;
@@ -2512,7 +2523,7 @@ nav:hover {
   }
 
   #container-4-t1 {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 700;
     line-height: 1.5;
     margin-left: 10vw;
@@ -2521,7 +2532,7 @@ nav:hover {
   }
 
   #container-4-t2 {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 700;
     line-height: 1.5;
     margin-left: 15vw;
@@ -2530,7 +2541,7 @@ nav:hover {
   }
 
   #container-4-t3 {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 700;
     line-height: 1.5;
     margin-left: 20vw;
@@ -2546,10 +2557,10 @@ nav:hover {
     /* padding-top: 80px; */
   }
   #title5 {
-    font-size: 3.5em;
+    font-size: 2.5em;
     position: absolute;
     padding-top: 5vh;
-    padding-left: 25vw;
+    padding-left: 26vw;
     z-index: 2;
   }
 
@@ -2563,7 +2574,7 @@ nav:hover {
   }
 
   #container-5-t1 {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 700;
     line-height: 1.5;
     margin-left: 10vw;
@@ -2571,7 +2582,7 @@ nav:hover {
   }
 
   #container-5-t2 {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 700;
     line-height: 1.5;
     margin-left: 10vw;
@@ -2579,7 +2590,7 @@ nav:hover {
   }
 
   #container-5-t3 {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 700;
     line-height: 1.5;
     margin-left: 30vw;
@@ -2596,7 +2607,7 @@ nav:hover {
     /* margin-bottom: 80px; */
   }
   #title6 {
-    font-size: 3.5em;
+    font-size: 2.5em;
     position: absolute;
     padding-top: 5vh;
     padding-left: 30vw;
@@ -2613,7 +2624,7 @@ nav:hover {
   }
 
   #container-6-t1 {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 700;
     line-height: 1.5;
     margin-left: 8vw;
@@ -2621,7 +2632,7 @@ nav:hover {
   }
 
   #container-6-t2 {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 700;
     line-height: 1.5;
     margin-left: 8vw;
@@ -2629,7 +2640,7 @@ nav:hover {
   }
 
   #container-6-t3 {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 700;
     line-height: 1.5;
     margin-left: 10%;
