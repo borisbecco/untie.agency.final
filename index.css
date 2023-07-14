@@ -771,7 +771,7 @@ nav:hover {
 /* space-section */
 
 .space-section {
-  height: 20vh;
+  height: 30vh;
   background-color: #f9f7ef;
 }
 
@@ -1103,7 +1103,7 @@ nav:hover {
 }
 
 .column {
-  width: calc(20.5341% - 8px);
+  width: calc(20.5058% - 8px);
   display: inline-block;
   margin-right: -6px;
   margin-top: -4px;
@@ -1982,10 +1982,10 @@ nav:hover {
     position: absolute;
   }
   #title1 {
-    font-size: 4em;
+    font-size: 2.5em;
     position: absolute;
-    padding-top: 5vh;
-    padding-left: 24%;
+    padding-top: 0vh;
+    padding-left: 4.8%;
     z-index: 2;
   }
 
@@ -2016,18 +2016,18 @@ nav:hover {
     position: absolute;
     padding-top: 10px;
     padding-left: 5%;
-    font-size: 16px;
+    font-size: 12px;
   }
 
   #wwd {
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 700;
     position: absolute;
     padding-left: 5%;
     padding-top: 5%;
   }
   #container-1-t1 {
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 700;
     line-height: 1.3;
     margin-left: 5%;
@@ -2035,7 +2035,7 @@ nav:hover {
   }
 
   #container-1-t2 {
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 600;
     line-height: 1.3;
     margin-left: 5%;
@@ -2043,7 +2043,7 @@ nav:hover {
   }
 
   #container-1-t3 {
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 700;
     line-height: 1.3;
     text-align: right;
@@ -2060,10 +2060,10 @@ nav:hover {
     /* padding-top: 20px; */
   }
   #title2 {
-    font-size: 4em;
+    font-size: 2.5em;
     position: absolute;
-    padding-top: 5vh;
-    padding-left: 38%;
+    padding-top: 0vh;
+    padding-left: 4.8%;
     z-index: 2;
   }
 
@@ -2077,7 +2077,7 @@ nav:hover {
   }
 
   #container-2-t1 {
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 700;
     line-height: 1.3;
     margin-left: 5%;
@@ -2085,7 +2085,7 @@ nav:hover {
   }
 
   #container-2-t2 {
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 700;
     line-height: 1.3;
     margin-left: 20%;
@@ -2094,7 +2094,7 @@ nav:hover {
   }
 
   #container-2-t3 {
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 700;
     line-height: 1.3;
     margin-left: 5%;
@@ -2110,10 +2110,10 @@ nav:hover {
   }
 
   #title3 {
-    font-size: 4em;
+    font-size: 2.5em;
     position: absolute;
-    padding-top: 5vh;
-    padding-left: 37vw;
+    padding-top: 0vh;
+    padding-left: 4.8vw;
     z-index: 2;
   }
 
@@ -2127,7 +2127,7 @@ nav:hover {
   }
 
   #container-3-t1 {
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 700;
     line-height: 1.5;
     margin-left: 7%;
@@ -2136,7 +2136,7 @@ nav:hover {
   }
 
   #container-3-t2 {
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 700;
     line-height: 1.5;
     margin-left: 7%;
@@ -2145,7 +2145,7 @@ nav:hover {
   }
 
   #container-3-t3 {
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 700;
     line-height: 1.5;
     margin-left: 7%;
@@ -2163,10 +2163,10 @@ nav:hover {
   }
 
   #title4 {
-    font-size: 4em;
+    font-size: 2.5em;
     position: absolute;
-    padding-top: 5vh;
-    padding-left: 40vw;
+    padding-top: 0vh;
+    padding-left: 4.8vw;
     z-index: 2;
   }
 
@@ -2180,7 +2180,7 @@ nav:hover {
   }
 
   #container-4-t1 {
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 700;
     line-height: 1.5;
     margin-left: 10vw;
@@ -2189,7 +2189,7 @@ nav:hover {
   }
 
   #container-4-t2 {
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 700;
     line-height: 1.5;
     margin-left: 15vw;
@@ -2198,7 +2198,7 @@ nav:hover {
   }
 
   #container-4-t3 {
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 700;
     line-height: 1.5;
     margin-left: 20vw;
@@ -2214,10 +2214,10 @@ nav:hover {
     /* padding-top: 80px; */
   }
   #title5 {
-    font-size: 4em;
+    font-size: 2.5em;
     position: absolute;
-    padding-top: 5vh;
-    padding-left: 20vw;
+    padding-top: 0vh;
+    padding-left: 4.8vw;
     z-index: 2;
   }
 
@@ -2231,7 +2231,7 @@ nav:hover {
   }
 
   #container-5-t1 {
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 700;
     line-height: 1.5;
     margin-left: 10vw;
@@ -2239,7 +2239,7 @@ nav:hover {
   }
 
   #container-5-t2 {
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 700;
     line-height: 1.5;
     margin-left: 10vw;
@@ -2247,7 +2247,7 @@ nav:hover {
   }
 
   #container-5-t3 {
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 700;
     line-height: 1.5;
     margin-left: 30vw;
@@ -2264,10 +2264,10 @@ nav:hover {
     /* margin-bottom: 100px; */
   }
   #title6 {
-    font-size: 4em;
+    font-size: 2.5em;
     position: absolute;
-    padding-top: 5vh;
-    padding-left: 20vw;
+    padding-top: 0vh;
+    padding-left: 4.8vw;
     z-index: 2;
   }
 
@@ -2281,7 +2281,7 @@ nav:hover {
   }
 
   #container-6-t1 {
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 700;
     line-height: 1.5;
     margin-left: 8vw;
@@ -2289,7 +2289,7 @@ nav:hover {
   }
 
   #container-6-t2 {
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 700;
     line-height: 1.5;
     margin-left: 8vw;
@@ -2297,7 +2297,7 @@ nav:hover {
   }
 
   #container-6-t3 {
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 700;
     line-height: 1.5;
     margin-left: 10%;
@@ -2323,8 +2323,8 @@ nav:hover {
   #title1 {
     font-size: 2.5em;
     position: absolute;
-    padding-top: 5vh;
-    padding-left: 27vw;
+    padding-top: 0vh;
+    padding-left: 4.8vw;
     z-index: 2;
   }
 
@@ -2337,10 +2337,11 @@ nav:hover {
 
   .arrow {
     cursor: none;
-    font-size: 64px;
-    font-weight: 700;
+    font-family: normal;
+    font-size: 50px;
     color: rgb(8, 8, 8);
     transition: all 0.2s ease-in-out;
+    border: none;
   }
 
   .arrow:hover {
@@ -2371,7 +2372,7 @@ nav:hover {
     padding-top: 5%;
   }
   #container-1-t1 {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 700;
     line-height: 1.3;
     margin-left: 5%;
@@ -2379,7 +2380,7 @@ nav:hover {
   }
 
   #container-1-t2 {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 600;
     line-height: 1.3;
     margin-left: 5%;
@@ -2387,7 +2388,7 @@ nav:hover {
   }
 
   #container-1-t3 {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 700;
     line-height: 1.3;
     text-align: right;
@@ -2405,8 +2406,8 @@ nav:hover {
   #title2 {
     font-size: 2.5em;
     position: absolute;
-    padding-top: 5vh;
-    padding-left: 39vw;
+    padding-top: 0vh;
+    padding-left: 4.8vw;
     z-index: 2;
   }
 
@@ -2420,7 +2421,7 @@ nav:hover {
   }
 
   #container-2-t1 {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 700;
     line-height: 1.3;
     margin-left: 5%;
@@ -2428,7 +2429,7 @@ nav:hover {
   }
 
   #container-2-t2 {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 700;
     line-height: 1.3;
     margin-left: 20%;
@@ -2437,7 +2438,7 @@ nav:hover {
   }
 
   #container-2-t3 {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 700;
     line-height: 1.3;
     margin-left: 5%;
@@ -2455,8 +2456,8 @@ nav:hover {
   #title3 {
     font-size: 2.5em;
     position: absolute;
-    padding-top: 5vh;
-    padding-left: 39vw;
+    padding-top: 0vh;
+    padding-left: 4.8vw;
     z-index: 2;
   }
 
@@ -2470,7 +2471,7 @@ nav:hover {
   }
 
   #container-3-t1 {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 700;
     line-height: 1.5;
     margin-left: 7%;
@@ -2479,7 +2480,7 @@ nav:hover {
   }
 
   #container-3-t2 {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 700;
     line-height: 1.5;
     margin-left: 7%;
@@ -2488,7 +2489,7 @@ nav:hover {
   }
 
   #container-3-t3 {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 700;
     line-height: 1.5;
     margin-left: 7%;
@@ -2508,8 +2509,8 @@ nav:hover {
   #title4 {
     font-size: 2.5em;
     position: absolute;
-    padding-top: 5vh;
-    padding-left: 42vw;
+    padding-top: 0;
+    padding-left: 4.8vw;
     z-index: 2;
   }
 
@@ -2523,7 +2524,7 @@ nav:hover {
   }
 
   #container-4-t1 {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 700;
     line-height: 1.5;
     margin-left: 10vw;
@@ -2532,7 +2533,7 @@ nav:hover {
   }
 
   #container-4-t2 {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 700;
     line-height: 1.5;
     margin-left: 15vw;
@@ -2541,7 +2542,7 @@ nav:hover {
   }
 
   #container-4-t3 {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 700;
     line-height: 1.5;
     margin-left: 20vw;
@@ -2559,8 +2560,8 @@ nav:hover {
   #title5 {
     font-size: 2.5em;
     position: absolute;
-    padding-top: 5vh;
-    padding-left: 26vw;
+    padding-top: 0vh;
+    padding-left: 4.8vw;
     z-index: 2;
   }
 
@@ -2574,7 +2575,7 @@ nav:hover {
   }
 
   #container-5-t1 {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 700;
     line-height: 1.5;
     margin-left: 10vw;
@@ -2582,7 +2583,7 @@ nav:hover {
   }
 
   #container-5-t2 {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 700;
     line-height: 1.5;
     margin-left: 10vw;
@@ -2590,7 +2591,7 @@ nav:hover {
   }
 
   #container-5-t3 {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 700;
     line-height: 1.5;
     margin-left: 30vw;
@@ -2603,14 +2604,12 @@ nav:hover {
     display: block;
     height: 100vh;
     width: 100vw;
-    /* padding-top: 100px; */
-    /* margin-bottom: 80px; */
   }
   #title6 {
     font-size: 2.5em;
     position: absolute;
-    padding-top: 5vh;
-    padding-left: 30vw;
+    padding-top: 0vh;
+    padding-left: 4.8vw;
     z-index: 2;
   }
 
@@ -2624,7 +2623,7 @@ nav:hover {
   }
 
   #container-6-t1 {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 700;
     line-height: 1.5;
     margin-left: 8vw;
@@ -2632,7 +2631,7 @@ nav:hover {
   }
 
   #container-6-t2 {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 700;
     line-height: 1.5;
     margin-left: 8vw;
@@ -2640,7 +2639,7 @@ nav:hover {
   }
 
   #container-6-t3 {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 700;
     line-height: 1.5;
     margin-left: 10%;
@@ -2654,7 +2653,7 @@ nav:hover {
 .cases-section {
   background-color: #f9f7ef;
   overflow: hidden;
-  padding: 70px;
+  padding: 20px;
   height: auto;
 }
 
@@ -2662,7 +2661,7 @@ nav:hover {
   display: flex;
   justify-content: center;
   text-align: center;
-  font-size: 100px;
+  font-size: 80px;
   font-weight: 205;
 }
 
@@ -3153,7 +3152,7 @@ nav:hover {
 }
 
 .card-tittle-size {
-  font-size: 40px;
+  font-size: 26.5px;
   font-family: "plaak-light";
   margin-top: 5px;
   margin-bottom: 5px;
@@ -3179,13 +3178,13 @@ nav:hover {
     transform: translate3d(0, 0, 0);
   }
   to {
-    transform: translate3d(270%, 0, 0);
+    transform: translate3d(60%, 0, 0);
   }
 }
 
 @keyframes slideReverse {
   from {
-    transform: translate3d(270%, 0, 0);
+    transform: translate3d(60%, 0, 0);
   }
   to {
     transform: translate3d(0, 0, 0);
@@ -3208,7 +3207,7 @@ nav:hover {
   margin-top: 28px;
   margin-left: 2.5px;
   text-align: center;
-  font-size: 17px;
+  font-size: 13px;
   font-family: "plaak-bold";
 }
 
@@ -3219,7 +3218,7 @@ nav:hover {
 
 .team-card-text {
   text-align: justify;
-  font-size: 16.8px;
+  font-size: 13px;
   line-height: 1.7;
   font-weight: bold;
   letter-spacing: 3px;
@@ -3229,7 +3228,7 @@ nav:hover {
   outline: none;
   background-color: transparent;
   text-align: justify;
-  font-size: 16.8px;
+  font-size: 13px;
   letter-spacing: 3px;
   font-weight: bold;
   font-family: "plaak-light";
@@ -3244,15 +3243,15 @@ nav:hover {
 /* arrow */
 
 .arrow1 {
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   -webkit-transform: rotate(45deg);
   border-left: none;
   border-top: none;
   border-right: 2px #000000 solid;
   border-bottom: 2px #000000 solid;
   margin-right: 30px;
-  margin-top: 15px;
+  margin-top: 10px;
   align-items: center;
 }
 
