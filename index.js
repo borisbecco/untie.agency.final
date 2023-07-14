@@ -495,7 +495,7 @@ var images = carousel.getElementsByTagName("img");
 var indicatorsContainer = document.querySelector(".indicators");
 var carouselContainer = document.querySelector(".carousel-container");
 var currentIndex = 0;
-var colors = ["#214733", "#262626", "#214733", "#912a5b"];
+var colors = ["#214733", "#262626", "#a42f33", "#912a5b"];
 
 function showImage(index) {
   if (index < 0) {
