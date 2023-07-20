@@ -74,27 +74,26 @@ window.addEventListener("scroll", function () {
   textBar.style.transform = `translate3d(0, ${y}px, 0)`;
 });
 
-// paralax second - section
+//  paralax second - section
 
-const carouselContainer1 = document.querySelector(".carousel");
-const secondSection = document.querySelector(".second-section");
-const secondSectionOffsetTop = secondSection.offsetTop;
-const secondSectionHeight = secondSection.offsetHeight;
-const carouselContainerHeight = carouselContainer1.offsetHeight;
+//  const carouselContainer1 = document.querySelector(".carousel");
+//  const secondSection = document.querySelector(".second-section");
+//  const secondSectionOffsetTop = secondSection.offsetTop;
+//  const secondSectionHeight = secondSection.offsetHeight;
+//  const carouselContainerHeight = carouselContainer1.offsetHeight;
 
-window.addEventListener("scroll", function () {
-  const scrollPosition = window.scrollY + window.innerHeight;
+//  window.addEventListener("scroll", function () {
+//    const scrollPosition = window.scrollY + window.innerHeight;
 
-  // Verificar si la parte inferior del selector es visible en la pantalla
-  if (scrollPosition > secondSectionOffsetTop + secondSectionHeight) {
-    const speed = carouselContainer1.getAttribute("data-speed");
-    const y =
-      ((scrollPosition - (secondSectionOffsetTop + secondSectionHeight)) *
-        speed) /
-      100;
-    carouselContainer1.style.transform = `translate3d(0, ${y}px, 0)`;
-  }
-});
+//    if (scrollPosition > secondSectionOffsetTop + secondSectionHeight) {
+//      const speed = carouselContainer1.getAttribute("data-speed");
+//      const y =
+//        ((scrollPosition - (secondSectionOffsetTop + secondSectionHeight)) *
+//          speed) /
+//        100;
+//      carouselContainer1.style.transform = `translate3d(0, ${y}px, 0)`;
+//    }
+//  });
 
 // paralax wwd - page
 
@@ -495,7 +494,7 @@ var images = carousel.getElementsByTagName("img");
 var indicatorsContainer = document.querySelector(".indicators");
 var carouselContainer = document.querySelector(".carousel-container");
 var currentIndex = 0;
-var colors = ["#214733", "#262626", "#a42f33", "#912a5b"];
+var colors = ["#f9f7ef", "#f9f7ef", "#f9f7ef", "#f9f7ef"];
 
 function showImage(index) {
   if (index < 0) {
