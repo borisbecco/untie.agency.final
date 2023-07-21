@@ -237,66 +237,63 @@ window.addEventListener("scroll", function () {
 
 // custom-mouse
 
-document.addEventListener("mousemove", function (event) {
+document.addEventListener("DOMContentLoaded", function () {
   var customMouse = document.getElementById("custom-mouse");
+  var inThirdSection = false; // Bandera para indicar si estamos dentro de la tercera sección
 
-  // Verificar si el overlay está abierto
-  var overlay = document.getElementById("overlay");
-  if (overlay.style.display === "block") {
-    // Reducir el tamaño del cursor cuando el overlay está abierto
-    customMouse.style.width = "10px";
-    customMouse.style.height = "10px";
-  } else {
-    // Restablecer el tamaño del cursor cuando el overlay está cerrado
-    customMouse.style.width = "15px";
-    customMouse.style.height = "15px";
-  }
+  document.addEventListener("mousemove", function (event) {
+    var overlay = document.getElementById("overlay");
+    var thirdSection = document.getElementById("third-section");
+    var thirdSectionRect = thirdSection.getBoundingClientRect();
+    var thirdSectionTop = thirdSectionRect.top;
+    var thirdSectionBottom = thirdSectionRect.bottom;
+    var thirdSectionLeft = thirdSectionRect.left;
+    var thirdSectionRight = thirdSectionRect.right;
 
-  var thirdSection = document.getElementById("third-section");
-  var thirdSectionRect = thirdSection.getBoundingClientRect();
-  var thirdSectionTop = thirdSectionRect.top;
-  var thirdSectionBottom = thirdSectionRect.bottom;
-  var thirdSectionLeft = thirdSectionRect.left;
-  var thirdSectionRight = thirdSectionRect.right;
+    if (overlay.style.display === "block") {
+      // Reducir el tamaño del cursor cuando el overlay está abierto
+      customMouse.style.width = "10px";
+      customMouse.style.height = "10px";
+    } else {
+      // Restablecer el tamaño del cursor cuando el overlay está cerrado
+      customMouse.style.width = "15px";
+      customMouse.style.height = "15px";
+    }
 
-  if (overlay.style.display === "block") {
-    // Estilos del cursor cuando el overlay está abierto
-    customMouse.style.width = "15px";
-    customMouse.style.height = "15px";
-    customMouse.style.mixBlendMode = "exclusion";
-  } else if (
-    event.clientY >= thirdSectionTop &&
-    event.clientY <= thirdSectionBottom &&
-    event.clientX >= thirdSectionLeft &&
-    event.clientX <= thirdSectionRight
-  ) {
-    // Estilos del cursor cuando está dentro de la sección "thirdSection"
-    customMouse.style.width = "15px";
-    customMouse.style.height = "15px";
-    customMouse.style.backgroundColor = "#a42f33";
-    customMouse.style.mixBlendMode = "normal";
-  } else {
-    // Estilos del cursor por defecto cuando está fuera de la sección "thirdSection"
-    customMouse.style.width = "15px";
-    customMouse.style.height = "15px";
-    customMouse.style.backgroundColor = "";
-    customMouse.style.mixBlendMode = "";
-  }
+    if (
+      event.clientY >= thirdSectionTop &&
+      event.clientY <= thirdSectionBottom &&
+      event.clientX >= thirdSectionLeft &&
+      event.clientX <= thirdSectionRight
+    ) {
+      // Estilos del cursor cuando está dentro de la sección "thirdSection"
+      customMouse.style.width = "15px";
+      customMouse.style.height = "15px";
+      customMouse.style.backgroundColor = "#a42f33";
+      customMouse.style.mixBlendMode = "normal";
+      inThirdSection = true; // Establecer la bandera en verdadero si estamos dentro de la tercera sección
+    } else {
+      // Estilos del cursor por defecto cuando está fuera de la sección "thirdSection"
+      customMouse.style.width = "15px";
+      customMouse.style.height = "15px";
+      customMouse.style.backgroundColor = "";
+      customMouse.style.mixBlendMode = "";
+      inThirdSection = false; // Establecer la bandera en falso si estamos fuera de la tercera sección
+    }
 
-  // Actualizar la posición del cursor
-  customMouse.style.left = event.clientX - 10 + "px";
-  customMouse.style.top = event.clientY - 10 + "px";
+    // Actualizar la posición del cursor
+    customMouse.style.left = event.clientX - 10 + "px";
+    customMouse.style.top = event.clientY - 10 + "px";
+  });
+
+  document.addEventListener("mousedown", function () {
+    customMouse.style.backgroundColor = inThirdSection ? "#a42f33" : "white"; // Restablecer el color solo si estamos en la tercera sección
+  });
+
+  document.addEventListener("mouseup", function () {
+    customMouse.style.backgroundColor = inThirdSection ? "#a42f33" : "white"; // Restablecer el color solo si estamos en la tercera sección
+  });
 });
-
-document.addEventListener("mousedown", function () {
-  var customMouse = document.getElementById("custom-mouse");
-  customMouse.style.backgroundColor = "white";
-});
-document.addEventListener("mouseup", function () {
-  var customMouse = document.getElementById("custom-mouse");
-  customMouse.style.backgroundColor = "white";
-});
-
 // custom-zoom
 
 document.addEventListener("mouseover", function (event) {
