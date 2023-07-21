@@ -97,143 +97,143 @@ window.addEventListener("scroll", function () {
 
 // paralax wwd - page
 
-const container1 = document.querySelector(".container-1");
-const container1Parallax = document.querySelector(".container-1-parallax");
-const container1OffsetTop = container1.offsetTop;
-const container1Height = container1.offsetHeight;
+// const container1 = document.querySelector(".container-1");
+// const container1Parallax = document.querySelector(".container-1-parallax");
+// const container1OffsetTop = container1.offsetTop;
+// const container1Height = container1.offsetHeight;
 
-function handleScrollContainer1() {
-  if (window.innerWidth >= 991) {
-    if (
-      window.scrollY + window.innerHeight >
-      container1OffsetTop + container1Height
-    ) {
-      const speed = container1Parallax.getAttribute("data-speed");
-      const y = ((window.scrollY - container1OffsetTop) * speed) / 80;
-      container1Parallax.style.transform = `translate3d(0, ${y}px, 0)`;
-    }
-  } else {
-    container1Parallax.style.transform = "none";
-  }
-}
+// function handleScrollContainer1() {
+//   if (window.innerWidth >= 991) {
+//     if (
+//       window.scrollY + window.innerHeight >
+//       container1OffsetTop + container1Height
+//     ) {
+//       const speed = container1Parallax.getAttribute("data-speed");
+//       const y = ((window.scrollY - container1OffsetTop) * speed) / 80;
+//       container1Parallax.style.transform = `translate3d(0, ${y}px, 0)`;
+//     }
+//   } else {
+//     container1Parallax.style.transform = "none";
+//   }
+// }
 
-window.addEventListener("scroll", handleScrollContainer1);
-window.addEventListener("resize", handleScrollContainer1);
+// window.addEventListener("scroll", handleScrollContainer1);
+// window.addEventListener("resize", handleScrollContainer1);
 
-const container2 = document.querySelector(".container-2");
-const container2Parallax = document.querySelector(".container-2-parallax");
-const container2OffsetTop = container2.offsetTop;
-const container2Height = container2.offsetHeight;
+// const container2 = document.querySelector(".container-2");
+// const container2Parallax = document.querySelector(".container-2-parallax");
+// const container2OffsetTop = container2.offsetTop;
+// const container2Height = container2.offsetHeight;
 
-function handleScrollContainer2() {
-  if (window.innerWidth >= 991) {
-    if (
-      window.scrollY + window.innerHeight >
-      container2OffsetTop + container2Height
-    ) {
-      const speed = container2Parallax.getAttribute("data-speed");
-      const y = ((window.scrollY - container2OffsetTop) * speed) / 80;
-      container2Parallax.style.transform = `translate3d(0, ${y}px, 0)`;
-    }
-  } else {
-    container2Parallax.style.transform = "none";
-  }
-}
+// function handleScrollContainer2() {
+//   if (window.innerWidth >= 991) {
+//     if (
+//       window.scrollY + window.innerHeight >
+//       container2OffsetTop + container2Height
+//     ) {
+//       const speed = container2Parallax.getAttribute("data-speed");
+//       const y = ((window.scrollY - container2OffsetTop) * speed) / 80;
+//       container2Parallax.style.transform = `translate3d(0, ${y}px, 0)`;
+//     }
+//   } else {
+//     container2Parallax.style.transform = "none";
+//   }
+// }
 
-window.addEventListener("scroll", handleScrollContainer2);
-window.addEventListener("resize", handleScrollContainer2);
+// window.addEventListener("scroll", handleScrollContainer2);
+// window.addEventListener("resize", handleScrollContainer2);
 
-const container3 = document.querySelector(".container-3");
-const container3Parallax = document.querySelector(".container-3-parallax");
-const container3OffsetTop = container3.offsetTop;
-const container3Height = container3.offsetHeight;
+// const container3 = document.querySelector(".container-3");
+// const container3Parallax = document.querySelector(".container-3-parallax");
+// const container3OffsetTop = container3.offsetTop;
+// const container3Height = container3.offsetHeight;
 
-function handleScrollContainer3() {
-  if (window.innerWidth >= 991) {
-    if (
-      window.scrollY + window.innerHeight >
-      container3OffsetTop + container3Height
-    ) {
-      const speed = container3Parallax.getAttribute("data-speed");
-      const y = ((window.scrollY - container3OffsetTop) * speed) / 80;
-      container3Parallax.style.transform = `translate3d(0, ${y}px, 0)`;
-    }
-  } else {
-    container3Parallax.style.transform = "none";
-  }
-}
+// function handleScrollContainer3() {
+//   if (window.innerWidth >= 991) {
+//     if (
+//       window.scrollY + window.innerHeight >
+//       container3OffsetTop + container3Height
+//     ) {
+//       const speed = container3Parallax.getAttribute("data-speed");
+//       const y = ((window.scrollY - container3OffsetTop) * speed) / 80;
+//       container3Parallax.style.transform = `translate3d(0, ${y}px, 0)`;
+//     }
+//   } else {
+//     container3Parallax.style.transform = "none";
+//   }
+// }
 
-window.addEventListener("scroll", handleScrollContainer3);
-window.addEventListener("resize", handleScrollContainer3);
+// window.addEventListener("scroll", handleScrollContainer3);
+// window.addEventListener("resize", handleScrollContainer3);
 
-const container4 = document.querySelector(".container-4");
-const container4Parallax = document.querySelector(".container-4-parallax");
-const container4OffsetTop = container4.offsetTop;
-const container4Height = container4.offsetHeight;
+// const container4 = document.querySelector(".container-4");
+// const container4Parallax = document.querySelector(".container-4-parallax");
+// const container4OffsetTop = container4.offsetTop;
+// const container4Height = container4.offsetHeight;
 
-function handleScrollContainer4() {
-  if (window.innerWidth >= 991) {
-    if (
-      window.scrollY + window.innerHeight >
-      container4OffsetTop + container4Height
-    ) {
-      const speed = container4Parallax.getAttribute("data-speed");
-      const y = ((window.scrollY - container4OffsetTop) * speed) / 80;
-      container4Parallax.style.transform = `translate3d(0, ${y}px, 0)`;
-    }
-  } else {
-    container4Parallax.style.transform = "none";
-  }
-}
+// function handleScrollContainer4() {
+//   if (window.innerWidth >= 991) {
+//     if (
+//       window.scrollY + window.innerHeight >
+//       container4OffsetTop + container4Height
+//     ) {
+//       const speed = container4Parallax.getAttribute("data-speed");
+//       const y = ((window.scrollY - container4OffsetTop) * speed) / 80;
+//       container4Parallax.style.transform = `translate3d(0, ${y}px, 0)`;
+//     }
+//   } else {
+//     container4Parallax.style.transform = "none";
+//   }
+// }
 
-window.addEventListener("scroll", handleScrollContainer4);
-window.addEventListener("resize", handleScrollContainer4);
+// window.addEventListener("scroll", handleScrollContainer4);
+// window.addEventListener("resize", handleScrollContainer4);
 
-const container5 = document.querySelector(".container-5");
-const container5Parallax = document.querySelector(".container-5-parallax");
-const container5OffsetTop = container5.offsetTop;
-const container5Height = container5.offsetHeight;
+// const container5 = document.querySelector(".container-5");
+// const container5Parallax = document.querySelector(".container-5-parallax");
+// const container5OffsetTop = container5.offsetTop;
+// const container5Height = container5.offsetHeight;
 
-function handleScrollContainer5() {
-  if (window.innerWidth >= 991) {
-    if (
-      window.scrollY + window.innerHeight >
-      container5OffsetTop + container5Height
-    ) {
-      const speed = container5Parallax.getAttribute("data-speed");
-      const y = ((window.scrollY - container5OffsetTop) * speed) / 80;
-      container5Parallax.style.transform = `translate3d(0, ${y}px, 0)`;
-    }
-  } else {
-    container5Parallax.style.transform = "none";
-  }
-}
+// function handleScrollContainer5() {
+//   if (window.innerWidth >= 991) {
+//     if (
+//       window.scrollY + window.innerHeight >
+//       container5OffsetTop + container5Height
+//     ) {
+//       const speed = container5Parallax.getAttribute("data-speed");
+//       const y = ((window.scrollY - container5OffsetTop) * speed) / 80;
+//       container5Parallax.style.transform = `translate3d(0, ${y}px, 0)`;
+//     }
+//   } else {
+//     container5Parallax.style.transform = "none";
+//   }
+// }
 
-window.addEventListener("scroll", handleScrollContainer5);
-window.addEventListener("resize", handleScrollContainer5);
+// window.addEventListener("scroll", handleScrollContainer5);
+// window.addEventListener("resize", handleScrollContainer5);
 
-const container6 = document.querySelector(".container-6");
-const container6Parallax = document.querySelector(".container-6-parallax");
-const container6OffsetTop = container6.offsetTop;
-const container6Height = container6.offsetHeight;
+// const container6 = document.querySelector(".container-6");
+// const container6Parallax = document.querySelector(".container-6-parallax");
+// const container6OffsetTop = container6.offsetTop;
+// const container6Height = container6.offsetHeight;
 
-function handleScrollContainer6() {
-  if (window.innerWidth >= 991) {
-    if (
-      window.scrollY + window.innerHeight >
-      container6OffsetTop + container6Height
-    ) {
-      const speed = container6Parallax.getAttribute("data-speed");
-      const y = ((window.scrollY - container6OffsetTop) * speed) / 80;
-      container6Parallax.style.transform = `translate3d(0, ${y}px, 0)`;
-    }
-  } else {
-    container6Parallax.style.transform = "none";
-  }
-}
+// function handleScrollContainer6() {
+//   if (window.innerWidth >= 991) {
+//     if (
+//       window.scrollY + window.innerHeight >
+//       container6OffsetTop + container6Height
+//     ) {
+//       const speed = container6Parallax.getAttribute("data-speed");
+//       const y = ((window.scrollY - container6OffsetTop) * speed) / 80;
+//       container6Parallax.style.transform = `translate3d(0, ${y}px, 0)`;
+//     }
+//   } else {
+//     container6Parallax.style.transform = "none";
+//   }
+// }
 
-window.addEventListener("scroll", handleScrollContainer6);
-window.addEventListener("resize", handleScrollContainer6);
+// window.addEventListener("scroll", handleScrollContainer6);
+// window.addEventListener("resize", handleScrollContainer6);
 
 // custom-mouse
 
@@ -657,26 +657,22 @@ teamCards.forEach(function (card) {
 
 // what-we-do
 
-const upArrow = document.getElementById("up");
-const downArrow = document.getElementById("down");
-const overlay1 = document.querySelector(".overlay1");
+const wwdIndicators = document.querySelector(".wwd-indicators");
 
-upArrow.addEventListener("click", function () {});
-
-downArrow.addEventListener("click", function () {});
-
-function scrollDown() {
-  window.scrollBy({
-    top: window.innerHeight,
-    behavior: "smooth",
-  });
+function handleIndicatorClick(event) {
+  const target = event.target;
+  if (target.classList.contains("clickable") && target.dataset.target) {
+    const sectionId = target.dataset.target;
+    scrollToSection(sectionId);
+  }
 }
 
-function scrollUp() {
-  window.scrollBy({
-    top: -window.innerHeight,
-    behavior: "smooth",
-  });
+function scrollToSection(sectionId) {
+  const targetSection = document.getElementById(sectionId);
+
+  if (targetSection) {
+    targetSection.scrollIntoView({ behavior: "smooth" });
+  }
 }
 
 //cases
