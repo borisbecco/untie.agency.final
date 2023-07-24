@@ -1036,7 +1036,7 @@ nav:hover {
   position: absolute;
   line-height: 1.1;
   color: #000000;
-  font-size: 0.9rem;
+  font-size: 12px;
   padding: 5px;
   z-index: 1;
   font-family: "plaak-regular";
@@ -2713,6 +2713,7 @@ nav:hover {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+  margin-right: 70px;
 }
 
 .cases-carousel-container {
@@ -2866,6 +2867,7 @@ nav:hover {
     align-items: center;
     justify-content: center;
     margin-bottom: 0;
+    margin-right: 0;
   }
 
   .cases-carousel-container {
