@@ -1,42 +1,49 @@
 $(document).ready(function () {
   // Captura el clic en los enlaces del menú
   $(".nav-menu-b a, .nav-menu-a a").click(function (e) {
-    e.preventDefault(); // Evita que se realice la acción predeterminada del enlace
-
-    // Oculta el overlay
-    $("#overlay").fadeOut();
     // Obtiene el destino del enlace
     var target = $(this).attr("href");
 
-    // Desplaza la ventana hacia la sección correspondiente
-    $("html, body").animate(
-      {
-        scrollTop: $(target).offset().top,
-      },
-      1000,
-      function () {
-        // Restaura los estilos de la barra de navegación
-        overlay.style.display = "none";
-        toggleButton.classList.remove("newPosition");
-        logo.classList.remove("logo-color-change");
-        navBar.classList.remove("navbar-color-change");
-        navBar.classList.remove("nav-hover-change");
-        hamburguerButton.classList.remove("hamburger-button-color-change");
-        languageButtonsContainer.classList.remove(
-          "language-button-container-change"
-        );
-        languageSpanButton.classList.remove(
-          "language-button-span-color-change"
-        );
-        languageButtons.forEach((button) =>
-          button.classList.remove("language-button-color-change")
-        );
-        document.getElementById("logo1").style.animation =
-          "slide1 1s ease-in-out forwards";
-        document.getElementById("logo2").style.animation =
-          "slide3 1s ease-in-out forwards";
-      }
-    );
+    // Verifica si el enlace termina con ".html"
+    if (target.endsWith(".html")) {
+      // No evita la acción predeterminada del enlace para los enlaces que terminan con ".html"
+      return true;
+    } else {
+      e.preventDefault(); // Evita que se realice la acción predeterminada del enlace
+
+      // Oculta el overlay
+      $("#overlay").fadeOut();
+
+      // Desplaza la ventana hacia la sección correspondiente
+      $("html, body").animate(
+        {
+          scrollTop: $(target).offset().top,
+        },
+        1000,
+        function () {
+          // Restaura los estilos de la barra de navegación
+          overlay.style.display = "none";
+          toggleButton.classList.remove("newPosition");
+          logo.classList.remove("logo-color-change");
+          navBar.classList.remove("navbar-color-change");
+          navBar.classList.remove("nav-hover-change");
+          hamburguerButton.classList.remove("hamburger-button-color-change");
+          languageButtonsContainer.classList.remove(
+            "language-button-container-change"
+          );
+          languageSpanButton.classList.remove(
+            "language-button-span-color-change"
+          );
+          languageButtons.forEach((button) =>
+            button.classList.remove("language-button-color-change")
+          );
+          document.getElementById("logo1").style.animation =
+            "slide1 1s ease-in-out forwards";
+          document.getElementById("logo2").style.animation =
+            "slide3 1s ease-in-out forwards";
+        }
+      );
+    }
   });
 });
 
@@ -73,167 +80,6 @@ window.addEventListener("scroll", function () {
   const y = (window.pageYOffset * speed) / 45;
   textBar.style.transform = `translate3d(0, ${y}px, 0)`;
 });
-
-//  paralax second - section
-
-//  const carouselContainer1 = document.querySelector(".carousel");
-//  const secondSection = document.querySelector(".second-section");
-//  const secondSectionOffsetTop = secondSection.offsetTop;
-//  const secondSectionHeight = secondSection.offsetHeight;
-//  const carouselContainerHeight = carouselContainer1.offsetHeight;
-
-//  window.addEventListener("scroll", function () {
-//    const scrollPosition = window.scrollY + window.innerHeight;
-
-//    if (scrollPosition > secondSectionOffsetTop + secondSectionHeight) {
-//      const speed = carouselContainer1.getAttribute("data-speed");
-//      const y =
-//        ((scrollPosition - (secondSectionOffsetTop + secondSectionHeight)) *
-//          speed) /
-//        100;
-//      carouselContainer1.style.transform = `translate3d(0, ${y}px, 0)`;
-//    }
-//  });
-
-// paralax wwd - page
-
-// const container1 = document.querySelector(".container-1");
-// const container1Parallax = document.querySelector(".container-1-parallax");
-// const container1OffsetTop = container1.offsetTop;
-// const container1Height = container1.offsetHeight;
-
-// function handleScrollContainer1() {
-//   if (window.innerWidth >= 991) {
-//     if (
-//       window.scrollY + window.innerHeight >
-//       container1OffsetTop + container1Height
-//     ) {
-//       const speed = container1Parallax.getAttribute("data-speed");
-//       const y = ((window.scrollY - container1OffsetTop) * speed) / 80;
-//       container1Parallax.style.transform = `translate3d(0, ${y}px, 0)`;
-//     }
-//   } else {
-//     container1Parallax.style.transform = "none";
-//   }
-// }
-
-// window.addEventListener("scroll", handleScrollContainer1);
-// window.addEventListener("resize", handleScrollContainer1);
-
-// const container2 = document.querySelector(".container-2");
-// const container2Parallax = document.querySelector(".container-2-parallax");
-// const container2OffsetTop = container2.offsetTop;
-// const container2Height = container2.offsetHeight;
-
-// function handleScrollContainer2() {
-//   if (window.innerWidth >= 991) {
-//     if (
-//       window.scrollY + window.innerHeight >
-//       container2OffsetTop + container2Height
-//     ) {
-//       const speed = container2Parallax.getAttribute("data-speed");
-//       const y = ((window.scrollY - container2OffsetTop) * speed) / 80;
-//       container2Parallax.style.transform = `translate3d(0, ${y}px, 0)`;
-//     }
-//   } else {
-//     container2Parallax.style.transform = "none";
-//   }
-// }
-
-// window.addEventListener("scroll", handleScrollContainer2);
-// window.addEventListener("resize", handleScrollContainer2);
-
-// const container3 = document.querySelector(".container-3");
-// const container3Parallax = document.querySelector(".container-3-parallax");
-// const container3OffsetTop = container3.offsetTop;
-// const container3Height = container3.offsetHeight;
-
-// function handleScrollContainer3() {
-//   if (window.innerWidth >= 991) {
-//     if (
-//       window.scrollY + window.innerHeight >
-//       container3OffsetTop + container3Height
-//     ) {
-//       const speed = container3Parallax.getAttribute("data-speed");
-//       const y = ((window.scrollY - container3OffsetTop) * speed) / 80;
-//       container3Parallax.style.transform = `translate3d(0, ${y}px, 0)`;
-//     }
-//   } else {
-//     container3Parallax.style.transform = "none";
-//   }
-// }
-
-// window.addEventListener("scroll", handleScrollContainer3);
-// window.addEventListener("resize", handleScrollContainer3);
-
-// const container4 = document.querySelector(".container-4");
-// const container4Parallax = document.querySelector(".container-4-parallax");
-// const container4OffsetTop = container4.offsetTop;
-// const container4Height = container4.offsetHeight;
-
-// function handleScrollContainer4() {
-//   if (window.innerWidth >= 991) {
-//     if (
-//       window.scrollY + window.innerHeight >
-//       container4OffsetTop + container4Height
-//     ) {
-//       const speed = container4Parallax.getAttribute("data-speed");
-//       const y = ((window.scrollY - container4OffsetTop) * speed) / 80;
-//       container4Parallax.style.transform = `translate3d(0, ${y}px, 0)`;
-//     }
-//   } else {
-//     container4Parallax.style.transform = "none";
-//   }
-// }
-
-// window.addEventListener("scroll", handleScrollContainer4);
-// window.addEventListener("resize", handleScrollContainer4);
-
-// const container5 = document.querySelector(".container-5");
-// const container5Parallax = document.querySelector(".container-5-parallax");
-// const container5OffsetTop = container5.offsetTop;
-// const container5Height = container5.offsetHeight;
-
-// function handleScrollContainer5() {
-//   if (window.innerWidth >= 991) {
-//     if (
-//       window.scrollY + window.innerHeight >
-//       container5OffsetTop + container5Height
-//     ) {
-//       const speed = container5Parallax.getAttribute("data-speed");
-//       const y = ((window.scrollY - container5OffsetTop) * speed) / 80;
-//       container5Parallax.style.transform = `translate3d(0, ${y}px, 0)`;
-//     }
-//   } else {
-//     container5Parallax.style.transform = "none";
-//   }
-// }
-
-// window.addEventListener("scroll", handleScrollContainer5);
-// window.addEventListener("resize", handleScrollContainer5);
-
-// const container6 = document.querySelector(".container-6");
-// const container6Parallax = document.querySelector(".container-6-parallax");
-// const container6OffsetTop = container6.offsetTop;
-// const container6Height = container6.offsetHeight;
-
-// function handleScrollContainer6() {
-//   if (window.innerWidth >= 991) {
-//     if (
-//       window.scrollY + window.innerHeight >
-//       container6OffsetTop + container6Height
-//     ) {
-//       const speed = container6Parallax.getAttribute("data-speed");
-//       const y = ((window.scrollY - container6OffsetTop) * speed) / 80;
-//       container6Parallax.style.transform = `translate3d(0, ${y}px, 0)`;
-//     }
-//   } else {
-//     container6Parallax.style.transform = "none";
-//   }
-// }
-
-// window.addEventListener("scroll", handleScrollContainer6);
-// window.addEventListener("resize", handleScrollContainer6);
 
 // custom-mouse
 
