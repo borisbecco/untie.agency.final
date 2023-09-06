@@ -780,12 +780,12 @@ nav:hover {
 .second-section {
   height: 140vh;
   width: auto;
-  background-color: #a42f33;
+  background-color: #f9f7ef;
   position: relative;
 }
 
 .carousel-container {
-  background-color: #a42f33;
+  background-color: #f9f7ef;
   height: 140vh;
   display: flex;
   justify-content: center;
