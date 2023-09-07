@@ -1020,7 +1020,7 @@ nav:hover {
   overflow: hidden;
   position: relative;
   object-fit: cover;
-  background-color: #dddddd !important;
+  background-color: #f9f7ef !important;
   display: flex;
   flex-direction: column;
 }
