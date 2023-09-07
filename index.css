@@ -1383,9 +1383,9 @@ nav:hover {
   height: 100vh;
   background-color: #f9f7ef; /* Color de fondo principal */
   padding: 20px;
-  background-image: radial-gradient(circle,rgba(255, 255, 255, 1), /* Color 1 con opacidad 0.5 */
-  rgba(209, 209, 209, 1),
-  rgba(146, 146, 146, 0.2) );
+  background-image: radial-gradient(circle,rgba(255, 255, 255, 0.62), /* Color 1 con opacidad 0.5 */
+  rgba(209, 209, 209, 0.62),
+  rgba(146, 146, 146, 0.124) );
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
