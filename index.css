@@ -1101,7 +1101,7 @@ nav:hover {
 }
 
 .card:hover img {
-  opacity: 0;
+  opacity: 0.1;
 }
 
 .row::after {
@@ -1136,7 +1136,7 @@ nav:hover {
     overflow: hidden;
     position: relative;
     object-fit: cover;
-    background-color: #dddddd !important;
+    background-color: #f9f7ef !important;
     display: flex; /* Utilizamos flexbox para el diseño flexible */
     flex-direction: column; /* Apilamos los elementos verticalmente */
   }
@@ -1187,7 +1187,7 @@ nav:hover {
     overflow: hidden;
     position: relative;
     object-fit: cover;
-    background-color: #dddddd !important;
+    background-color: #f9f7ef !important;
     display: flex; /* Utilizamos flexbox para el diseño flexible */
     flex-direction: column; /* Apilamos los elementos verticalmente */
   }
@@ -1351,7 +1351,7 @@ nav:hover {
     overflow: hidden;
     position: relative;
     object-fit: cover;
-    background-color: #dddddd !important;
+    background-color: #f9f7ef !important;
     display: flex; /* Utilizamos flexbox para el diseño flexible */
     flex-direction: column; /* Apilamos los elementos verticalmente */
   }
