@@ -1380,7 +1380,7 @@ nav:hover {
 .what-we-do-section {
   width: auto;
   overflow: hidden;
-  height: 90vh;
+  height: 100vh;
   background-color: #f9f7ef; /* Color de fondo principal */
   padding: 20px;
   background-image: radial-gradient(
