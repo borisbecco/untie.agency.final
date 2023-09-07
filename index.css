@@ -1383,30 +1383,7 @@ nav:hover {
   height: 100vh;
   background-color: #f9f7ef; /* Color de fondo principal */
   padding: 20px;
-  background-image: radial-gradient(
-      circle at 48.483072916666664% 47.757161458333336%,
-      rgba(8, 8, 8, 0.01) 0%,
-      35.989999999999995%,
-      rgba(8, 8, 8, 0) 59%
-    ),
-    radial-gradient(
-      circle at 48.4423828125% 47.708333333333336%,
-      rgba(8, 8, 8, 0.02) 0%,
-      28.139999999999993%,
-      rgba(8, 8, 8, 0) 67%
-    ),
-    radial-gradient(
-      circle at 28.134765625000004% 37.28841145833333%,
-      rgba(84, 76, 63, 0.01) 0%,
-      15.899999999999999%,
-      rgba(84, 76, 63, 0) 53%
-    ),
-    radial-gradient(
-      circle at 48.9013671875% 49.521484375%,
-      rgba(61, 55, 44, 0.05) 0%,
-      100%,
-      rgba(61, 55, 44, 0) 100%
-    );
+  background-image: radial-gradient(ellipse farthest-corner at 40% 40%, #ffffff, #d1d1d1, #929292);;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -1797,7 +1774,8 @@ nav:hover {
   line-height: 1.5;
 }
 
-@media screen and (min-width: 1451px) and (max-width: 1774px) {}
+@media screen and (min-width: 1451px) and (max-width: 1774px) {
+}
 .cases-carousel {
   width: 100%;
   height: 330px;
