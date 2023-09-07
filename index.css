@@ -1380,10 +1380,10 @@ nav:hover {
 .what-we-do-section {
   width: auto;
   overflow: hidden;
-  height: 100vh;
-  background-color: #f9f7ef; /* Color de fondo principal */
+  height: 88vh;
+  background-color: #f9f7ef;
   padding: 20px;
-  background-image: radial-gradient(circle,rgba(255, 255, 255, 0.62), /* Color 1 con opacidad 0.5 */
+  background-image: radial-gradient(circle,rgba(255, 255, 255, 0.62),
   rgba(209, 209, 209, 0.62),
   rgba(146, 146, 146, 0.124) );
   background-attachment: fixed;
@@ -1479,30 +1479,9 @@ nav:hover {
     height: 190vh;
     background-color: #f9f7ef; /* Color de fondo principal */
     padding: 20px;
-    background-image: radial-gradient(
-        circle at 48.483072916666664% 47.757161458333336%,
-        rgba(8, 8, 8, 0.01) 0%,
-        35.989999999999995%,
-        rgba(8, 8, 8, 0) 59%
-      ),
-      radial-gradient(
-        circle at 48.4423828125% 47.708333333333336%,
-        rgba(8, 8, 8, 0.02) 0%,
-        28.139999999999993%,
-        rgba(8, 8, 8, 0) 67%
-      ),
-      radial-gradient(
-        circle at 28.134765625000004% 37.28841145833333%,
-        rgba(84, 76, 63, 0.01) 0%,
-        15.899999999999999%,
-        rgba(84, 76, 63, 0) 53%
-      ),
-      radial-gradient(
-        circle at 48.9013671875% 49.521484375%,
-        rgba(61, 55, 44, 0.05) 0%,
-        100%,
-        rgba(61, 55, 44, 0) 100%
-      );
+    background-image: radial-gradient(circle,rgba(255, 255, 255, 0.62),
+    rgba(209, 209, 209, 0.62),
+    rgba(146, 146, 146, 0.124) );
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -1564,30 +1543,9 @@ nav:hover {
     height: 180vh;
     background-color: #f9f7ef; /* Color de fondo principal */
     padding: 20px;
-    background-image: radial-gradient(
-        circle at 48.483072916666664% 47.757161458333336%,
-        rgba(8, 8, 8, 0.01) 0%,
-        35.989999999999995%,
-        rgba(8, 8, 8, 0) 59%
-      ),
-      radial-gradient(
-        circle at 48.4423828125% 47.708333333333336%,
-        rgba(8, 8, 8, 0.02) 0%,
-        28.139999999999993%,
-        rgba(8, 8, 8, 0) 67%
-      ),
-      radial-gradient(
-        circle at 28.134765625000004% 37.28841145833333%,
-        rgba(84, 76, 63, 0.01) 0%,
-        15.899999999999999%,
-        rgba(84, 76, 63, 0) 53%
-      ),
-      radial-gradient(
-        circle at 48.9013671875% 49.521484375%,
-        rgba(61, 55, 44, 0.05) 0%,
-        100%,
-        rgba(61, 55, 44, 0) 100%
-      );
+    background-image: radial-gradient(circle,rgba(255, 255, 255, 0.62),
+    rgba(209, 209, 209, 0.62),
+    rgba(146, 146, 146, 0.124) );
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -1635,6 +1593,38 @@ nav:hover {
   }
 }
 
+/* contact-section */
+
+.contact-section {
+  width: auto;
+  overflow: hidden;
+  height: 80vh;
+  background-color: #f9f7ef;
+  padding: 20px;
+  background-image: radial-gradient(circle,rgba(255, 255, 255, 0.62),
+  rgba(209, 209, 209, 0.62),
+  rgba(146, 146, 146, 0.124) );
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.contact-text {
+  font-family: "plaak-regular";
+  display: block;
+  height: auto;
+  width: 1500px;
+  font-size: 60px;
+  text-align: left;
+  top: 215px;
+  position: relative;
+}
+
+.contact-text-a {
+  color: #1d1d1b;
+  text-decoration-line: underline;
+}
+
 /* cases-section */
 
 .cases-section {
@@ -1651,6 +1641,7 @@ nav:hover {
   text-align: center;
   font-size: 34px;
   font-weight: 205;
+  font-family: "plaak-regular";
 }
 
 .cases-sub-tittle {
@@ -1658,7 +1649,7 @@ nav:hover {
   justify-content: center;
   text-align: center;
   letter-spacing: 2px;
-  line-height: 1.4;
+  line-height: 1.6;
   font-size: 12px;
   margin-top: 25px;
 }
