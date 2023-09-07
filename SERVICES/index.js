@@ -238,5 +238,5 @@ toggleButton.addEventListener("click", function () {
 
 document.getElementById("overlay").addEventListener("click", function () {
   if (!event.target.closest("#nav-content"))
-    window.location.href = "index.html"; //
+    window.location.href = "/index.html"; //
 });  

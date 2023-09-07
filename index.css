@@ -1679,7 +1679,8 @@ nav:hover {
   justify-content: center;
   text-align: center;
   letter-spacing: 2px;
-  font-size: 13px;
+  line-height: 1.4;
+  font-size: 12px;
   margin-top: 25px;
 }
 
@@ -1723,7 +1724,7 @@ nav:hover {
 }
 
 .cases-carousel-containers {
-  margin-top: 100px;
+  margin-top: 60px;
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
