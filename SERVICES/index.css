@@ -115,10 +115,10 @@ nav {
 }
 
 #nav.scroll {
-  background-color: #f9f7ef;
-  opacity: 0.94;
+  /* background-color: #f9f7ef; */
+  opacity: 1;
   transition: 0.1s ease;
-  border-bottom: 0.1px solid darkgrey;
+  /* border-bottom: 0.1px solid darkgrey; */
 }
 
 @media screen and (max-width: 576px) {
