@@ -166,10 +166,9 @@ nav {
 }
 
 #nav.scroll {
-  background-color: #f9f7ef;
-  opacity: 0.94;
+  opacity: 1;
   transition: 0.1s ease;
-  border-bottom: 0.1px solid darkgrey;
+  /* border-bottom: 0.1px solid darkgrey; */
 }
 
 @media screen and (max-width: 576px) {
@@ -1649,9 +1648,9 @@ nav:hover {
   justify-content: center;
   text-align: center;
   letter-spacing: 2px;
-  line-height: 1.6;
+  line-height: 1.7;
   font-size: 12px;
-  margin-top: 25px;
+  margin-top: 20px;
 }
 
 .cases-carousel {
@@ -1694,7 +1693,7 @@ nav:hover {
 }
 
 .cases-carousel-containers {
-  margin-top: 60px;
+  margin-top: 45px;
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
