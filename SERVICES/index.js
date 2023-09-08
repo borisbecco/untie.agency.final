@@ -43,7 +43,7 @@ function redirectToSpanishIndex() {
   //EN
   
   function redirectToEnglishIndex() {
-    window.location.href = "../index.html";
+    window.location.href = "../../index.html";
   }
   
   let languageEn = document.querySelector(".language-en");
