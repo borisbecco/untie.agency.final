@@ -2947,18 +2947,3 @@ footer {
   }
 }
 
-.space-section2 {
-  height: 30vh;
-}
-/* services-section */
-
-.services-section {
-  margin-top: 200px;
-  background-color: #f4f3f3;
-  height: 150vh;
-  /* overflow: hidden; */
-}
-
-.services-main {
-  margin-bottom: 50px;
-}
