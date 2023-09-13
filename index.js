@@ -100,6 +100,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // Reducir el tamaño del cursor cuando el overlay está abierto
       customMouse.style.width = "10px";
       customMouse.style.height = "10px";
+      customMouse.style.mixBlendMode = "exclusion";
     } else {
       // Restablecer el tamaño del cursor cuando el overlay está cerrado
       customMouse.style.width = "15px";
@@ -497,26 +498,6 @@ teamCards.forEach(function (card) {
     }
   });
 });
-
-// what-we-do
-
-const wwdIndicators = document.querySelector(".wwd-indicators");
-
-function handleIndicatorClick(event) {
-  const target = event.target;
-  if (target.classList.contains("clickable") && target.dataset.target) {
-    const sectionId = target.dataset.target;
-    scrollToSection(sectionId);
-  }
-}
-
-function scrollToSection(sectionId) {
-  const targetSection = document.getElementById(sectionId);
-
-  if (targetSection) {
-    targetSection.scrollIntoView({ behavior: "smooth" });
-  }
-}
 
 //cases
 

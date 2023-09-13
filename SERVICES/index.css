@@ -73,6 +73,7 @@ body.overlay-open {
 
 .main-section {
   width: auto;
+  background-color: #f9f7ef;
 }
 
 /* Small screens (up to 576px) */
@@ -96,6 +97,7 @@ body.overlay-open {
   .main-section {
     height: 8vh;
     width: 100%;
+    background-color: #f9f7ef;
     padding: 0;
   }
 }
@@ -115,7 +117,7 @@ nav {
 }
 
 #nav.scroll {
-  /* background-color: #f9f7ef; */
+  /* background-color: transparent; */
   opacity: 1;
   transition: 0.1s ease;
   /* border-bottom: 0.1px solid darkgrey; */
@@ -544,7 +546,7 @@ nav:hover {
     top: 0;
     left: 0;
     width: 100vw;
-    max-height: 85%;
+    max-height: 100%;
     background-color: #1d1d1b;
     font-size: 38px;
     letter-spacing: -2.3px;

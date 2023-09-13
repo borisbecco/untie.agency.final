@@ -240,3 +240,54 @@ document.getElementById("overlay").addEventListener("click", function () {
   if (!event.target.closest("#nav-content"))
     window.location.href = "/index.html"; //
 });  
+
+//overlay-menu
+
+// Obtener el overlay y el cuerpo de la página
+const body = document.body;
+
+// Inicializar variable para llevar el seguimiento del estado del overlay
+let overlayActive = false;
+
+// Función para agregar la clase que desactiva el scroll
+function disableScroll() {
+  body.classList.add("overlay-open");
+}
+
+// Función para quitar la clase que desactiva el scroll
+function enableScroll() {
+  body.classList.remove("overlay-open");
+}
+
+// Función para alternar el estado del overlay
+function toggleOverlay() {
+  if (overlayActive) {
+    enableScroll();
+    overlay.style.display = "none";
+    overlayActive = false;
+  } else {
+    disableScroll();
+    overlay.style.display = "block";
+    overlayActive = true;
+  }
+}
+
+// Agregar evento al hacer clic en una opción del menú
+document.querySelectorAll("#nav-content a").forEach((a) => {
+  a.addEventListener("click", function () {
+    enableScroll();
+    toggleOverlay();
+  });
+});
+
+// Agregar evento al hacer clic en el botón de cerrar el overlay
+overlay.addEventListener("click", function (e) {
+  if (e.target.class === "nav-menu") {
+    toggleOverlay();
+  }
+});
+
+// Agregar evento al hacer clic en el botón de toggle
+document.getElementById("toggleButton").addEventListener("click", function () {
+  toggleOverlay();
+});
