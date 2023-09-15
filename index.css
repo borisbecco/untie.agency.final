@@ -1469,6 +1469,11 @@ nav:hover {
   height: auto;
 }
 
+.wwd-arrow:hover {
+  transform: scale(1.2); /* Escala la flecha al 120% del tamaño original */
+  transition: transform 0.3s ease; /* Agrega una transición suave para suavizar el efecto */
+}
+
 @media screen and (max-width: 577px) {
   .what-we-do-section {
     width: auto;

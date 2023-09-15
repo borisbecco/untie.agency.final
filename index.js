@@ -543,3 +543,13 @@ $(document).ready(function () {
       .show();
   });
 });
+
+
+$(document).ready(function() {
+  $(".wwd-links").click(function() {
+    // Obtén la URL del enlace contenido en este contenedor
+    var url = $(this).find(".wwd-link").attr("href");
+    // Redirige a la URL
+    window.location.href = url;
+  });
+});
