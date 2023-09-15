@@ -642,16 +642,16 @@ nav:hover {
 
 .services-main-subtitle {
   margin-top: 100px;
-  font-size: 16px;
+  font-size: 15px;
   font-family: "plaak-light";
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .services-main-title {
   font-size: 40px;
 }
 
 .services-photo1 {
-  margin-top: 30px;
+  margin-top: 20px;
   width: 100%;
   padding-bottom: 40.99%;
   background-image: url("/SERVICESPHOTOS/wwd2_foto1.jpg");
@@ -661,7 +661,7 @@ nav:hover {
 
 
 .services-photo2 {
-  margin-top: 30px;
+  margin-top: 20px;
   width: 100%;
   padding-bottom: 40.99%;
   background-image: url("/SERVICESPHOTOS/wwd2_foto2.jpg");
@@ -670,7 +670,7 @@ nav:hover {
 }
 
 .services-photo3 {
-  margin-top: 30px;
+  margin-top: 20px;
   width: 100%;
   padding-bottom: 40.99%;
   background-image: url("/SERVICESPHOTOS/wwd2_foto3.jpg");
@@ -680,7 +680,7 @@ nav:hover {
 
 
 .services-photo4 {
-  margin-top: 30px;
+  margin-top: 20px;
   width: 100%;
   padding-bottom: 40.99%;
   background-image: url("/SERVICESPHOTOS/wwd2_foto4.jpg");
@@ -690,7 +690,7 @@ nav:hover {
 
 
 .services-photo5 {
-  margin-top: 30px;
+  margin-top: 20px;
   width: 100%;
   padding-bottom: 40.99%;
   background-image: url("/SERVICESPHOTOS/wwd2_foto5.jpg");
@@ -699,7 +699,7 @@ nav:hover {
 }
 
 .services-photo6 {
-  margin-top: 30px;
+  margin-top: 20px;
   width: 100%;
   padding-bottom: 40.99%;
   background-image: url("/SERVICESPHOTOS/wwd2_foto6.jpg");
@@ -928,7 +928,7 @@ nav:hover {
     margin-top: 100px;
     font-size: 14px;
     font-family: "plaak-light";
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
   .services-main-title {
     font-size: 28px;
