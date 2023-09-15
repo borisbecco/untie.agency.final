@@ -1310,7 +1310,6 @@ nav:hover {
   .card span {
     font-size: 0.7rem;
     margin-top: 35vh;
-
   }
 }
 
@@ -1378,9 +1377,12 @@ nav:hover {
   height: 100vh;
   background-color: #f9f7ef;
   padding: 20px;
-  background-image: radial-gradient(circle,rgba(255, 255, 255, 0.62),
-  rgba(209, 209, 209, 0.62),
-  rgba(146, 146, 146, 0.124) );
+  background-image: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.62),
+    rgba(209, 209, 209, 0.62),
+    rgba(146, 146, 146, 0.124)
+  );
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -1474,9 +1476,12 @@ nav:hover {
     height: 190vh;
     background-color: #f9f7ef; /* Color de fondo principal */
     padding: 20px;
-    background-image: radial-gradient(circle,rgba(255, 255, 255, 0.62),
-    rgba(209, 209, 209, 0.62),
-    rgba(146, 146, 146, 0.124) );
+    background-image: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0.62),
+      rgba(209, 209, 209, 0.62),
+      rgba(146, 146, 146, 0.124)
+    );
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -1538,9 +1543,12 @@ nav:hover {
     height: 180vh;
     background-color: #f9f7ef; /* Color de fondo principal */
     padding: 20px;
-    background-image: radial-gradient(circle,rgba(255, 255, 255, 0.62),
-    rgba(209, 209, 209, 0.62),
-    rgba(146, 146, 146, 0.124) );
+    background-image: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0.62),
+      rgba(209, 209, 209, 0.62),
+      rgba(146, 146, 146, 0.124)
+    );
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -1586,38 +1594,6 @@ nav:hover {
     box-sizing: border-box;
     margin-top: 40px;
   }
-}
-
-/* contact-section */
-
-.contact-section {
-  width: auto;
-  overflow: hidden;
-  height: 80vh;
-  background-color: #f9f7ef;
-  padding: 20px;
-  background-image: radial-gradient(circle,rgba(255, 255, 255, 0.62),
-  rgba(209, 209, 209, 0.62),
-  rgba(146, 146, 146, 0.124) );
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-}
-
-.contact-text {
-  font-family: "plaak-regular";
-  display: block;
-  height: auto;
-  width: 1500px;
-  font-size: 60px;
-  text-align: left;
-  top: 215px;
-  position: relative;
-}
-
-.contact-text-a {
-  color: #1d1d1b;
-  text-decoration-line: underline;
 }
 
 /* cases-section */
@@ -2020,6 +1996,64 @@ nav:hover {
     margin-bottom: 30px;
   }
 }
+
+/* contact-section */
+
+.contact-section {
+  width: auto;
+  overflow: hidden;
+  height: 80vh;
+  background-color: #f9f7ef;
+  padding: 20px;
+  background-image: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.62),
+    rgba(209, 209, 209, 0.62),
+    rgba(146, 146, 146, 0.124)
+  );
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  display: flex; /* Habilitar flexbox para centrar verticalmente */
+  align-items: center; /* Centrar verticalmente el contenido */
+}
+
+.contact-text {
+  font-family: "plaak-regular";
+  width: 66%;
+  font-size: 3vw;
+  text-align: left; /* Alineación de texto personalizada si es necesario */
+  position: relative;
+}
+
+.contact-text-a {
+  color: #1d1d1b;
+  text-decoration-line: underline;
+}
+
+/* Estilos adicionales para pantallas más pequeñas */
+@media screen and (min-width: 577px) and (max-width: 991px) {
+  .contact-section {
+    height: 60vh;
+    justify-content: center;
+  }
+
+  .contact-text {
+    font-size: 3vw; /* Cambiar el tamaño de fuente para pantallas más pequeñas */
+  }
+}
+
+@media screen and (max-width:  576px) {
+  .contact-section {
+    height: 60vh;
+    justify-content: center;
+  }
+
+  .contact-text {
+    font-size: 5vw;
+  }
+}
+
 /* team-section */
 
 .team-section {
@@ -2947,4 +2981,3 @@ footer {
     font-size: 18px;
   }
 }
-
