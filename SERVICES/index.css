@@ -774,11 +774,85 @@ nav:hover {
 }
 
 
+@media screen and (min-width: 1500px) and (max-width: 1650px) {
+
+  .services-content-title {
+    margin-bottom: 20px;
+    margin-top: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+  }
+
+  .services-column-paragraph {
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    line-height: 1.7;
+    text-align: justify;
+    white-space: nowrap;
+  }
+
+  .services-p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin-bottom: 25px;
+    white-space: nowrap;
+  }
+}
+
 
 @media screen and (min-width: 1144px) and (max-width: 1499px) {
   .services-column {
-    width: calc(33.33% - 0px);
-    box-sizing: border-box;
+    width: calc(25% - 20px); /* Espacio de margen entre las columnas */
+    margin-right: 20px; /* Espacio de margen entre las columnas */
+  }
+
+  .services-content-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribuir las columnas uniformemente */
+  }
+
+  .services-content-title {
+    margin-bottom: 20px;
+    margin-top: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+  }
+
+  .services-column-title {
+    margin-top: 25px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .services-column-subtitle {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  .services-column-paragraph {
+    font-size: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    line-height: 1.7;
+    text-align: justify;
+    white-space: nowrap;
+  }
+
+  .services-p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin-bottom: 25px;
+    white-space: nowrap;
+  }
+
+  .services-content-container .services-column:last-child {
+    margin-right: 0;
   }
 }
 
