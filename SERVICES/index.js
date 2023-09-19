@@ -292,13 +292,3 @@ document.getElementById("toggleButton").addEventListener("click", function () {
   toggleOverlay();
 });
 
-
-
-$(document).ready(function() {
-  $(".wwd-links-container").click(function() {
-    // Obtén la URL del enlace contenido en este contenedor
-    var url = $(this).find(".wwd-link").attr("href");
-    // Redirige a la URL
-    window.location.href = url;
-  });
-});
