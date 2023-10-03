@@ -650,6 +650,25 @@ nav:hover {
   font-size: 40px;
 }
 
+
+/* services-carousel */
+
+.services-carousel-container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.services-carousel {
+  display: flex;
+}
+
+.services-carousel-slide {
+  flex: 0 0 100%;
+  transition: transform 0.5s;
+}
+
 .services-photo1 {
   margin-top: 20px;
   width: 100%;
@@ -703,6 +722,37 @@ nav:hover {
   background-size: cover;
   background-position: center;
 }
+
+.services-carousel-container .indicators {
+  position: absolute;
+  bottom: -1vw;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.services-carousel-container .indicator {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #555555;
+  mix-blend-mode: exclusion;
+  margin: 0 5px;
+  cursor: none;
+}
+
+.services-carousel-container .indicator.active {
+  background-color: #1d1d1b;
+  box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.5);
+  width: 5px;
+  height: 5px;
+}
+
+
+/* services-columns */
+
 .services-paragraph {
   display: flex;
   justify-content: center;
@@ -747,6 +797,7 @@ nav:hover {
   width: calc(25% - 0px);
   box-sizing: border-box;
   margin-top: 50px;
+  position: relative;
 }
 
 .services-column-title {
@@ -780,7 +831,7 @@ nav:hover {
 }
 
 .services-hide.show {
-  max-height: 280px;
+  max-height: 280px; /* O una altura suficientemente grande para mostrar todo el contenido */
   transition: max-height 0.3s ease-in-out;
 }
 

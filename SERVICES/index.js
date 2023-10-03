@@ -290,6 +290,73 @@ document.getElementById("toggleButton").addEventListener("click", function () {
   toggleOverlay();
 });
 
+
+// services-carousel
+
+
+const servicesCarousel = document.querySelector(".services-carousel");
+const servicesSlides = document.querySelectorAll(".services-carousel-slide");
+const servicesIndicators = document.querySelectorAll(".indicator");
+const servicesContainer = document.querySelector(".services-carousel-container");
+
+let servicesCurrentIndex = 0;
+const servicesMaxIndex = servicesSlides.length - 1;
+
+function servicesUpdateCarousel() {
+  const servicesTranslateValue = -servicesCurrentIndex * 100 + "%";
+  servicesCarousel.style.transform = `translateX(${servicesTranslateValue})`;
+
+  // Actualizar los indicadores
+  servicesIndicators.forEach((indicator, index) => {
+    if (index === servicesCurrentIndex) {
+      indicator.classList.add("active");
+    } else {
+      indicator.classList.remove("active");
+    }
+  });
+
+  // Cambiar la clase de fondo de la imagen principal
+  const servicesPhotos = document.querySelectorAll(".services-photo");
+  servicesPhotos.forEach((photo, index) => {
+    if (index === servicesCurrentIndex) {
+      photo.classList.add(`services-photo${index + 1}`);
+    } else {
+      photo.classList.remove(`services-photo${index + 1}`);
+    }
+  });
+}
+
+function servicesNextSlide() {
+  if (servicesCurrentIndex < servicesMaxIndex) {
+    servicesCurrentIndex++;
+    servicesUpdateCarousel();
+  }
+}
+
+function servicesPrevSlide() {
+  if (servicesCurrentIndex > 0) {
+    servicesCurrentIndex--;
+    servicesUpdateCarousel();
+  }
+}
+
+servicesContainer.addEventListener("click", function (event) {
+  const containerWidth = servicesContainer.offsetWidth;
+  const clickX = event.clientX - servicesContainer.getBoundingClientRect().left;
+
+  if (clickX < containerWidth / 2) {
+    servicesPrevSlide();
+  } else {
+    servicesNextSlide();
+  }
+});
+
+// Inicializar el carousel en la primera imagen
+servicesUpdateCarousel();
+
+
+
+
 // services
 
 const servicesColumn = document.querySelectorAll(".services-column");
@@ -297,17 +364,19 @@ const arrow1 = document.querySelectorAll(".arrow1");
 const servicesHide = document.querySelectorAll(".services-hide");
 
 for (let i = 0; i < servicesColumn.length; i++) {
-    arrow1[i].addEventListener("click", function () {
-        if (servicesHide[i].classList.contains("show")) {
-            servicesHide[i].classList.remove("show");
-            arrow1[i].classList.remove("rotate");
-            arrow1[i].classList.add("reverse-arrow");
-            setTimeout(function () {
-                arrow1[i].classList.remove("reverse-arrow");
-            }, 500); // Ajusta el tiempo según la duración de tu animación "reverse-arrow"
-        } else {
-            servicesHide[i].classList.add("show");
-            arrow1[i].classList.add("rotate");
-        }
+    // Usar el evento mouseenter para mostrar el contenido al pasar el mouse sobre la flecha
+    arrow1[i].addEventListener("mouseenter", function () {
+        servicesHide[i].classList.add("show");
+        arrow1[i].classList.add("rotate");
+    });
+
+    // Usar el evento mouseleave para ocultar el contenido al quitar el mouse de la flecha
+    arrow1[i].addEventListener("mouseleave", function () {
+        servicesHide[i].classList.remove("show");
+        arrow1[i].classList.remove("rotate");
+        arrow1[i].classList.add("reverse-arrow");
+        setTimeout(function () {
+            arrow1[i].classList.remove("reverse-arrow");
+        }, 500); // Ajusta el tiempo según la duración de tu animación "reverse-arrow"
     });
 }
