@@ -359,24 +359,25 @@ servicesUpdateCarousel();
 
 // services
 
-const servicesColumn = document.querySelectorAll(".services-column");
-const arrow1 = document.querySelectorAll(".arrow1");
-const servicesHide = document.querySelectorAll(".services-hide");
+const servicesColumns = document.querySelectorAll(".services-column");
 
-for (let i = 0; i < servicesColumn.length; i++) {
-    // Usar el evento mouseenter para mostrar el contenido al pasar el mouse sobre la flecha
-    arrow1[i].addEventListener("mouseenter", function () {
-        servicesHide[i].classList.add("show");
-        arrow1[i].classList.add("rotate");
-    });
+servicesColumns.forEach((column) => {
+  const arrow1 = column.querySelector(".arrow1");
+  const servicesHide = column.querySelector(".services-hide");
 
-    // Usar el evento mouseleave para ocultar el contenido al quitar el mouse de la flecha
-    arrow1[i].addEventListener("mouseleave", function () {
-        servicesHide[i].classList.remove("show");
-        arrow1[i].classList.remove("rotate");
-        arrow1[i].classList.add("reverse-arrow");
-        setTimeout(function () {
-            arrow1[i].classList.remove("reverse-arrow");
-        }, 500); // Ajusta el tiempo según la duración de tu animación "reverse-arrow"
-    });
-}
+  // Usar el evento mouseenter para mostrar el contenido al hacer hover en cualquier parte del div
+  column.addEventListener("mouseenter", function () {
+    servicesHide.classList.add("show");
+    arrow1.classList.add("rotate");
+  });
+
+  // Usar el evento mouseleave para ocultar el contenido al quitar el mouse del div
+  column.addEventListener("mouseleave", function () {
+    servicesHide.classList.remove("show");
+    arrow1.classList.remove("rotate");
+    arrow1.classList.add("reverse-arrow");
+    setTimeout(function () {
+      arrow1.classList.remove("reverse-arrow");
+    }, 500); // Ajusta el tiempo según la duración de tu animación "reverse-arrow"
+  });
+});

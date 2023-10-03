@@ -1389,13 +1389,54 @@ nav:hover {
 }
 
 .wwd-title {
-  margin-top: 150px;
+  margin-top: 120px;
   font-family: "plaak-light";
-  font-size: 38px;
+  font-size: 58px;
   display: flex;
-  justify-content: start;
+  justify-content: center;
   text-align: center;
-  margin-left: 30px;
+}
+
+
+.wwd-subtitles-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 75px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.wwd-subtitles-column {
+  display: flex;
+  flex-direction: column;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+.wwd-subtitle {
+  font-family: "plaak-light";
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.wwd-subtitle-number {
+  color: #545452;
+}
+
+
+.wwd-paragraph {
+  font-family: "plaak-light";
+  font-size: 12px;
+  text-align: center;
+  line-height: 1.5;
+  /* margin-right: 120px; */
+}
+
+.wwd-paragraph-strong {
+  font-weight: bold;
 }
 
 .wwd-columns {
@@ -1417,23 +1458,7 @@ nav:hover {
   width: auto;
   height: 100px;
 }
-.wwd-subtitle {
-  font-family: "plaak-light";
-  font-size: 32px;
-  margin-bottom: 20px;
-}
 
-.wwd-paragraph {
-  font-family: "plaak-light";
-  font-size: 12px;
-  font-style: justify;
-  line-height: 1.3;
-  margin-right: 120px;
-}
-
-.wwd-paragraph-strong {
-  font-weight: bold;
-}
 .wwd-links-container {
   display: flex;
   flex-direction: column;
