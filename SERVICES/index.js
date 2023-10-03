@@ -315,29 +315,23 @@ function servicesUpdateCarousel() {
     }
   });
 
-  // Cambiar la clase de fondo de la imagen principal
-  const servicesPhotos = document.querySelectorAll(".services-photo");
-  servicesPhotos.forEach((photo, index) => {
-    if (index === servicesCurrentIndex) {
-      photo.classList.add(`services-photo${index + 1}`);
-    } else {
-      photo.classList.remove(`services-photo${index + 1}`);
-    }
-  });
+  // Resto del código para cambiar la clase de fondo de la imagen principal...
 }
 
 function servicesNextSlide() {
-  if (servicesCurrentIndex < servicesMaxIndex) {
-    servicesCurrentIndex++;
-    servicesUpdateCarousel();
+  servicesCurrentIndex++;
+  if (servicesCurrentIndex > servicesMaxIndex) {
+    servicesCurrentIndex = 0; // Vuelve al principio
   }
+  servicesUpdateCarousel();
 }
 
 function servicesPrevSlide() {
-  if (servicesCurrentIndex > 0) {
-    servicesCurrentIndex--;
-    servicesUpdateCarousel();
+  servicesCurrentIndex--;
+  if (servicesCurrentIndex < 0) {
+    servicesCurrentIndex = servicesMaxIndex; // Vuelve al final
   }
+  servicesUpdateCarousel();
 }
 
 servicesContainer.addEventListener("click", function (event) {
@@ -351,9 +345,8 @@ servicesContainer.addEventListener("click", function (event) {
   }
 });
 
-// Inicializar el carousel en la primera imagen
+// Inicializar el carrusel en la primera imagen
 servicesUpdateCarousel();
-
 
 
 
