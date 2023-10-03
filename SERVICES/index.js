@@ -30,165 +30,163 @@ $(document).ready(function () {
   });
 });
 
-
 // language
 
 function redirectToSpanishIndex() {
-    window.location.href = "../ES/index.html";
-  }
-  
-  let languageEs = document.querySelector(".language-es");
-  languageEs.addEventListener("click", redirectToSpanishIndex);
-  
-  //EN
-  
-  function redirectToEnglishIndex() {
-    window.location.href = "../../index.html";
-  }
-  
-  let languageEn = document.querySelector(".language-en");
-  languageEn.addEventListener("click", redirectToEnglishIndex);  
+  window.location.href = "../ES/index.html";
+}
 
+let languageEs = document.querySelector(".language-es");
+languageEs.addEventListener("click", redirectToSpanishIndex);
 
-  // custom-mouse
+//EN
+
+function redirectToEnglishIndex() {
+  window.location.href = "../../index.html";
+}
+
+let languageEn = document.querySelector(".language-en");
+languageEn.addEventListener("click", redirectToEnglishIndex);
+
+// custom-mouse
 
 document.addEventListener("DOMContentLoaded", function () {
-    var customMouse = document.getElementById("custom-mouse");
-    var inThirdSection = false; // Bandera para indicar si estamos dentro de la tercera sección
-  
-    document.addEventListener("mousemove", function (event) {
-      var overlay = document.getElementById("overlay");
-      var thirdSection = document.getElementById("third-section");
-      var thirdSectionRect = thirdSection.getBoundingClientRect();
-      var thirdSectionTop = thirdSectionRect.top;
-      var thirdSectionBottom = thirdSectionRect.bottom;
-      var thirdSectionLeft = thirdSectionRect.left;
-      var thirdSectionRight = thirdSectionRect.right;
-  
-      if (overlay.style.display === "block") {
-        // Reducir el tamaño del cursor cuando el overlay está abierto
-        customMouse.style.width = "10px";
-        customMouse.style.height = "10px";
-      } else {
-        // Restablecer el tamaño del cursor cuando el overlay está cerrado
-        customMouse.style.width = "15px";
-        customMouse.style.height = "15px";
-      }
-  
-      if (
-        event.clientY >= thirdSectionTop &&
-        event.clientY <= thirdSectionBottom &&
-        event.clientX >= thirdSectionLeft &&
-        event.clientX <= thirdSectionRight
-      ) {
-        // Estilos del cursor cuando está dentro de la sección "thirdSection"
-        customMouse.style.width = "15px";
-        customMouse.style.height = "15px";
-        customMouse.style.backgroundColor = "#a42f33";
-        customMouse.style.mixBlendMode = "normal";
-        inThirdSection = true; // Establecer la bandera en verdadero si estamos dentro de la tercera sección
-      } else {
-        // Estilos del cursor por defecto cuando está fuera de la sección "thirdSection"
-        customMouse.style.width = "15px";
-        customMouse.style.height = "15px";
-        customMouse.style.backgroundColor = "";
-        customMouse.style.mixBlendMode = "";
-        inThirdSection = false; // Establecer la bandera en falso si estamos fuera de la tercera sección
-      }
-  
-      // Actualizar la posición del cursor
-      customMouse.style.left = event.clientX - 10 + "px";
-      customMouse.style.top = event.clientY - 10 + "px";
-    });
-  
-    document.addEventListener("mousedown", function () {
-      customMouse.style.backgroundColor = inThirdSection ? "#a42f33" : "white"; // Restablecer el color solo si estamos en la tercera sección
-    });
-  
-    document.addEventListener("mouseup", function () {
-      customMouse.style.backgroundColor = inThirdSection ? "#a42f33" : "white"; // Restablecer el color solo si estamos en la tercera sección
-    });
-  });
-  // custom-zoom
-  
-  document.addEventListener("mouseover", function (event) {
-    var target = event.target;
-    if (target.classList.contains("clickable")) {
-      var customMouse = document.getElementById("custom-mouse");
-  
-      // Verificar si el overlay está abierto
-      var overlay = document.getElementById("overlay");
-      if (overlay.style.display === "block") {
-        // Cambiar la escala del cursor cuando el overlay está abierto
-        customMouse.style.transform = "scale(2.0)";
-      } else {
-        // Restablecer la escala del cursor cuando el overlay está cerrado
-        customMouse.style.transform = "scale(1.5)";
-      }
-    }
-  });
-  
-  document.addEventListener("mouseout", function (event) {
-    var target = event.target;
-    if (target.classList.contains("clickable")) {
-      var customMouse = document.getElementById("custom-mouse");
-      customMouse.style.transform = ""; // devuelve el tamaño del cursor personalizado a su valor original
-    }
-  });
-  
-  //nav bar scroll
-  
-  window.addEventListener("scroll", function () {
-    var navbar = document.getElementById("nav");
+  var customMouse = document.getElementById("custom-mouse");
+  var inThirdSection = false; // Bandera para indicar si estamos dentro de la tercera sección
+
+  document.addEventListener("mousemove", function (event) {
     var overlay = document.getElementById("overlay");
-    var scrolled = window.pageYOffset || document.documentElement.scrollTop;
-  
-    if (
-      scrolled > 0 &&
-      overlay.style.display !== "block" &&
-      !overlay.classList.contains("active")
-    ) {
-      navbar.classList.add("scroll");
+    var thirdSection = document.getElementById("third-section");
+    var thirdSectionRect = thirdSection.getBoundingClientRect();
+    var thirdSectionTop = thirdSectionRect.top;
+    var thirdSectionBottom = thirdSectionRect.bottom;
+    var thirdSectionLeft = thirdSectionRect.left;
+    var thirdSectionRight = thirdSectionRect.right;
+
+    if (overlay.style.display === "block") {
+      // Reducir el tamaño del cursor cuando el overlay está abierto
+      customMouse.style.width = "10px";
+      customMouse.style.height = "10px";
     } else {
-      navbar.classList.remove("scroll");
+      // Restablecer el tamaño del cursor cuando el overlay está cerrado
+      customMouse.style.width = "15px";
+      customMouse.style.height = "15px";
     }
+
+    if (
+      event.clientY >= thirdSectionTop &&
+      event.clientY <= thirdSectionBottom &&
+      event.clientX >= thirdSectionLeft &&
+      event.clientX <= thirdSectionRight
+    ) {
+      // Estilos del cursor cuando está dentro de la sección "thirdSection"
+      customMouse.style.width = "15px";
+      customMouse.style.height = "15px";
+      customMouse.style.backgroundColor = "#a42f33";
+      customMouse.style.mixBlendMode = "normal";
+      inThirdSection = true; // Establecer la bandera en verdadero si estamos dentro de la tercera sección
+    } else {
+      // Estilos del cursor por defecto cuando está fuera de la sección "thirdSection"
+      customMouse.style.width = "15px";
+      customMouse.style.height = "15px";
+      customMouse.style.backgroundColor = "";
+      customMouse.style.mixBlendMode = "";
+      inThirdSection = false; // Establecer la bandera en falso si estamos fuera de la tercera sección
+    }
+
+    // Actualizar la posición del cursor
+    customMouse.style.left = event.clientX - 10 + "px";
+    customMouse.style.top = event.clientY - 10 + "px";
   });
-  
-  // nav menu hover effect
-  
-  const hoverTextList = document.querySelectorAll(".hover-effect");
-  
-  hoverTextList.forEach((hoverText) => {
-    const originalText = hoverText.textContent;
-  
-    hoverText.addEventListener("mouseenter", () => {
-      hoverText.setAttribute("data-rearranged", "true");
-      hoverText.textContent = reverseText(originalText);
+
+  document.addEventListener("mousedown", function () {
+    customMouse.style.backgroundColor = inThirdSection ? "#a42f33" : "white"; // Restablecer el color solo si estamos en la tercera sección
+  });
+
+  document.addEventListener("mouseup", function () {
+    customMouse.style.backgroundColor = inThirdSection ? "#a42f33" : "white"; // Restablecer el color solo si estamos en la tercera sección
+  });
+});
+// custom-zoom
+
+document.addEventListener("mouseover", function (event) {
+  var target = event.target;
+  if (target.classList.contains("clickable")) {
+    var customMouse = document.getElementById("custom-mouse");
+
+    // Verificar si el overlay está abierto
+    var overlay = document.getElementById("overlay");
+    if (overlay.style.display === "block") {
+      // Cambiar la escala del cursor cuando el overlay está abierto
+      customMouse.style.transform = "scale(2.0)";
+    } else {
+      // Restablecer la escala del cursor cuando el overlay está cerrado
+      customMouse.style.transform = "scale(1.5)";
+    }
+  }
+});
+
+document.addEventListener("mouseout", function (event) {
+  var target = event.target;
+  if (target.classList.contains("clickable")) {
+    var customMouse = document.getElementById("custom-mouse");
+    customMouse.style.transform = ""; // devuelve el tamaño del cursor personalizado a su valor original
+  }
+});
+
+//nav bar scroll
+
+window.addEventListener("scroll", function () {
+  var navbar = document.getElementById("nav");
+  var overlay = document.getElementById("overlay");
+  var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+
+  if (
+    scrolled > 0 &&
+    overlay.style.display !== "block" &&
+    !overlay.classList.contains("active")
+  ) {
+    navbar.classList.add("scroll");
+  } else {
+    navbar.classList.remove("scroll");
+  }
+});
+
+// nav menu hover effect
+
+const hoverTextList = document.querySelectorAll(".hover-effect");
+
+hoverTextList.forEach((hoverText) => {
+  const originalText = hoverText.textContent;
+
+  hoverText.addEventListener("mouseenter", () => {
+    hoverText.setAttribute("data-rearranged", "true");
+    hoverText.textContent = reverseText(originalText);
+    setTimeout(() => {
+      hoverText.textContent = shuffleText(reverseText(originalText));
       setTimeout(() => {
-        hoverText.textContent = shuffleText(reverseText(originalText));
+        hoverText.textContent = reverseText(originalText);
         setTimeout(() => {
-          hoverText.textContent = reverseText(originalText);
-          setTimeout(() => {
-            hoverText.removeAttribute("data-rearranged");
-            hoverText.textContent = originalText;
-          }, 80);
+          hoverText.removeAttribute("data-rearranged");
+          hoverText.textContent = originalText;
         }, 80);
       }, 80);
-    });
+    }, 80);
   });
-  
-  function reverseText(text) {
-    const reversedText = text.split("").reverse().join("");
-    return reversedText;
-  }
-  
-  function shuffleText(text) {
-    const shuffledText = text
-      .split("")
-      .sort(() => Math.random() - 0.5)
-      .join("");
-    return shuffledText;
-  }
+});
+
+function reverseText(text) {
+  const reversedText = text.split("").reverse().join("");
+  return reversedText;
+}
+
+function shuffleText(text) {
+  const shuffledText = text
+    .split("")
+    .sort(() => Math.random() - 0.5)
+    .join("");
+  return shuffledText;
+}
 
 //togglebar
 
@@ -239,7 +237,7 @@ toggleButton.addEventListener("click", function () {
 document.getElementById("overlay").addEventListener("click", function () {
   if (!event.target.closest("#nav-content"))
     window.location.href = "/index.html"; //
-});  
+});
 
 //overlay-menu
 
@@ -292,3 +290,24 @@ document.getElementById("toggleButton").addEventListener("click", function () {
   toggleOverlay();
 });
 
+// services
+
+const servicesColumn = document.querySelectorAll(".services-column");
+const arrow1 = document.querySelectorAll(".arrow1");
+const servicesHide = document.querySelectorAll(".services-hide");
+
+for (let i = 0; i < servicesColumn.length; i++) {
+    arrow1[i].addEventListener("click", function () {
+        if (servicesHide[i].classList.contains("show")) {
+            servicesHide[i].classList.remove("show");
+            arrow1[i].classList.remove("rotate");
+            arrow1[i].classList.add("reverse-arrow");
+            setTimeout(function () {
+                arrow1[i].classList.remove("reverse-arrow");
+            }, 500); // Ajusta el tiempo según la duración de tu animación "reverse-arrow"
+        } else {
+            servicesHide[i].classList.add("show");
+            arrow1[i].classList.add("rotate");
+        }
+    });
+}

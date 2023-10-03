@@ -1745,13 +1745,56 @@ nav:hover {
   line-height: 1.5;
 }
 
-@media screen and (min-width: 1451px) and (max-width: 1774px) {
+@media screen and (min-width: 1600px) and (max-width: 1774px) {
 }
 .cases-carousel {
   width: 100%;
-  height: 330px;
+  height: 318.7px;
   position: relative;
   overflow: hidden;
+}
+
+.cases-carousel-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 60px;
+  width: 536.7px;
+}
+
+.carousel-titles-main-title {
+  font-size: 12px;
+  font-weight: 205;
+  font-family: "plaak-regular";
+  letter-spacing: 1.4px;
+  text-align: justify;
+}
+
+.carousel-titles-sub-title {
+  display: flex;
+  justify-content: start;
+  margin-left: 2px;
+  text-align: justify;
+  margin-top: 10px;
+  font-size: 8px;
+  font-family: "plaak-regular";
+  letter-spacing: 1.3px;
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 1451px) and (max-width: 1599px) {
+}
+.cases-carousel {
+  width: 100%;
+  height: 318.7px;
+  position: relative;
+  overflow: hidden;
+}
+
+.cases-carousel-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 60px;
+  width: 500px;
 }
 
 .carousel-titles-main-title {
@@ -2048,7 +2091,7 @@ nav:hover {
   }
 }
 
-@media screen and (max-width:  576px) {
+@media screen and (max-width: 576px) {
   .contact-section {
     height: 60vh;
     justify-content: center;

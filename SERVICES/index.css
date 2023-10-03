@@ -659,7 +659,6 @@ nav:hover {
   background-position: center;
 }
 
-
 .services-photo2 {
   margin-top: 20px;
   width: 100%;
@@ -678,7 +677,6 @@ nav:hover {
   background-position: center;
 }
 
-
 .services-photo4 {
   margin-top: 20px;
   width: 100%;
@@ -687,7 +685,6 @@ nav:hover {
   background-size: cover;
   background-position: center;
 }
-
 
 .services-photo5 {
   margin-top: 20px;
@@ -773,9 +770,71 @@ nav:hover {
   text-align: justify;
 }
 
+/* services-overlay */
+
+.services-hide {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.services-hide.show {
+  max-height: 280px; /* Ajusta esta altura según tus necesidades */
+  transition: max-height 0.5s ease-in-out;
+}
+
+.services-hide p {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.services-hide.show p {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.arrow1 {
+  width: 16px;
+  height: 16px;
+  -webkit-transform: rotate(45deg);
+  border-left: none;
+  border-top: none;
+  border-right: 2px #000000 solid;
+  border-bottom: 2px #000000 solid;
+  right: -88%;
+  margin-top: -20px;
+  position: relative;
+}
+
+.arrow1.rotate {
+  animation: rotate-arrow 0.5s;
+  transform: rotate(225deg);
+}
+
+@keyframes rotate-arrow {
+  0% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(225deg);
+  }
+}
+
+.arrow1.reverse-arrow {
+  animation: reverse-arrow 0.5s;
+  transform: rotate(45deg);
+}
+
+@keyframes reverse-arrow {
+  0% {
+    transform: rotate(225deg);
+  }
+  100% {
+    transform: rotate(405deg);
+  }
+}
 
 @media screen and (min-width: 1500px) and (max-width: 1650px) {
-
   .services-content-title {
     margin-bottom: 20px;
     margin-top: 25px;
@@ -801,7 +860,6 @@ nav:hover {
   }
 }
 
-
 @media screen and (min-width: 1144px) and (max-width: 1499px) {
   .services-column {
     width: calc(25% - 20px); /* Espacio de margen entre las columnas */
@@ -826,7 +884,7 @@ nav:hover {
     font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
   }
-  
+
   .services-column-subtitle {
     font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
@@ -887,7 +945,6 @@ nav:hover {
   }
 }
 
-
 @media screen and (min-width: 377px) and (max-width: 757px) {
   .services-content-container {
     display: flex;
@@ -936,7 +993,7 @@ nav:hover {
     margin-left: 50px;
     margin-right: 50px;
   }
-  
+
   .services-p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
@@ -951,7 +1008,6 @@ nav:hover {
     margin-left: 50px;
     margin-right: 50px;
   }
-  
 }
 
 @media screen and (max-width: 376px) {
@@ -989,7 +1045,7 @@ nav:hover {
     margin-right: 25px;
     margin-top: 50px;
   }
-  
+
   .services-main {
     padding-left: 25px;
     display: flex;
@@ -997,7 +1053,7 @@ nav:hover {
     flex-direction: column;
     font-family: "plaak-light";
   }
-  
+
   .services-main-subtitle {
     margin-top: 100px;
     font-size: 14px;
@@ -1016,7 +1072,7 @@ nav:hover {
     margin-left: 25px;
     margin-right: 25px;
   }
-  
+
   .services-p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
@@ -1026,13 +1082,11 @@ nav:hover {
   }
 }
 
-
 /* footer*/
 
 .space-section2 {
   background-color: #f9f7ef;
   height: 15vh;
-
 }
 
 footer {
@@ -1188,3 +1242,5 @@ footer {
     font-size: 18px;
   }
 }
+
+
