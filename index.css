@@ -1377,24 +1377,25 @@ nav:hover {
   height: 100vh;
   background-color: #f9f7ef;
   padding: 20px;
-  background-image: radial-gradient(
+  /* background-image: radial-gradient(
     circle,
     rgba(255, 255, 255, 0.62),
     rgba(209, 209, 209, 0.62),
     rgba(146, 146, 146, 0.124)
-  );
-  background-attachment: fixed;
+  ); */
+  /* background-attachment: fixed;
   background-position: center;
-  background-size: cover;
+  background-size: cover; */
 }
 
 .wwd-title {
   margin-top: 120px;
   font-family: "plaak-light";
-  font-size: 58px;
+  font-size: 50px;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   text-align: center;
+  margin-left: 30px;
 }
 
 
@@ -1402,7 +1403,7 @@ nav:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin-top: 75px;
+  margin-top: 100px;
 }
 
 .wwd-subtitles-column {
@@ -1437,7 +1438,7 @@ nav:hover {
 
 .wwd-subtitle-2 {
   font-family: "plaak-light";
-  font-size: 20px;
+  font-size: 16px;
   color: #515151;
   letter-spacing: 2.8px;
   display: flex;
@@ -1520,6 +1521,8 @@ nav:hover {
     background-size: cover;
   }
 
+
+  
   .wwd-columns {
     display: flex;
     flex-direction: column;
@@ -1540,7 +1543,7 @@ nav:hover {
     font-family: "plaak-light";
     font-size: 30px;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     flex-wrap: nowrap;
     text-align: center;
     margin-bottom: -50px;
@@ -1558,6 +1561,7 @@ nav:hover {
     margin-bottom: 20px;
     margin-top: 50px;
     text-align: left;
+    margin-left: 30px;
   }
 
   .wwd-paragraph {
@@ -1566,6 +1570,7 @@ nav:hover {
     width: auto;
     text-align: left;
     line-height: 1.5;
+    margin-left: 30px;
   }
 
 
@@ -1574,6 +1579,10 @@ nav:hover {
     flex-direction: column;
     box-sizing: border-box;
     margin-top: 35px;
+  }
+
+  .wwd-links {
+    margin-bottom: 10px;
   }
 }
 
@@ -1584,7 +1593,7 @@ nav:hover {
     height: 180vh;
     background-color: #f9f7ef; /* Color de fondo principal */
     padding: 20px;
-    background-image: radial-gradient(
+    /* background-image: radial-gradient(
       circle,
       rgba(255, 255, 255, 0.62),
       rgba(209, 209, 209, 0.62),
@@ -1592,8 +1601,34 @@ nav:hover {
     );
     background-attachment: fixed;
     background-position: center;
-    background-size: cover;
+    background-size: cover; */
   }
+
+  .wwd-subtitles-row {
+    flex-direction: column;
+    justify-content: center;
+    align-content:space-between ;
+  }
+
+  .wwd-subtitle {
+    font-family: "plaak-light";
+    font-size: 28px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    text-align: left;
+    margin-left: 30px;
+  }
+
+  .wwd-paragraph {
+    font-family: "plaak-light";
+    font-size: 11px;
+    width: auto;
+    text-align: left;
+    line-height: 1.5;
+    margin-left: 30px;
+    white-space: nowrap;
+  }
+
 
   .wwd-columns {
     display: flex;
@@ -1634,9 +1669,94 @@ nav:hover {
     flex-direction: column;
     box-sizing: border-box;
     margin-top: 40px;
+    
   }
+
+  .wwd-links {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    border-top: solid 1px darkgrey;
+    padding-top: 8px;
+    margin-right: 40px;
+  }
+  
+  .wwd-link {
+    font-family: "plaak-light";
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    cursor: none;
+    user-select: none;
+  }  
 }
 
+@media screen and (min-width: 1002px) and (max-width: 1183px) {
+
+  .wwd-title {
+    font-size: 38px;
+  }
+
+  .wwd-subtitle {
+    font-size: 27px;
+  }
+  .wwd-subtitle-2 {
+    font-size: 13px;
+  }
+
+  .wwd-link {
+    font-size: 17px;
+  }
+  .wwd-paragraph {
+    font-family: "plaak-light";
+    font-size: 10px;
+    flex-wrap: wrap;
+    text-align: center;
+    line-height: 1.5;
+    width: 310px;
+  }
+
+  .wwd-subtitles-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 100px;
+  }  
+}
+@media screen and (min-width: 1184px) and (max-width: 1393px) {
+
+  .wwd-title {
+    font-size: 40px;
+  }
+
+  .wwd-subtitle {
+    font-size: 28px;
+  }
+  .wwd-subtitle-2 {
+    font-size: 14px;
+  }
+
+  .wwd-link {
+    font-size: 18px;
+  }
+  .wwd-paragraph {
+    font-family: "plaak-light";
+    font-size: 11px;
+    flex-wrap: wrap;
+    text-align: center;
+    line-height: 1.5;
+    width: 350px;
+  }
+
+  .wwd-subtitles-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 100px;
+  }  
+}
 /* cases-section */
 
 .cases-section {

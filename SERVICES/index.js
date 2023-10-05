@@ -358,13 +358,28 @@ servicesColumns.forEach((column) => {
   const arrow1 = column.querySelector(".arrow1");
   const servicesHide = column.querySelector(".services-hide");
 
-  // Usar el evento mouseenter para mostrar el contenido al hacer hover en cualquier parte del div
+  // Usar el evento mouseenter para mostrar el contenido al hacer hover en la flecha
+  arrow1.addEventListener("mouseenter", function () {
+    servicesHide.classList.add("show");
+    arrow1.classList.add("rotate");
+  });
+
+  // Usar el evento mouseleave para ocultar el contenido al quitar el mouse de la flecha
+  arrow1.addEventListener("mouseleave", function () {
+    servicesHide.classList.remove("show");
+    arrow1.classList.remove("rotate");
+    arrow1.classList.add("reverse-arrow");
+    setTimeout(function () {
+      arrow1.classList.remove("reverse-arrow");
+    }, 500); // Ajusta el tiempo según la duración de tu animación "reverse-arrow"
+  });
+
+  // Puedes agregar eventos adicionales para mostrar/ocultar el contenido al hacer hover en la columna completa si lo deseas
   column.addEventListener("mouseenter", function () {
     servicesHide.classList.add("show");
     arrow1.classList.add("rotate");
   });
 
-  // Usar el evento mouseleave para ocultar el contenido al quitar el mouse del div
   column.addEventListener("mouseleave", function () {
     servicesHide.classList.remove("show");
     arrow1.classList.remove("rotate");
