@@ -1128,7 +1128,7 @@ nav:hover {
     height: 190vh;
     background-color: #f9f7ef; /* Color de fondo principal */
     padding: 20px;
-    background-image: radial-gradient(
+    /* background-image: radial-gradient(
       circle,
       rgba(255, 255, 255, 0.62),
       rgba(209, 209, 209, 0.62),
@@ -1136,7 +1136,7 @@ nav:hover {
     );
     background-attachment: fixed;
     background-position: center;
-    background-size: cover;
+    background-size: cover; */
   }
 
   .wwd-columns {
@@ -1205,7 +1205,7 @@ nav:hover {
   .what-we-do-section {
     width: auto;
     overflow: hidden;
-    height: 180vh;
+    height: 170vh;
     background-color: #f9f7ef; /* Color de fondo principal */
     padding: 20px;
     /* background-image: radial-gradient(
@@ -1282,22 +1282,21 @@ nav:hover {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    margin-top: 40px;
   }
-
+  
   .wwd-links {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     justify-content: space-between;
     border-top: solid 1px darkgrey;
     padding-top: 8px;
     margin-right: 40px;
   }
-
+  
   .wwd-link {
     font-family: "plaak-light";
-    font-size: 20px;
+    font-size: 18px;
     text-decoration: none;
     color: black;
     font-weight: bold;
