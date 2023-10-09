@@ -972,7 +972,7 @@ nav:hover {
     border-right: 2px #000000 solid;
     border-bottom: 2px #000000 solid;
     right: -81%;
-    margin-top: -31px;
+    margin-top: -42px;
     position: relative;
   }
 }
@@ -1005,6 +1005,19 @@ nav:hover {
     font-size: 13px;
     margin-bottom: 25px;
     white-space: nowrap;
+  }
+
+  .arrow1 {
+    width: 15px;
+    height: 15px;
+    -webkit-transform: rotate(45deg);
+    border-left: none;
+    border-top: none;
+    border-right: 2px #000000 solid;
+    border-bottom: 2px #000000 solid;
+    right: -81%;
+    margin-top: -42px;
+    position: relative;
   }
 }
 
@@ -1070,6 +1083,18 @@ nav:hover {
     margin-top: 60px;
     margin-left: 50px;
     margin-right: 50px;
+  }
+  .arrow1 {
+    width: 15px;
+    height: 15px;
+    -webkit-transform: rotate(45deg);
+    border-left: none;
+    border-top: none;
+    border-right: 2px #000000 solid;
+    border-bottom: 2px #000000 solid;
+    right: -81%;
+    margin-top: -42px;
+    position: relative;
   }
 }
 
@@ -1153,7 +1178,7 @@ nav:hover {
     border-right: 2px #000000 solid;
     border-bottom: 2px #000000 solid;
     right: -91%;
-    top: -43px;
+    top: -45px;
     margin-top: 0;
     position: relative;
   }
