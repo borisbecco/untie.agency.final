@@ -652,6 +652,11 @@ nav:hover {
 
 /* services-carousel */
 
+.space-section2 {
+  background-color: #f9f7ef;
+  height: 40vh;
+}
+
 .services-carousel-container {
   width: 100%;
   max-width: 100%;
@@ -1019,9 +1024,13 @@ nav:hover {
     margin-top: -42px;
     position: relative;
   }
+
+  .space-section2 {
+    height: 20vh;
+  }
 }
 
-@media screen and (min-width: 377px) and (max-width: 757px) {
+@media screen and (min-width: 394px) and (max-width: 757px) {
   .services-content-container {
     display: flex;
     flex-wrap: nowrap;
@@ -1096,9 +1105,12 @@ nav:hover {
     margin-top: -42px;
     position: relative;
   }
+  .space-section2 {
+    height: 20vh;
+  }
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 393px) {
   .services-content-container {
     display: flex;
     flex-wrap: nowrap;
@@ -1182,14 +1194,14 @@ nav:hover {
     margin-top: 0;
     position: relative;
   }
+  .space-section2 {
+    height: 15vh;
+  }
 }
 
 /* footer*/
 
-.space-section2 {
-  background-color: #f9f7ef;
-  height: 40vh;
-}
+
 
 footer {
   background-color: #1d1d1b;
