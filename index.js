@@ -90,6 +90,10 @@ window.addEventListener("scroll", function () {
 var video = document.getElementById("homeVideo");
 var hasStarted = false;
 
+video.addEventListener("canplay", function() {
+  video.play();
+});
+
 function playVideoOnScroll() {
   if (!hasStarted) {
     var videoTop = video.getBoundingClientRect().top;
