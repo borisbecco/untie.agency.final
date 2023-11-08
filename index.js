@@ -67,6 +67,8 @@ languageEn.addEventListener("click", redirectToEnglishIndex);
 
 // paralax main - page
 
+/*
+
 window.addEventListener("scroll", function () {
   const mainTitle = document.querySelector(".main-tittle-container");
   const speed = mainTitle.getAttribute("data-speed");
@@ -80,6 +82,53 @@ window.addEventListener("scroll", function () {
   const y = (window.pageYOffset * speed) / 45;
   textBar.style.transform = `translate3d(0, ${y}px, 0)`;
 });
+
+*/
+
+// home - video
+
+var video = document.getElementById("homeVideo");
+var hasStarted = false;
+
+function playVideoOnScroll() {
+  if (!hasStarted) {
+    var videoTop = video.getBoundingClientRect().top;
+    var videoBottom = video.getBoundingClientRect().bottom;
+
+    // Detect when the video is in the viewport
+    if (videoTop < window.innerHeight && videoBottom >= 0) {
+      video.play();
+      hasStarted = true;
+    }
+  }
+}
+
+function changeVideoURLForMobile() {
+  var newURL = "/HOME/UNTIE_1080x1920_Loop.mp4";
+  video.src = newURL;
+  video.load();
+  video.play();
+}
+
+// Función que se ejecuta cuando la ventana cambia de tamaño
+function handleResize() {
+  if (window.innerWidth <= 768) { // Puedes ajustar este valor según tu diseño responsivo
+    changeVideoURLForMobile();
+  }
+}
+
+// Escuchar el evento "resize" para detectar cambios en el tamaño de la ventana
+window.addEventListener("resize", handleResize);
+
+// Llamar a la función de cambio de URL al cargar la página (en caso de que se cargue en una vista móvil)
+if (window.innerWidth <= 768) {
+  changeVideoURLForMobile();
+}
+
+
+window.addEventListener("scroll", playVideoOnScroll);
+
+playVideoOnScroll();
 
 // custom-mouse
 
@@ -224,7 +273,7 @@ function shuffleText(text) {
 
 // carousel
 
-let slides = document.querySelectorAll(".image-slide");
+/*let slides = document.querySelectorAll(".image-slide");
 let currentSlide = 0;
 let slideInterval;
 
@@ -277,6 +326,8 @@ slidesCarousel.addEventListener("mousemove", function (event) {
 });
 
 handleMediaQuery(mediaQuery); // Verificar la media query inicialmente
+
+*/
 
 //togglebar
 
