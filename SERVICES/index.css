@@ -176,10 +176,10 @@ nav:hover {
   align-items: center;
   padding: 5px;
   margin-left: 15px;
-  margin-top: 10px;
+  margin-top: 3px;
 }
 
-#logo1 {
+/* #logo1 {
   width: 60px;
   height: 50px;
 }
@@ -187,7 +187,7 @@ nav:hover {
 #logo2 {
   width: 71px;
   height: 50px;
-}
+} */
 
 @keyframes slide1 {
   0% {
@@ -217,35 +217,31 @@ nav:hover {
 }
 
 @media screen and (max-width: 576px) {
-  #logo-container {
-    margin-top: 10px;
-  }
-  #logo1 {
+  .logo-img-1 {
     width: 40px;
-    height: 30px;
+    height: 23.70px;
   }
 
-  #logo2 {
+  .logo-img-2 {
     width: 47px;
-    height: 30px;
+    height: 23.73px;
   }
+
   .navbar-color-change {
     border-bottom: 1px solid #f9f7ef;
   }
 }
 
 @media screen and (min-width: 577px) and (max-width: 991px) {
-  #logo-container {
-    margin-top: 10px;
-  }
-  #logo1 {
+
+  .logo-img-1 {
     width: 52px;
-    height: 40px;
+    height: 30.81px;
   }
 
-  #logo2 {
+  .logo-img-2 {
     width: 60px;
-    height: 40px;
+    height: 30.31px;
   }
 }
 
