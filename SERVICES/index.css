@@ -830,7 +830,7 @@ nav:hover {
 }
 
 .services-hide.show {
-  max-height: 280px; /* O una altura suficientemente grande para mostrar todo el contenido */
+  max-height: 330px; /* O una altura suficientemente grande para mostrar todo el contenido */
   transition: max-height 0.3s ease-in-out;
 }
 
@@ -853,7 +853,7 @@ nav:hover {
   border-right: 2px #000000 solid;
   border-bottom: 2px #000000 solid;
   right: -75%;
-  margin-top: -31px;
+  margin-top: -48px;
   position: relative;
 }
 
